@@ -45,6 +45,7 @@ height: auto;
 }
 
 .eventPlanner {
+  width: 100%;
   padding: 0 2rem;
   background: #fafafa;
   min-height: 100vh;
@@ -52,7 +53,7 @@ height: auto;
 
 .plannerHero {
   background-image: url(https://i.ytimg.com/vi/eJ8BUhCgwxo/maxresdefault.jpg);
-  width: 99vw;
+  width: 100vw;
   height:25rem ;
   text-align: center;
   margin-bottom: 2rem;
@@ -85,7 +86,7 @@ height: auto;
 }
 
 .card {
-    width:320px;
+  width: 30%;
   background: #fff;
   border-radius: 16px;
   overflow: hidden;
@@ -157,4 +158,62 @@ height: auto;
   text-align: center;
   color: #888;
   font-style: italic;
+}
+@media (max-width: 1024px){
+  .navbar{
+    width: 100%;
+  }
+  .plannerHero {
+    background-image: url(https://i.ytimg.com/vi/eJ8BUhCgwxo/maxresdefault.jpg);
+    width: 90%;
+    height:25rem ;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-left: 0;
+    background-color: rgba(0, 0, 0, 0.427);
+    background-blend-mode: darken;
+    display: grid;
+    place-items: center;
+  }
+  .controls {
+   display:  flex;
+   gap: 0.8rem;
+   justify-content: center;
+   margin: 2rem;
+   align-items: center;
+
+  }
+  .search{
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    min-width:20rem;
+    font-size: 1rem;
+    border-color: #EF7722;
+    border-width: 2px;
+    width: 10%;
+    height: auto;
+  }
+  
+.eventsGrid {
+  width: 100%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2,1fr);
+    margin: 0  0 0 4rem;
+  }
+  .card {
+    width:350px;
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    overflow: hidden;
+  }
+  .eventPlanner {
+    padding: 0;
+    background: #fafafa;
+    min-height: 100vh;
+}
 }

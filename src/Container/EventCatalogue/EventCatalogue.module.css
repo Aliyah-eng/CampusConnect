@@ -266,6 +266,12 @@ height: auto;
 
 
 @media (max-width: 1339px) and (min-width: 1024px) {
+    .navbar{
+        width: 100%;
+        background-color: #f0eeee;
+        padding: 1.3rem 1rem;
+        color: #385e79;
+    }
     .event_catalogue_dashboard{
         flex-direction: column;
         justify-content: center;
