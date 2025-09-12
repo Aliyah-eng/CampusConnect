@@ -324,31 +324,136 @@
      cursor: pointer;
 }
 
+/* ========== BASE STYLES (already in place) ========== */
+/* Keep your current styles above this section */
+
+
+/* ========== RESPONSIVENESS ========== */
+@media (max-width: 1024px) {
+  .about_history {
+    padding: 2rem 3rem;
+  }
+
+  .section_body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section_one, .section_two {
+    width: 90%;
+  }
+
+  .image_topic {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .partner_logos img {
+    width: 6rem;
+    max-height: 6rem;
+  }
+}
+
 @media (max-width: 768px) {
-    .about_history {
-        padding: 2rem;
-    } 
-    .history_container {
-        grid-template-columns: 1fr;
-    }
-    .section_one, .section_two {
-        width: 100%;
-        margin-bottom: 1.5rem;
-    }
-}@media (max-width: 480px) {
-    .about_history {
-        padding: 1rem;
-    } 
-    .text_p, .content p {
-        width: 100%;
-        font-size: 16px;
-    }
-    .quote {
-        font-size: 18px;
-        line-height: 28px;
-    }
-    .section_one{
-      
-    }
-    
+  .about_history {
+    padding: 1.5rem;
+  }
+
+  .history_container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .history_img_wrapper img {
+    border-radius: 1rem;
+  }
+
+  .text_p,
+  .quote {
+    width: 100%;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .mission_header,
+  .values_header {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .valuesList li {
+    font-size: 0.95rem;
+  }
+
+  .image_topic {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .events_grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .partner_logos {
+    gap: 20px;
+  }
+
+  .partner_logos img {
+    width: 5rem;
+    max-height: 5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about_history {
+    padding: 1rem;
+  }
+
+  .logo_link {
+    font-size: 1.5rem;
+  }
+
+  .text_p,
+  .quote {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .section_one, 
+  .section_two {
+    width: 18rem;
+   margin: 0rem -1rem;
+  }
+
+  .mission_header,
+  .values_header {
+    font-size: 1.4rem;
+  }
+
+  .image_topic {
+    grid-template-columns: 1fr;
+  }
+
+  .events_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .event_card {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .partner_logos {
+    gap: 15px;
+  }
+
+  .partner_logos img {
+    width: 4rem;
+    max-height: 4rem;
+  }
+
+  .tittle, .Patner_tittle {
+    font-size: 1.4rem;
+    text-align: center;
+  }
 }

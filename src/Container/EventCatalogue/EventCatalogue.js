@@ -9,29 +9,39 @@ import { FaLaptopCode } from "react-icons/fa";
 import { GiTheaterCurtains, GiTrophy } from "react-icons/gi";
 import { FiClipboard } from "react-icons/fi";
 import { FaShoppingCart } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 
 export const EventCatalogeNavBar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className={classes.navbar}>
-      <div className={classes.navbar_content_wrapper}>
-        <h2>
-          <Link to="/" className={classes.navbar_link}>
-            CampusConnect
-          </Link>
-        </h2>
-       
-        <div
-          className={`${classes.navLinks} ${menuOpen ? classes.active : ""}`}
-        >
-          <Link to="/Event" className={classes.navbar_link}>
-            <FaHome  size={ 40}/>
-          </Link>
-        </div>
+    <nav className={classes.navbar}>
+      <div className={classes.logo}>
+        <Link to="/">Campus Events</Link>
       </div>
-    </div>
+
+      {/* Hamburger Icon */}
+      <div className={classes.hamburger} onClick={() => setIsOpen(!isOpen)}>
+        {isOpen ? <FaTimes /> : <FaBars />}
+      </div>
+
+      {/* Links */}
+      <ul className={`${classes.navLinks} ${isOpen ? classes.open : ""}`}>
+        <li>
+          <Link to="/events">Events</Link>
+        </li>
+        <li>
+          <Link to="/gallery">Gallery</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/contact">Contact</Link>
+        </li>
+      </ul>
+    </nav>
   );
 };
 
@@ -556,7 +566,7 @@ const TourPlanner = () => {
 
 /* ---------------- MAIN PAGE ---------------- */
 const EventCatalogue = () => {
-  return (
+  return (  
     <section className={classes.event_catalogue_page}>
       <EventCatalogeNavBar />
       <section className={classes.event_catalogue_dashboard}>
