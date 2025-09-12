@@ -1,0 +1,14 @@
+.footer_bottom_content{
+    background-color: #EF7722;
+    border-top: 2px solid ;
+    display: grid;
+    place-items: center;
+    padding: 1rem 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+ p{
+    font-size: 1.1rem;
+    color: #EF7722;
+}

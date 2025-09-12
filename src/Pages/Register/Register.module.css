@@ -1,0 +1,149 @@
+ 
+  .header_back{
+    display: flex;
+     
+  }
+  .back{
+    margin-left: 80rem;
+  }
+  .AllEncompassing {
+    overflow-y: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* min-height: 90vh; */
+            background-color: #f5f7fa;
+            padding: 10px;
+        }
+
+        .thebox {
+            display: flex;
+            width: 90%;
+            max-width: 1000px;
+            height: 550px;
+
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .WordSide {
+            width: 60%;
+            background: white;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .TheImageSide {
+            width: 40%;
+            background:  linear-gradient(135deg, #EF7722 0%, #0099ff 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+
+        .form_container {
+            /* width: 100%; */
+            /* max-width: 450px; */
+            width: 50rem;
+            height: 100%;
+            margin: 0 2rem 4rem -9rem;
+        }
+
+        .RegisterFormText {
+            /* margin-top: 2rem; */
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .RegisterFormText h1 {
+            color: #2c3e50;
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+        .FirstAndLastName {
+            display: flex;
+            gap: 35px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .FirstAndLastName div {
+            flex: 1;
+        }
+
+        .AllTheOtherFormNames {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #2c3e50;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        input {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 15px;
+            transition: all 0.3s ease;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+        }
+
+        input[type="submit"] {
+            background: linear-gradient(to right, #EF7722 , #0099ff);
+            color: white;
+            border: none;
+            padding: 16px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-top: 10px;
+        }
+
+        input[type="submit"]:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(38, 117, 252, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .TheImageSide {
+                display: none;
+            }
+            
+            .WordSide {
+                padding: none;
+                width: 100%;
+                overflow: visible;
+            }
+            
+            .thebox{
+                height: 70vh;
+            }
+
+            .form-container{
+                margin-left: -12px;
+            }
+
+            .FirstAndLastName {
+                flex-direction: column;
+                gap: 20px;
+
+            }
+        }

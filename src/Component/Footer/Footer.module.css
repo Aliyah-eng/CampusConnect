@@ -1,0 +1,332 @@
+.footer_section{
+    background:  linear-gradient(135deg, #EF7722, #0099ff);
+    color: #fff;
+    /* height: 65vh; */
+    margin-top: 7rem;
+    position: relative;
+    margin-bottom: -9rem;
+}
+.newsletter_box{
+    background:  linear-gradient(55deg, #0099ff, #EF7722);
+    width: 80vw;
+    margin: auto;
+    color: white;
+    border-radius: 1.5rem;
+    padding: 4rem 2rem ;
+    position: absolute;
+    margin-top: -7rem;
+    left: 10vw;
+    border: 1px solid white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.newsletter_content_wrapper{
+    width: 55%;
+}
+.newsletter_content_wrapper h1{
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+.newsletter_content_wrapper p{
+    line-height: 2;
+    font-size: 1.1rem;
+}
+.newsletter_input_wrapper{
+    padding: 0.5rem;
+    width: 35%;
+    margin-right: 4rem;
+    display: flex;
+}
+.newsletter_input_wrapper{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+.newsletter_input_wrapper input{
+    padding: 0.4rem 0.5rem;
+    font-size: 1.1rem;
+    outline: none;
+    width: 100%;
+    border-radius: 0;
+    border: 1px solid #efefef;
+}
+.submit_btn{
+    padding: 0.5rem 0.7rem;
+    border: 0;
+    outline: none;
+    height: fit-content;
+    width: fit-content;
+    font-size: 1rem;
+    color: white;
+    background-color:#385e79;
+    border: 1px solid #efefef;
+    cursor: pointer;
+}
+.submit_btn:hover{
+    color: #385e79;
+    background-color:white;
+    border: 1px solid #385e79;
+    cursor: pointer;
+}
+.footer_content_wrapper{
+    margin: auto;
+    padding: 4.5rem 0  2rem 0rem;
+    padding-bottom: 0;
+}
+.footer_top_content{
+    display: grid;
+    grid-template-columns: 40fr 60fr;
+    column-gap: 3rem;
+    /* padding-bottom: 1rem; */
+    align-items: center;
+    /* padding-top: 6rem; */
+    width: 90vw;
+    margin: auto;
+    margin-top: 5rem;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+.lists_wrapper{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 5rem;
+}
+.img_subtext{
+    font-size: 1.2rem;
+}
+/* .logo_text_wrapper{
+    margin-bottom: 5rem;
+} */
+.logo_text_wrapper p{
+    line-height: 2;
+}
+.footer_logo{
+    margin-top: -1rem;
+}
+
+.news_letter{
+    display: grid;
+}
+.Suscribe_text{
+     font-size: 2rem;
+     margin-bottom: 1rem;
+     font-weight: 700;
+}
+
+.subscribe_input{
+    border-bottom: 2px solid white;
+    height: 2rem;
+    gap: 10px;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.subscribe_icon{
+    color: white;
+    height: 2rem;
+    width: 2rem;
+}
+.input_mail{
+    all: unset;
+    font-size: 1.2rem;
+    height: 100%;
+    /* color: white !important; */
+}
+
+.input_mail::placeholder{
+    color: white;
+    padding: 4px 8px;
+
+}
+.submit_mail{
+    all: unset;
+    padding: 4px 8px;
+    color: black;
+    background-color: white;
+    width: fit-content;
+    font-size: 1rem;
+}
+.footer_quick_links{
+    line-height: 2rem;
+    text-align: left;
+}
+.quick_title{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+.quick_links{
+    display: grid;
+    gap: 5px;
+    line-height: 1.9;
+}
+.quick_links a{
+    color: white;
+}
+.footer_bottom_content{
+    border-top: 2px solid white;
+    display: grid;
+    place-items: center;
+    padding: 1rem 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.footer_bottom_content p{
+    font-size: 1.1rem;
+}
+
+@media(max-width: 1000px){
+    .footer_section{
+        background-color: #385e79;
+        padding-top: 3rem;
+    }
+    .footer_content_wrapper{
+        padding: 0;
+    }
+    .newsletter_box{
+        position: static;
+        top: auto;
+        left: auto;
+        margin-top: 0;
+    }
+
+
+    .footer_top_content{
+        display: flex;
+        flex-direction: column;
+        width: 60vw;
+        margin-top: 0;
+        padding-top: 1rem;
+    }
+    .footer_main{
+        text-align: center;
+        padding: 2rem 0;
+    }
+    .lists_wrapper{
+        gap: 1rem;
+        width: 70vw;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .newsletter_box{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .newsletter_content_wrapper{
+        width: 80%;
+    }
+    .newsletter_input_wrapper{
+        width: 55%;
+        margin: auto;
+        margin-top: 0.5rem;
+    }
+}
+
+
+@media(max-width: 870px){
+    .footer_top_content, .lists_wrapper{
+        width: 80vw;
+    }
+}
+
+@media(max-width: 780px){
+    .footer_top_content, .lists_wrapper{
+        width: 85vw;
+    }
+}
+
+
+@media (max-width: 750px) {
+    .newsletter_content_wrapper{
+        width: 90%;
+    }
+    .newsletter_input_wrapper{
+        width: 75%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .newsletter_box{
+        padding: 2rem;
+    }
+    .newsletter_content_wrapper{
+        width: 100%;
+    }
+    .newsletter_input_wrapper{
+        width: 100%;
+    }
+    .newsletter_content_wrapper h1{
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+@media(max-width: 650px){
+    .footer_section{
+        margin-top: 2rem;
+    }
+    .lists_wrapper{
+        width: 85vw;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .footer_quick_links{
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .newsletter_box{
+        width: 90vw;
+        padding: 1rem;
+    }
+    .newsletter_content_wrapper h1{
+        font-size: 1.2rem;
+    }
+    .newsletter_content_wrapper p{
+        font-size: 1rem;
+    }
+    .newsletter_input_wrapper{
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+
+    .footer_top_content{
+        width: 95vw;
+    }
+    .logo_text_wrapper{
+        font-size: 1.1rem;
+    }
+    .img_subtext{
+        font-size: 1rem;
+        width: 95%;
+        margin: auto;
+        padding-top: 0.2rem;
+    }
+
+    .footer_bottom_content p{
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 430px) {
+    .footer_bottom_content p{
+        font-size: 0.9rem;
+    }
+}
+
+

@@ -1,0 +1,154 @@
+.hero{
+    background-color: #ffffff;
+    height: 89vh;
+}
+.hero_content_wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 85vw;
+    align-items: center;
+    padding: 2.5rem 0;
+}
+
+.hero_txt_content{
+    width: 90%;
+}
+.hero_txt_content h2{
+    font-size: 2.2rem;
+    color: #1E40AF;
+}
+.hero_txt_content p{
+    font-family: manuscript; ; 
+    width: 75%;
+    line-height: 1.9;
+    font-size: 1.1rem;
+    color: #374151;
+}
+.explore_btn{
+    padding: 0.8rem 1.3rem;
+    border: 0;
+    font-size: 1.1rem;
+    color: white;
+    background: #EF7722;
+    border-radius: 0.3rem;
+    margin-top: 0.5rem;
+}
+.explore_btn:hover{
+    color: white;
+    background-color: #C2410C;
+}
+
+
+
+.hero_img_wrapper{
+    /* margin-right: em; */
+    width: 80%;
+    height: 30rem;
+    
+}
+.hero_img{
+    border-radius: 2rem;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+
+
+@media (max-width: 990px) {
+    .hero_txt_content h2{
+        font-size: 1.6rem;
+    }
+    .hero_txt_content > p{
+        width: 95%;
+        font-size: 1rem;
+    }
+    .hero_img_wrapper{
+        width: 90%;
+    }
+}
+
+@media (max-width: 850px) {
+    .hero_content_wrapper{
+        background-color: white;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 70vw;
+    }
+    .hero_txt_content > p{
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+@media (max-width: 750px) {
+
+    .hero_content_wrapper{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 80vw;
+    }
+    .hero_img_wrapper{
+        width: 100%;
+        height: 15rem;
+    }
+}
+
+.hero_content_wrapper{
+
+}
+
+
+@media (max-width: 570px) {
+    .hero_content_wrapper{
+        width: 90vw;
+    }
+    .hero_txt_content{
+        width: 100%;
+    }
+    .hero_txt_content > p{
+        font-size: 0.95rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 415px) {
+    .hero_txt_content > p{
+        line-height: 1.8;
+    }
+}
+@media (max-width: 320px) {
+    .hero_txt_content{
+        width: 100%;
+        margin-left: 0.5em;
+    }
+    .hero_img{
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero_img_wrapper{
+        width: 100%;
+
+    }
+    .hero_content_wrapper{
+         align-items: center;
+    }
+    .hero_txt_content h2{
+         font-size: 1.5rem;
+    }
+    .hero_txt_content p{
+        font-size: 1rem;
+    }
+    .explore_btn {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin: auto;
+         margin-top: 1rem;
+
+    }
+    a .explore_btn{
+        text-decoration: none;
+    }
+}

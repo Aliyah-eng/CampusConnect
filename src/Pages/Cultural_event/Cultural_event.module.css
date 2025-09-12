@@ -1,0 +1,162 @@
+.controls {
+ display:  flex;
+    gap: 1rem;
+ justify-content: center;
+ margin: 2rem;
+ align-items: center;
+
+}
+
+.search{
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  min-width:30rem;
+  font-size: 1rem;
+border-color: #EF7722;
+border-width: 2px;
+width: 40%;
+height: auto;
+}
+.filterCategory{
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #EF7722;
+  width: 13rem;
+  font-size: 1rem;
+}
+.sortBy{
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #EF7722;
+  width: 13rem;
+  font-size: 1rem;
+}
+
+
+
+.contenient_toogler ul li{
+    padding-left: 1rem;
+    list-style: none;
+    background: red !important;
+}
+.hide{
+    display: none;
+}
+.merge{
+     /* padding: 1rem; */
+     display: flex;
+     gap: 2rem;
+     margin: 1rem;
+}
+
+.eventPlanner {
+  padding: 0 2rem;
+  background: #fafafa;
+  min-height: 100vh;
+}
+
+.plannerHero {
+  background-image: url(https://i.ytimg.com/vi/eJ8BUhCgwxo/maxresdefault.jpg);
+  width: 99vw;
+  height:25rem ;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-left: -2rem;
+  background-color: rgba(0, 0, 0, 0.427);
+  background-blend-mode: darken;
+   display: grid;
+    place-items: center;
+}
+.plannerHero{
+  padding: auto;
+}
+.plannerHero h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ef7722;
+}
+
+.plannerHero p {
+  color: white;
+  font-size: 1rem;
+}
+
+
+
+.eventsGrid {
+  display: grid;
+  gap: 2rem;
+  margin-left: 3.2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  width: 25rem;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  height: 35rem;
+  padding: 2rem;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.content {
+  padding: 1rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.date,
+.venue
+ {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 0.4rem;
+}
+.desc{
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.bookmarkBtn {
+  margin-top: 0.8rem;
+  width: 100%;
+  background: #f0f0f0;
+  border: none;
+  padding: 0.6rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.bookmarkBtn:hover {
+  background: #efefef;
+}
+
+.bookmarkBtn.active {
+  background: #ef7722;
+  color: #fff;
+  font-weight: 600;
+}
+
+.noEvents {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+}

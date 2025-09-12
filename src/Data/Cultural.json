@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "category": "Cultural",
+    "img": "https://tickikids.ams3.cdn.digitaloceanspaces.com/z2.cache/gallery/activities/12253/image_5b10e7c3a13c54.97334003.jpg",
+    "eventName": "Cultural Week Opening Ceremony",
+    "dateTime": "20 Sep 2025, 10:00 AM – 4:00 PM",
+    "venue": "Main Auditorium",
+    "description": "Kickstart the cultural week with a grand opening ceremony featuring performances, speeches, and a showcase of traditions."
+  },
+  {
+    "id": 2,
+    "category": "Cultural",
+    "img": "https://th.bing.com/th/id/R.1734404ea96043bfd813ec078ff19b5e?rik=yT00ocR2gvxotA&pid=ImgRaw&r=0",
+    "eventName": "traditional Dance Night",
+    "dateTime": "21 Sep 2025, 5:00 PM – 9:00 PM",
+    "venue": "Open Air Theatre",
+    "description": "An evening filled with vibrant traditional dances representing different ethnic groups and cultures."
+  },
+  {
+    "id": 3,
+    "category": "Cultural",
+    "img": "https://cdn.lyceum.lk/edgemedia/20240426182013/childrens-art-crafts-display-2023.jpg",
+    "eventName": "Art & Craft Exhibition",
+    "dateTime": "22 Sep 2025, 9:00 AM – 3:00 PM",
+    "venue": "Exhibition Hall",
+    "description": "Explore unique handmade crafts and artworks showcasing cultural heritage and creativity."
+  },
+  {
+    "id": 4,
+    "category": "Cultural",
+    "img": "https://i.pinimg.com/originals/84/f3/e1/84f3e19a7065200cda680f64ba809363.jpg",
+    "eventName": "Drama Performance – Folklore Tales",
+    "dateTime": "22 Sep 2025, 6:00 PM – 8:00 PM",
+    "venue": "Drama Hall",
+    "description": "Students perform captivating folklore-inspired plays highlighting moral lessons and tradition."
+  },
+  {
+    "id": 5,
+    "category": "Cultural",
+    "img": "https://img.freepik.com/premium-photho/young-woman-traditional-dress-cultural-festival-parade_1111209-76686.jpg?w=2000",
+    "eventName": "Cultural Fashion Parade",
+    "dateTime": "23 Sep 2025, 4:00 PM – 7:00 PM",
+    "venue": "Main Auditorium",
+    "description": "A colorful parade of traditional attires from different cultures, blending history and modern fashion."
+  },
+  {
+    "id": 6,
+    "category": "Cultural",
+    "img": "https://blueroom.org.au/wp-content/uploads/EAPS-Hero-Image-Web-1.jpg",
+    "eventName": "Poetry & Storytelling Evening",
+    "dateTime": "23 Sep 2025, 6:30 PM – 9:00 PM",
+    "venue": "Library Hall",
+    "description": "An intimate evening of poetry recitals and storytelling celebrating oral traditions."
+  },
+  {
+    "id": 7,
+    "category": "Cultural",
+    "img": "https://aroundtheworldfestival.com/wp-content/gallery/4th-edition-of-the-around-the-world-cultural-food-festival-august-2019/DSC_4352.jpg",
+    "eventName": "Cultural Food Festival",
+    "dateTime": "24 Sep 2025, 11:00 AM – 5:00 PM",
+    "venue": "Campus Field",
+    "description": "Taste and experience delicious traditional dishes prepared by students and local chefs."
+  },
+  {
+    "id": 8,
+    "category": "Cultural",
+    "img": "https://www.globaltimes.cn/Portals/0/attachment/2020/2020-06-14/8ef20499-79af-4b80-8248-5ae20fb8772d.jpeg",
+    "eventName": "Photography Exhibition – Heritage in Focus",
+    "dateTime": "24 Sep 2025, 1:00 PM – 6:00 PM",
+    "venue": "Gallery Room",
+    "description": "A stunning display of photographs capturing cultural landmarks, festivals, and lifestyles."
+  },
+  {
+    "id": 9,
+    "category": "Cultural",
+    "img": "https://static.islcollective.com/storage/preview/201703/1532x1084/cultural-quizz-fun-activities-games-games-oneonone-activities_96428_1.jpg",
+    "eventName": "Cultural Quiz Competition",
+    "dateTime": "25 Sep 2025, 10:00 AM – 2:00 PM",
+    "venue": "Lecture Hall 101",
+    "description": "Test your knowledge of global traditions, languages, and customs in an interactive quiz challenge."
+  },
+  {
+    "id": 10,
+    "category": "Cultural",
+    "img": "https://img.freepik.com/premium-photo/group-musicians-playing-traditional-instruments-night-festival-generated-by-ai_188544-168594.jpg",
+    "eventName": "Music Night – Sounds of Tradition",
+    "dateTime": "25 Sep 2025, 6:00 PM – 10:00 PM",
+    "venue": "Open Air Theatre",
+    "description": "Enjoy an evening of traditional music instruments and cultural songs performed live."
+  },
+  {
+    "id": 11,
+    "category": "Cultural",
+    "img": "https://i.ytimg.com/vi/hXUKghg5ABo/maxresdefault.jpg",
+    "eventName": "Cultural Debate – Tradition vs Modernity",
+    "dateTime": "26 Sep 2025, 9:00 AM – 12:00 PM",
+    "venue": "Seminar Room",
+    "description": "A thought-provoking debate exploring the balance between cultural heritage and modernization."
+  },
+  {
+    "id": 12,
+    "category": "Cultural",
+    "img": "https://tse1.mm.bing.net/th/id/OIP.z9af49TLe-P05jYLdg9CHwHaOG?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "eventName": "Heritage Movie Screening",
+    "dateTime": "26 Sep 2025, 5:00 PM – 8:00 PM",
+    "venue": "Main Auditorium",
+    "description": "Watch a cultural documentary/film exploring traditions, languages, and folklore stories."
+  },
+  {
+    "id": 13,
+    "category": "Cultural",
+    "img": "https://th.bing.com/th/id/R.fabbf4e82515ff44d1e60338a2c497e7?rik=%2fy4TCetQ%2b43%2b3g&riu=http%3a%2f%2fwdtfvf.org%2fwp-content%2ffiles_mf%2f1330172815NAG_7977.jpg&ehk=KmXYGLWgNeGu4VShTSsRLINk3e6EKeITD72QR6YjW7s%3d&risl=&pid=ImgRaw&r=0",
+    "eventName": "Cultural Sports & Games",
+    "dateTime": "27 Sep 2025, 10:00 AM – 4:00 PM",
+    "venue": "Sports Ground",
+    "description": "Engage in traditional sports and indigenous games celebrated by different communities."
+  },
+  {
+    "id": 14,
+    "category": "Cultural",
+    "img": "https://folklorefestival.com/storage/app/media/festivals/atalebudapest/DSC_0221.jpg",
+    "eventName": "Folklore Song Contest",
+    "dateTime": "27 Sep 2025, 6:00 PM – 9:00 PM",
+    "venue": "Drama Hall",
+    "description": "Students showcase their vocal talents by performing folklore-inspired songs."
+  },
+  {
+    "id": 15,
+    "category": "Cultural",
+    "img": "https://tse2.mm.bing.net/th/id/OIP.hKnG6W0nFtFO6sp2CbKfewHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "eventName": "Cultural Film-Making Workshop",
+    "dateTime": "28 Sep 2025, 11:00 AM – 3:00 PM",
+    "venue": "Media Lab 302",
+    "description": "Learn the basics of film-making with a focus on storytelling and cultural documentation."
+  },
+  {
+    "id": 16,
+    "category": "Cultural",
+    "img": "https://th.bing.com/th/id/R.d8fcbda2a598a10aa799a8c846f89e61?rik=9qegJ%2fECcpEwzA&riu=http%3a%2f%2fwww.dsource.in%2fsites%2fdefault%2ffiles%2fresource%2fpopular-folk-musical-instruments%2ffolk-musical-instruments%2fimages%2f1.jpg&ehk=NrNsFHTM%2fOzf0GrYNmsap0MiPP4V%2fFSPWR2xnM%2b6bAE%3d&risl=&pid=ImgRaw&r=0",
+    "eventName": "Folk Instrument Showcase",
+    "dateTime": "28 Sep 2025, 4:00 PM – 7:00 PM",
+    "venue": "Music Studio",
+    "description": "Discover and experience traditional instruments and their role in cultural expression."
+  },
+  {
+    "id": 17,
+    "category": "Cultural",
+    "img": "https://tse1.mm.bing.net/th/id/OIP.fWKsjMuey2ZDaMo_F1QusgHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "eventName": "Cultural parade & Streets carnival",
+    "dateTime": "29 Sep 2025, 2:00 PM – 6:00 PM",
+    "venue": "Campus Streets",
+    "description": "A lively parade and carnival with costumes, drumming, and cultural dances."
+  },
+  {
+    "id": 18,
+    "category": "Cultural",
+    "img": "https://cancersupportyorkshire.org.uk/content/uploads/2019/06/beading-.jpg",
+    "eventName": "Fashion & Bead Making Workshop",
+    "dateTime": "29 Sep 2025, 10:00 AM – 1:00 PM",
+    "venue": "Design Studio",
+    "description": "Hands-on workshop teaching beadwork, embroidery, and traditional accessory making."
+  },
+  {
+    "id": 19,
+    "category": "Cultural",
+    "img": "https://wacmn.org/wac/wp-content/uploads/2022/12/SYMPOSIUM-ON-CULTURE-e1679948084646.jpg",
+    "eventName": "Cultural Symposium",
+    "dateTime": "30 Sep 2025, 9:00 AM – 2:00 PM",
+    "venue": "Main Conference Hall",
+    "description": "A panel discussion with experts exploring the significance of preserving cultural heritage."
+  },
+  {
+    "id": 20,
+    "category": "Cultural",
+    "img": "https://th.bing.com/th/id/R.e15be19d2f6a8bcd4fd0d17cb66bb140?rik=flf6eXy%2bIPHQ%2fw&pid=ImgRaw&r=0",
+    "eventName": "Folk Dance Workshop",
+    "dateTime": "30 Sep 2025, 3:00 PM – 6:00 PM",
+    "venue": "Dance Studio",
+    "description": "Learn traditional dance moves and their historical meanings in this interactive workshop."
+  },
+  {
+    "id": 21,
+    "category": "Cultural",
+    "img": "https://internationalcultureexchange.files.wordpress.com/2013/10/image7.jpeg",
+    "eventName": "International Culture Exchange",
+    "dateTime": "01 Oct 2025, 11:00 AM – 4:00 PM",
+    "venue": "Campus Lawn",
+    "description": "A day for international students to share their unique cultural heritage and traditions."
+  },
+  {
+    "id": 22,
+    "category": "Cultural",
+    "img": "https://www.photocontestinsider.com/wp-content/uploads/2014/06/culture-enter.jpg",
+    "eventName": "Cultural Photography Contest",
+    "dateTime": "01 Oct 2025, 2:00 PM – 6:00 PM",
+    "venue": "Exhibition Hall",
+    "description": "Students compete by capturing the beauty of cultural life through photography."
+  },
+  {
+    "id": 23,
+    "category": "Cultural",
+    "img": "https://fatsil.org/wp-content/uploads/2023/12/workshop_on_broadcasting_and_indigenous_languages-768x439.jpg",
+    "eventName": "Indigenous Language Workshop",
+    "dateTime": "02 Oct 2025, 9:00 AM – 12:00 PM",
+    "venue": "Language Lab",
+    "description": "Learn and practice indigenous languages to keep them alive for future generations."
+  },
+  {
+    "id": 24,
+    "category": "Cultural",
+    "img": "https://s-media-cache-ak0.pinimg.com/736x/00/31/5d/00315dd0ca6d741823c7a2e6d6e88d65.jpg",
+    "eventName": "Folk Art Painting session",
+    "dateTime": "02 Oct 2025, 1:00 PM – 4:00 PM",
+    "venue": "Art Studio",
+    "description": "A guided session for creating traditional folk art pieces inspired by heritage."
+  },
+  {
+    "id": 25,
+    "category": "Cultural",
+    "img": "https://tse4.mm.bing.net/th/id/OIP.Mzjrm3VeRG09dg_Ua1iqkQHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "eventName": "Drumming Circle – Beats of Unity",
+    "dateTime": "03 Oct 2025, 4:00 PM – 8:00 PM",
+    "venue": "Campus Amphitheatre",
+    "description": "Join a live drumming circle celebrating rhythm, dance, and cultural energy."
+  },
+  {
+    "id": 26,
+    "category": "Cultural",
+    "img": "https://tse4.mm.bing.net/th/id/OIP.j-_pU2gj-mINquSMoL2vFQHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "eventName": "Oral History Night",
+    "dateTime": "03 Oct 2025, 6:00 PM – 9:00 PM",
+    "venue": "Library Hall",
+    "description": "Elders and students share oral histories, traditions, and heritage tales."
+  },
+  {
+    "id": 27,
+    "category": "Cultural",
+    "img": "https://tse2.mm.bing.net/th/id/OIP.X_-up_TX6B2UM9-XWdso8wHaEk?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "eventName": "Mask & Costume Exhibition",
+    "dateTime": "04 Oct 2025, 10:00 AM – 5:00 PM",
+    "venue": "Gallery Room",
+    "description": "A collection of cultural masks and costumes representing symbolic traditions."
+  },
+  {
+    "id": 28,
+    "category": "Cultural",
+    "img": "https://news.griffith.edu.au/wp-content/uploads/2013/09/cultural-gala-1024x682.jpg",
+    "eventName": "Cultural Closing Gala",
+    "dateTime": "05 Oct 2025, 6:00 PM – 10:00 PM",
+    "venue": "Main Auditorium",
+    "description": "A glamorous closing gala with performances, awards, and celebration of culture."
+  },
+  {
+    "id": 29,
+    "category": "Cultural",
+    "img": "https://iubat.edu/wp-content/uploads/2023/02/IUBAT-Cultural-Talent-Hunt-2023-6.jpg",
+    "eventName": "Cultural Talent Hunt",
+    "dateTime": "05 Oct 2025, 2:00 PM – 6:00 PM",
+    "venue": "Drama Hall",
+    "description": "Students showcase hidden cultural talents through singing, dancing, and acting."
+  },
+  {
+    "id": 30,
+    "category": "Cultural",
+    "img": "https://tse4.mm.bing.net/th/id/OIP.y97-XWdtIp7NN-Y32RZd1QHaG-?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "eventName": "Folk Tales Illustration Contest",
+    "dateTime": "06 Oct 2025, 10:00 AM – 3:00 PM",
+    "venue": "Art Studio",
+    "description": "Artists bring folk tales to life through illustrations and visual storytelling."
+  }
+]

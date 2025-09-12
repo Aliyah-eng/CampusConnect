@@ -1,0 +1,12 @@
+.about_hero {
+    height: 50vh;
+    color: white;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.521);
+    background-image: url(https://www.gdata.in/images/banners/company-banner.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-position: center;
+    display: grid;
+    place-items: center;
+  }

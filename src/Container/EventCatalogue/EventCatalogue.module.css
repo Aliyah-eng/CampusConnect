@@ -1,0 +1,416 @@
+.event_catalogue_page{
+    overflow: hidden;
+}
+.navbar{
+    background-color: #f0eeee;
+    padding: 1.3rem 1rem;
+    color: #385e79;
+}
+.navbar_content_wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 35rem;
+}
+.card_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 5rem;
+}
+.navbar_link{
+    text-decoration: none;
+    color: #EF7722 !important;
+}
+.card_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.event_details{
+    top: -100%;
+    right: -64%;
+
+    font-size: 1rem;
+    width: 5.2rem;
+    height: 2.5rem;
+    /* border-radius: 0.5rem; */
+    padding: 1rem auto;
+    padding-top: 0.5rem;
+    text-align: center;
+    margin: -0.5rem 2.3rem;
+    border-top-right-radius: none;
+    border-bottom-left-radius: 1rem;
+
+    position: relative;
+      background-color: white;
+      color: white !important;
+      font-weight: 700;
+}
+.navbar_content_wrapper > h2{
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+.navbar_content_wrapper ion-icon{
+    font-size: 2.1rem;
+}
+.Countdown{
+     font-size: 3rem;
+}
+
+
+.event_catalogue_dashboard{
+    display: flex;
+    gap: 0.8rem;
+}
+.info{
+     background-color: #cccccc95;
+     padding: 1rem 2rem;
+}
+
+.catalogue_sidebar{
+    background-color: white;
+    padding: 1rem;
+    width: 21vw;
+    margin: 1rem 0;
+    height: 82vh;
+    /* overflow-y: scroll; */
+    margin-left: 1rem;
+    border-radius: 0.5rem;
+}
+/* .catalogue_sidebar::-webkit-scrollbar {
+    height: 0.7rem;
+}
+.catalogue_sidebar::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 0.7rem;
+} */
+.catalogue_sidebar_list{
+    list-style: none;
+}
+.link{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.tour_options{
+    margin-top: 0.7rem;
+}
+.catalogue_sidebar_list li{
+    padding-left: 1.2rem;
+    line-height: 2.5;
+}
+.catalogue_sidebar_list li:hover{
+    background:#d0c1b6;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+.active_list{
+    background: #EF7722;
+    border-radius: 0.2rem;
+    font-weight: bold;
+}
+.showBookmarkedBtn{
+     width: 15rem;
+     color: white;
+}
+.controls {
+ display:  flex;
+    gap: 1rem;
+ justify-content: center;
+ align-items: center;
+
+}
+
+.search{
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  min-width:30rem;
+  font-size: 1rem;
+border-color: #EF7722;
+border-width: 2px;
+width: 350px;
+height: auto;
+}
+.filterCategory{
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #EF7722;
+  min-width: 100px;
+  font-size: 1rem;
+}
+.sortBy{
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #EF7722;
+  min-width: 160px;
+  font-size: 1rem;
+}
+.name{
+     font-size: 3rem;
+}
+
+
+.contenient_toogler ul li{
+    padding-left: 1rem;
+    list-style: none;
+    background: red !important;
+}
+.hide{
+    display: none;
+}
+
+
+
+
+/* Tour planner */
+.event_planner{
+    height: 84.3vh;
+    overflow-y: scroll;
+    padding-bottom: 3rem;
+}
+.fixedCartButton {
+  position: fixed;
+  bottom: 50px;   /* distance from bottom of screen */
+  right:10px;    /* distance from right side */
+  background-color: #EF7722;
+  border: none;
+  border-radius: 50%;
+  padding: 4px 2px;
+  cursor: pointer;
+  width: 6rem;
+  height: 5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.fixedCartButton:hover {
+  transform: scale(1.1);
+  background-color: #EF7722;
+}
+
+.planner_hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0.486)), url(https://png.pngtree.com/background/20210710/original/pngtree-campus-event-poster-promotion-background-material-picture-image_997554.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 75vw;
+    height: 40vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.event_card_container{
+    width: 90%;
+    margin: 2rem auto;
+}
+.budget_input_wrapper{
+   
+}
+.budget_box{
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+.budget_box > select{
+    padding: 0.3rem 1rem;
+    width: 10vw;
+    outline: none;
+    font-family: inherit;
+}
+.budget_box_input{
+    width: 22vw;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.3rem 1rem;
+    outline: none;
+}
+.event_card_container > h3{
+    margin-bottom: 1rem;
+}
+.event_card_wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    width: 68vw;
+}
+.destination_card{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.26);
+    cursor: pointer;
+}
+.destination_card_img_wrapper{
+    width: 100%;
+    height: 30vh;
+}
+.destination_img{
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.destination_card_content{
+    padding: 0.5rem;
+}
+
+
+@media (max-width: 1000px) {
+    .event_catalogue_dashboard{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .catalogue_sidebar{
+        width: 80vw;
+        height: 100%;
+        border-radius: 0.5rem;
+    }
+    .catalogue_sidebar_list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .event_planner{
+        width: 90vw;
+        overflow: hidden;
+        height: 100%;
+    }
+
+    .planner_hero{
+        width: 90vw;
+        height: 30vh;
+    }
+    .event_card_container{
+        margin: 1rem;
+    }
+    .event_card_wrapper{
+        width: 85vw;
+    }
+
+    .event_catalogue_page{
+        overflow-Y: scroll;
+    }
+}
+
+
+
+@media (max-width: 830px) {
+    .event_card_wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 750px) {
+    .catalogue_sidebar{
+        width: 90vw;
+    }
+    .budget_input_wrapper{
+        justify-content: center;
+    }
+    .budget_box{
+        width: 50vw;
+    }
+    
+    .budget_box > select{
+        padding: 0.3rem 1rem;
+        width: 35%;
+        outline: none;
+        border: 1px solid rgb(173, 173, 173);
+        border-radius: 0.5rem;
+        font-family: inherit;
+    }
+    .budget_box_input{
+        width: 65%;
+        border: 1px solid rgb(173, 173, 173);
+        border-radius: 0.5rem;
+    }
+}
+
+@media (max-width: 620px) {
+    .catalogue_sidebar{
+        width: 90vw;
+    }
+    .destination_card_img_wrapper{
+        height: 25vh;
+    }
+}
+
+
+@media (max-width: 590px) {
+    .catalogue_sidebar_list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .planner_hero{
+        height: 25vh;
+        font-size: 1.2rem;
+    }
+
+    .event_card_wrapper{
+        grid-template-columns: repeat(1, 1fr);
+        width: 60vw;
+        margin: auto;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .catalogue_sidebar{
+        width: 80vw;
+    }
+    .catalogue_sidebar_list{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+@media (max-width: 440px) {
+    .budget_box{
+        width: 80vw;
+        margin-bottom: 1rem;
+    }
+    .event_card_wrapper{
+        width: 70vw;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .destination_card_img_wrapper{
+        height: 20vh;
+    }
+}
+
+
+@media (max-width: 370px) {
+    .event_card_wrapper{
+        width: 85vw;
+    }
+    .catalogue_sidebar{
+        width: 90vw;
+        margin-left: 0;
+    }
+    .planner_hero{
+        font-size: 1.1rem;
+    }
+}
+
+
+@media (max-width: 360px) {
+    .event_card_wrapper{
+        width: 90vw;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .navbar_content_wrapper{
+        padding-right: 0;
+    }
+}

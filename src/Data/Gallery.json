@@ -1,0 +1,357 @@
+{
+  "gallery": [
+    {
+      "id": 1,
+      "title": "Robotics Workshop",
+      "year": "2022-23",
+      "category": "Technical",
+        "description": "A hands-on workshop on robotics, building and programming autonomous robots.",
+      "image": "https://media.npr.org/assets/img/2023/10/04/mleong_scioly_20230831_slide-1fc39305d8ab464d47b44d973eec5ba99454c852.jpg"
+    },
+    {
+      "id": 2,
+      "title": "AI & ML Seminar",
+      "year": "2022-23",
+      "category": "Technical",
+        "description": "A hands-on workshop on robotics, building and programming autonomous robots.",
+      "image": "https://images.theconversation.com/files/612569/original/file-20240808-19-ydsl00.jpg?ixlib=rb-4.1.0&rect=257%2C214%2C3329%2C1661&q=45&auto=format&w=1356&h=668&fit=crop"
+    },
+    {
+      "id": 3,
+      "title": "Hackathon Finals",
+      "year": "2022-23",
+      "category": "Technical",
+        "description": "A hands-on workshop on robotics, building and programming autonomous robots.",
+      "image": "https://miro.medium.com/v2/resize:fit:1200/1*jDt_jfxfE61gSV7GszdKcg.jpeg"
+    },
+    {
+      "id": 4,
+      "title": "Inter-college Debate",
+      "year": "2022-23",
+      "category": "Cultural",
+      "image": "https://s3.amazonaws.com/thumbnails.thecrimson.com/photos/2019/11/10/194302_1340798.jpg.1500x999_q95_crop-smart_upscale.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Drama Night",
+      "year": "2022-23",
+      "category": "Cultural",
+      "image":  "https://s.yimg.com/ny/api/res/1.2/ZTa6bT8Qi_b3XK1rjARbEg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY0MA--/https://media.zenfs.com/en/ap.org/37bfd0119e2bf13b14dacfc757c40417"
+    },
+    {
+      "id": 6,
+      "title": "Music Fest",
+      "year": "2022-23",
+      "category": "Cultural",
+      "image": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1v32Wa.img?w=1000&h=563&m=4&q=86"
+    },
+    {
+      "id": 7,
+      "title": "Football Tournament",
+      "year": "2022-23",
+      "category": "Sports",
+      "image": "https://highschool.si.com/.image/t_share/MjAyMDUxNDM2OTg3NTU3NDg5/378137915_798344518755339_2336403359300550006_n.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Basketball League",
+      "year": "2022-23",
+      "category": "Sports",
+      "image": "http://www.sportoboz.ru/uploads/fotos/img/50701715bc3a9.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Athletics Meet",
+      "year": "2022-23",
+      "category": "Sports",
+      "image": "https://www.lboro.ac.uk/media/wwwlboroacuk/external/content/newsandevents/news/2021/05/lia-new.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Departmental Project Expo",
+      "year": "2022-23",
+      "category": "Departmental",
+      "image": "https://www.jeccomposites.com/wp-content/uploads/2023/04/JECW.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Coding Bootcamp",
+      "year": "2023-24",
+      "category": "Technical",
+      "image": "https://avatars.mds.yandex.net/get-altay/1627037/2a0000016740010b71c956fcd006150ebf0c/XXL_height"
+    },
+    {
+      "id": 12,
+      "title": "Cybersecurity Talk",
+      "year": "2023-24",
+      "category": "Technical",
+      "image": "https://cdn-res.keymedia.com/cms/images/us/036/0311_637872709517639805.jpg"
+    },
+    {
+      "id": 13,
+      "title": "Tech Fest Exhibition",
+      "year": "2023-24",
+      "category": "Technical",
+      "image": "https://www.c-o-k.ru/images/seminar/wysiwyg/103/10389/ezhegodnaya-konferenciya-tech-week-2.JPG?1717695154"
+    },
+    {
+      "id": 14,
+      "title": "Dance Competition",
+      "year": "2023-24",
+      "category": "Cultural",
+      "image": "https://competes.tv/wp-content/uploads/2023/07/dance-competition-first-dance-competition-dance-competition-experience-Dance-8c71894e-1024x683.jpg"
+    },
+    {
+      "id": 15,
+      "title": "Art Exhibition",
+      "year": "2023-24",
+      "category": "Cultural",
+      "image": "https://www.modernschool.org/wp-content/uploads/2018/02/Art-Exhibition-2018.jpg"
+    },
+    {
+      "id": 16,
+      "title": "Traditional Fest",
+      "year": "2023-24",
+      "category": "Cultural",
+      "image": "https://cdn.culture.ru/images/8160ce60-a06f-591c-a3e6-88ecda31be01"
+    },
+    {
+      "id": 17,
+      "title": "Cricket Match",
+      "year": "2023-24",
+      "category": "Sports",
+      "image": "https://im.indiatimes.in/facebook/2017/Dec/k_1512287719.jpg"
+    },
+    {
+      "id": 18,
+      "title": "Volleyball Cup",
+      "year": "2023-24",
+      "category": "Sports",
+      "image": "https://images.volleyballworld.com/image/private/t_q-best/fivb-prd/ltj6mcoubwqy2pd7jgls.jpg"
+    },
+    {
+      "id": 19,
+      "title": "Swimming Gala",
+      "year": "2023-24",
+      "category": "Sports",
+      "image": "https://vmrw8k5h.tinifycdn.com/news/wp-content/uploads/2020/02/brigham-young-pool-byu-cougars.jpeg"
+    },
+    {
+      "id": 20,
+      "title": "Final Year Project Showcase",
+      "year": "2023-24",
+      "category": "Departmental",
+      "image": "https://avatars.mds.yandex.net/i?id=2fc76be36abb79d6414d441823cabf80_l-9221695-images-thumbs&ref=rim&n=13&w=1080&h=720"
+    },
+    {
+      "id": 21,
+      "title": "Data Science Workshop",
+      "year": "2024-25",
+      "category": "Technical",
+      "image": "https://asset-a.grid.id/crop/0x0:0x0/x/photo/2021/11/03/04_algoritma-data-science-school-20211103125537.jpg"
+    },
+    {
+      "id": 22,
+      "title": "Cloud Computing Seminar",
+      "year": "2024-25",
+      "category": "Technical",
+      "image": "https://img-cdn.inc.com/image/upload/f_webp,c_fit,w_640,q_auto/images/panoramic/GettyImages-1383550433_534077_sommjp.jpg"
+    },
+    {
+      "id": 23,
+      "title": "IoT Hackathon",
+      "year": "2024-25",
+      "category": "Technical",
+      "image": "https://cdn.prod.website-files.com/5b4786dab998deabe400ed18/61c33529836757424d53d8da_Hero%20-%20IoT%20Hackathon%20Guide-%20Everything%20You%20Need%20to%20Know.jpg"
+    },
+    {
+      "id": 24,
+      "title": "Cultural Parade",
+      "year": "2024-25",
+      "category": "Cultural",
+      "image": "https://i.ytimg.com/vi/JaTu-uDyTi4/maxresdefault.jpg"
+    },
+    {
+      "id": 25,
+      "title": "Fashion Show",
+      "year": "2024-25",
+      "category": "Cultural",
+      "image": "https://brechando.com/wp-content/uploads/2016/07/texo_moda-mariana-zappar.jpg"
+    },
+    {
+      "id": 26,
+      "title": "Singing Night",
+      "year": "2024-25",
+      "category": "Cultural",
+      "image": "https://cdn.pixabay.com/photo/2017/09/08/07/23/an-event-2727942_1280.jpg"
+    },
+    {
+      "id": 27,
+      "title": "Table Tennis Tournament",
+      "year": "2024-25",
+      "category": "Sports",
+      "image": "https://media.baamboozle.com/uploads/images/368927/1627466174_840396.jpeg"
+    },
+    {
+      "id": 28,
+      "title": "Badminton Challenge",
+      "year": "2024-25",
+      "category": "Sports",
+      "image": "https://i0.wp.com/www.zarpanews.gr/wp-content/uploads/2017/12/badminton.jpg?ssl=1"
+    },
+    {
+      "id": 29,
+      "title": "Marathon",
+      "year": "2024-25",
+      "category": "Sports",
+      "image": "https://t3.ftcdn.net/jpg/06/69/81/00/360_F_669810021_wu6IWcSWNx3kVr63VRoSDbM1SC2e32ed.jpg"
+    },
+    {
+      "id": 30,
+      "title": "Mini Project Demo",
+      "year": "2024-25",
+      "category": "Departmental",
+      "image": "https://www.campustimes.org/wp-content/uploads/2013/10/bio-class-1024x680.jpg"
+    },
+    {
+      "id": 31,
+      "title": "AI Hackathon",
+      "year": "2025-26",
+      "category": "Technical",
+      "image": "https://quasa.io/storage/images/news/HpCrxLn2TZ982jH62eTPrAQ7mJ202o4swEHnEeVM.webp"
+    },
+    {
+      "id": 32,
+      "title": "Blockchain Summit",
+      "year": "2025-26",
+      "category": "Technical",
+      "image": "https://www.blockchainbeach.com/wp-content/uploads/2021/09/Screen-Shot-2021-09-05-at-2.51.05-PM.png"
+    },
+    {
+      "id": 33,
+      "title": "Startup Pitch",
+      "year": "2025-26",
+      "category": "Technical",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/7/77/Presentaci%C3%B3n_de_la_Biblioteca_Digital_en_el_Encuentro_Federal_de_la_Palabra_%2813911819285%29.jpg"
+    },
+    {
+      "id": 34,
+      "title": "Drama Festival",
+      "year": "2025-26",
+      "category": "Cultural",
+      "image": "https://s.yimg.com/ny/api/res/1.2/ZTa6bT8Qi_b3XK1rjARbEg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY0MA--/https://media.zenfs.com/en/ap.org/37bfd0119e2bf13b14dacfc757c40417"
+    },
+    {
+      "id": 35,
+      "title": "Photography Contest",
+      "year": "2025-26",
+      "category": "Cultural",
+      "image": "https://lavidaleica.com/sites/default/files/zeiss_contest_2011.jpg"
+    },
+    {
+      "id": 36,
+      "title": "Poetry Slam",
+      "year": "2025-26",
+      "category": "Cultural",
+      "image": "https://i.ytimg.com/vi/WWqQ8MqTgTE/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgSihDMA8=&amp;rs=AOn4CLB29L5ii7kAouEP65N08cKqDTd-3A"
+    },
+    {
+      "id": 37,
+      "title": "Hockey Championship",
+      "year": "2025-26",
+      "category": "Sports",
+      "image": "https://images.delfi.lv/media-api-image-cropper/v1/3bd7ca40-7cc6-11ed-9a7b-c34840b383f5.jpg?w=1200&h=628"
+    },
+    {
+      "id": 38,
+      "title": "Rugby Tournament",
+      "year": "2025-26",
+      "category": "Sports",
+      "image": "https://sustainhealth.fit/wp-content/uploads/2022/08/rugby-sevens-los-angeles-1224x816.jpg"
+    },
+    {
+      "id": 39,
+      "title": "Boxing Night",
+      "year": "2025-26",
+      "category": "Sports",
+      "image": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1ygi9E.img?w=900&h=506&m=4&q=88"
+    },
+    {
+      "id": 40,
+      "title": "Research Symposium",
+      "year": "2025-26",
+      "category": "Departmental",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/HIG_research_symposium102715a.jpg"
+    },
+    {
+      "id": 41,
+      "title": "Cloud Computing Bootcamp",
+      "year": "2026-27",
+      "category": "Technical",
+      "image": "https://yes.sgp1.digitaloceanspaces.com/diginews/uploads/2023/09/Node.js-dan-TypeScript-1024x610.png"
+    },
+    {
+      "id": 42,
+      "title": "AR/VR Showcase",
+      "year": "2026-27",
+      "category": "Technical",
+      "image": "https://avatars.mds.yandex.net/get-altay/1246719/2a00000164382b3354b1f2f8f71e3770b696/XXL_height"
+    },
+    {
+      "id": 43,
+      "title": "Drone Racing",
+      "year": "2026-27",
+      "category": "Technical",
+      "image": "https://miro.medium.com/v2/resize:fit:1200/1*DIxIvc63wsOICJqoEvAWyg.jpeg"
+    },
+    {
+      "id": 44,
+      "title": "Folk Dance",
+      "year": "2026-27",
+      "category": "Cultural",
+      "image": "https://live.staticflickr.com/6124/6010062906_5a0114edfc_b.jpg"
+    },
+    {
+      "id": 45,
+      "title": "Drama Skit",
+      "year": "2026-27",
+      "category": "Cultural",
+      "image": "https://d3s3zh7icgjwgd.cloudfront.net/AcuCustom/Sitename/DAM/100/Rehearsal-at-LIPA_Main.jpg"
+    },
+    {
+      "id": 46,
+      "title": "Painting Competition",
+      "year": "2026-27",
+      "category": "Cultural",
+      "image": "https://queenspost.com/wp-content/uploads/2024/04/admin-ajax-5.jpg?w=600"
+    },
+    {
+      "id": 47,
+      "title": "Chess Tournament",
+      "year": "2026-27",
+      "category": "Sports",
+      "image": "https://s-cdn.sportbox.ru/images/styles/1200-auto/fp_fotos/52/4d/604d2cdfa86e1d435545e6632fbd38845ea086fe481a4798303718.jpg"
+    },
+    {
+      "id": 48,
+      "title": "Tennis Championship",
+      "year": "2026-27",
+      "category": "Sports",
+      "image": "https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/raleigh/ACC_Tennis_2018_Garrett_Poulos_01_92a2c283_3a5f_4353_81eb_ce294b657949_66393d49-722a-47c3-a351-ee22bca4be3e.jpg"
+    },
+    {
+      "id": 49,
+      "title": "Cycling Race",
+      "year": "2026-27",
+      "category": "Sports",
+      "image": "https://d32ydbgkw6ghe6.cloudfront.net/production/uploads/cover_images/c87e85c695ec584acbf8c9665a5727021854/i1080x475.jpg"
+    },
+    {
+      "id": 50,
+      "title": "Capstone Presentation",
+      "year": "2026-27",
+      "category": "Departmental",
+      "image": "https://cdn.prod.website-files.com/5dd3dedb5d0bd9e8c4ac38ab/6715d39d97866e3c25b7c560_6715d30f615f1ac8013b6613_%255BEMBED1%255D_Esanullah_Oct14_Photo%2520provided%2520by%2520Sabhya.jpeg"
+    }
+  ]
+}

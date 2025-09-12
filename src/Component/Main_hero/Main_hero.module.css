@@ -1,0 +1,108 @@
+.landing_page {
+      display: flex;
+      justify-content: space-between;
+      /* margin: 40px 0; */
+      gap: 30px;
+      /* height: 28rem; */
+      background-repeat:no-repeat;
+      background-size: cover;
+      width: 99.55vw;
+      height: 70vh;
+      margin: 0 -2rem 0 -1rem;
+      background-attachment: fixed;
+      background-color: rgba(0, 0, 0, 0.375);
+      background-blend-mode: darken;
+      /* background-position:left; */
+      background-image: url(https://www.sjsu.edu/_images/people/ADV_campus-events-dschmitz_1.jpg);
+    }
+    .hero_text {
+      flex: 6;
+      margin: 6rem 5rem;
+    }
+    .hero_text h1 {
+      font-size: 3rem;
+      font-weight: 900;
+      margin-bottom: 15px;
+      color: #fff;
+    }
+    .hero_text p {
+      margin-bottom: 25px;
+      color:#ede8ea;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+    .btn_learn {
+      background-color: #ff3385;
+      padding: 14px 30px;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+    }
+    .btn_learn:hover {
+        color: #db4444;
+      background-color: white;
+    }
+    .hero_image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero_image img {
+      width: 350px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(243, 111, 33, 0.5);
+    }
+    @media (max-width: 400px) {
+      .hero_text h1{
+        width: 18rem !important;
+         font-size: 1.4rem !important;
+      }
+      .landing_page{
+        width: 25.5rem !important;
+      }
+      .hero_image img {
+        width: 30rem;
+      }
+    }
+    @media (max-width:450px) {
+       .landing_page{
+        width: 26.9rem !important;
+      }
+    .hero_text h1{
+      width: 21rem!important;
+        font-size: 1.5rem!important;
+        margin-left: -2rem;
+    }
+    }
+    @media (max-width:320px) {
+       .landing_page{
+        width: 21rem !important;
+      }
+    .hero_text h1{
+      width: 21rem!important;
+        font-size: 1.2rem!important;
+        margin-left: -3.5rem;
+    }
+    .hero_text p{
+      width: 19rem!important;
+      font-size: 0.5rem!important;
+       margin-left: -3.5rem;
+    }
+    }
+    @media (max-width: 850px){
+        
+        .hero_text h1{
+          width: 45rem;
+        }
+        .hero_text p{
+           font-size: 1.3rem;
+        }
+         .landing_page{
+        width: 52.2rem;
+      }
+    }

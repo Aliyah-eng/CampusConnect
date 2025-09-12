@@ -1,0 +1,354 @@
+.about_history {
+    padding: 3rem 6rem;
+} 
+  .history_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 2rem;
+  }
+  .logo_link {
+    font-size: 2rem;
+    color: #EF7722;
+    text-decoration: none;
+    height: 4rem;
+}
+.Patner_tittle{
+  color: #EF7722;
+  padding: 1rem 3rem;
+   margin: auto;
+}
+ .partner_logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+  }
+    .partner_logos a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 0.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .partner_logos a:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .partner_logos img {
+    width: 8rem;
+    height: auto;
+    max-height: 8rem;
+    object-fit: cover;
+  }
+
+  .about_title {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin: 1rem 0;
+  }
+  
+  .about_detail p {
+    font-size: 1rem;
+    margin: 1rem 0;
+    line-height: 2;
+  }
+  
+  .history_img_wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  
+  .history_img_wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 2rem;
+  }
+  .section_body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px;
+    margin: 15px;
+    gap: 20px;
+}
+
+
+.section_one {
+    width: 48%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section_one .mission_header {
+    font-size: 2rem;
+    color: #EF7722;
+    font-weight: 550;
+}
+
+.text_p {
+    word-spacing: 1.5px;
+    width: 80%;
+    line-height: 28px;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.quote {
+    word-spacing: 1.5px;
+    width: 90%;
+    line-height: 38px;
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgb(244, 245, 248);
+    border-radius: 8px;
+}
+
+.quote p {
+    text-align: right;
+    font-weight: bold;
+}
+
+
+.section_two {
+    width: 48%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section_two .mission_header {
+    font-size: 2rem;
+    color: #EF7722;
+    margin-bottom: 20px;
+    font-weight: 550;
+}
+
+.section_two p {
+    width: 80%;
+    text-align: left;
+    margin-left: 20px;
+    padding-left: 15px;
+    font-size: 18px;
+}
+
+
+.section_two .mission_header1 {
+    color: #EF7722;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.mission_content{
+    margin-bottom: 20px;
+    margin-left: 35px;
+}
+.mission_header1 i {
+    margin-right: 10px;
+    border: 2px solid #EF7722;
+    padding: 5px;
+    border-radius: 6px;
+    color: #EF7722;
+}
+
+.mission_header1 .fa-plane {
+    padding: 10px;
+}
+
+
+.content p {
+    font-size: 20px;
+    margin-left: 35px;
+}
+.values_header{
+    font-size: 2rem;
+    color: #EF7722;
+    margin-bottom: 20px;
+    font-weight: 550;
+    padding-left: 2rem;
+    /* text-align: center; */
+}
+.card {
+  background: #fff;
+  padding: 3rem 25px;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 25px;
+  margin-top:2rem ;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.cardTitle {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: #1a73e8;
+}
+
+.cardText {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.valuesList {
+  list-style: none;
+  padding: 0;
+}
+
+.valuesList li {
+  padding: 8px 0;
+  font-size: 1rem;
+  color: #555;
+  display: flex;
+  align-items: center;
+}
+
+.valuesList li::before {
+  content: "✔️";
+  margin-right: 10px;
+  color: #1a73e8;
+}
+.events_section {
+  padding: 2rem;
+  background: #f9fafb;
+  margin: 2rem 0;
+}
+
+.events_title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  padding-bottom: 2rem;
+}
+
+.events_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.event_card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.event_card:hover {
+  transform: translateY(-5px);
+}
+
+.event_image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.event_header {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.event_icon {
+  font-size: 1.5rem;
+}
+
+.event_card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.event_month,
+.event_category,
+.event_description {
+  padding: 0 1rem;
+  margin: 0.3rem 0;
+}
+
+.event_month {
+  font-weight: bold;
+  color: #0077cc;
+}
+
+.event_category {
+  font-style: italic;
+  color: #666;
+}
+
+.event_description {
+  font-size: 0.95rem;
+  color: #444;
+  padding-bottom: 1rem;
+}
+.tittle{
+     color: #EF7722;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 3rem;
+     font-size: 1.8rem;
+}
+.image_topic{
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 2rem;
+     margin: auto;
+     width: 90vw;
+     padding-bottom: 3rem;
+}
+.topic_div{
+     box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.329) ;
+     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .about_history {
+        padding: 2rem;
+    } 
+    .history_container {
+        grid-template-columns: 1fr;
+    }
+    .section_one, .section_two {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+}@media (max-width: 480px) {
+    .about_history {
+        padding: 1rem;
+    } 
+    .text_p, .content p {
+        width: 100%;
+        font-size: 16px;
+    }
+    .quote {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .section_one{
+      
+    }
+    
+}

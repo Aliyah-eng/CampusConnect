@@ -1,0 +1,607 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  caret-color: transparent;
+}
+body{
+  width: 100%;
+  height: auto;
+  padding-bottom: 6rem;
+}
+.upcoming_hero{
+  width: 100%;
+  height: 380px;
+  background: url(https://imu.indiana.edu/images/hotel/reservations-campusevents/football-crowd.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.403);
+  background-blend-mode: darken;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.upcoming_hero .first-text{
+  width: 100px;
+  height: 30px;
+  background-color: orange;
+  color: whitesmoke;
+  text-align: center;
+  align-content: center;
+  border-radius: 30px;
+  font-size: 15px;
+  line-height: 1.4;
+}
+.gir{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.upcoming_hero .first-text:hover{
+  width: 105px;
+  height: 32px;
+  font-size: 16px;
+  background-color: orange;
+  transition: all .4s ease;
+}
+.upcoming_hero h1{
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 40px;
+  color: whitesmoke;
+  line-height: 1.5;
+  margin: 10px;
+  position: static;
+}
+.mis{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.this{
+  padding-top: 7px;
+  display: flex;
+  color: whitesmoke;
+  gap: 5px;
+  padding-left: 5px;
+  line-height: 1.9;
+  font-size: 15px;
+}
+.this i{
+  line-height: 1.9;
+  color: orange;
+}
+.buttons{
+  display: flex;
+  padding-top: 20px;
+  gap: 40px;
+}
+.buttons button{
+  width: 100px;
+  height: 30px;
+  background: none;
+  border: 1px solid #9c9c9c;
+  border-radius: 30px;
+  color: black;
+  transition: color .3s ease;
+}
+.buttons button:hover{
+  background-color: goldenrod;
+  transition: all .4s ease;
+  color: whitesmoke;
+}
+.events{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  align-content: center;
+  padding-top: 3.5rem;
+}
+.events .event-tit{
+  font-family: "Roboto", sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+.events .event-spa{
+  font-weight: bold;
+  color: orange;
+}
+.divider{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 17%;
+  margin: 30px auto;
+}
+.divider::before, .divider::after{
+  content: " ";
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+}
+.divider:not(:empty)::before, .divider:not(:empty)::after{
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+.events .event-text{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  color: whitesmoke;
+}
+.cards_butts{
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.cards_butts button{
+  width: 90px;
+  height: 30px;
+  background: none;
+  border: 1px solid;
+  border-radius: 30px;
+  color: whitesmoke;
+  background-color: orange;
+}
+.cards_butts button:first-child{
+  background-color: white;
+  color: orange;
+}
+.cards_butts button:first-child{
+  width: 50px;
+  height: 35px;
+}
+.cards_butts button:nth-child(2){
+  width: 79px;
+  height: 35px;
+}
+.cards_butts button:nth-child(3){
+  width: 75px;
+  height: 35px;
+}
+.cards_butts button:nth-child(4){
+  width: 70px;
+  height: 35px;
+}
+.cards_butts button:last-child{
+  width: 100px;
+  height: 35px;
+}
+.cards_butts button:hover{
+  background-color: white;
+  color: orange;
+}
+.cards_butts button:first-child:hover{
+  background-color: orange;
+  color: white;
+}
+.card{
+  width: 90%;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 4rem;
+  place-items: center;
+
+}
+.card {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem auto;
+}
+
+.cards {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.cards:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Container */
+.cards_cont {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+}
+
+.cards_cont img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: scale 0.4s ease;
+}
+
+.cards:hover .cards_cont img {
+  scale: 1.05;
+}
+
+/* Gradient Overlay */
+.cards_cont::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0));
+}
+
+/* Floating Buttons (price + status) */
+.img_btn {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  display: flex;
+  gap: 10px;
+  z-index: 2;
+}
+
+.img_btn button {
+  padding: 6px 14px;
+  border-radius: 30px;
+  border: none;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.img_btn button:first-child {
+  background: #fff;
+  color: orange;
+}
+
+.img_btn button:last-child {
+  background: orange;
+  color: #fff;
+}
+
+.img_btn button:hover {
+  opacity: 0.9;
+}
+
+/* Bookmark Button */
+.bookmark_btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(255,255,255,0.8);
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+  z-index: 3;
+  transition: background 0.3s ease;
+}
+.category_btn{
+     position: absolute;
+  top: 15px;
+  left: 15px;
+  background: rgba(255,255,255,0.8);
+  border: none;
+  /* border-radius: 50%; */
+  padding: 8px;
+  width: 7rem;
+  height: 3rem;
+  cursor: pointer;
+  z-index: 3;
+  transition: background 0.3s ease;
+     background-color: orange;
+}
+.bookmark_btn:hover {
+  background: orange;
+  color: #fff;
+}
+
+/* Content */
+.card_tit {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 15px 20px 5px;
+  font-family: "Roboto", sans-serif;
+}
+
+.card_cont {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 0 20px;
+  color: #555;
+  font-size: 14px;
+  flex-wrap: wrap;
+}
+
+.thi button {
+  background: orange;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 12px;
+  width: 10rem;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.thi button:hover {
+  background: #fff;
+  color: orange;
+  border: 1px solid orange;
+}
+
+.card_text {
+  margin: 15px 20px 20px;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .cards_butts{
+    width: 100%;
+    padding: 2.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .card{
+    width: 90%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 2rem;
+    place-items: center;
+  }
+  .cards{
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .cards:nth-child(3){
+    margin-top: 30px;
+  }
+}
+@media (max-width: 767px) and (min-width: 620px){
+  .card{
+    width: 90%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 2rem;
+    place-items: center;
+  }
+  .events-text{
+    margin: 0 18px;
+  }
+  .cards{
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    place-items: center;
+  }
+  .thi{
+    margin: 0 10px;
+    left: 5%;
+  }
+   .cards:nth-child(2), .cards:nth-child(3){
+    margin-top: 30px;
+  }
+}
+@media (max-width: 619px) and (min-width: 375px){
+  .mis {
+    display: flex;
+    flex-direction: row;
+    gap: 17px;
+  }
+  .upcoming_hero h1 {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 35px;
+    color: whitesmoke;
+    line-height: 1.5;
+    margin: 10px;
+    position: static;
+  }
+  .divider{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 30%;
+    margin: 30px auto;
+  }
+  .divider::before, .divider::after{
+    content: " ";
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+  }
+  .divider:not(:empty)::before, .divider:not(:empty)::after{
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+  }
+    .card{
+    width: 90%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 2rem;
+    place-items: center;
+  }
+  .cards_butts {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    margin: 0 0.7rem;
+  }
+  .cards_butts button{
+    width: 90px;
+    height: 30px;
+    background: none;
+    border: 1px solid;
+    border-radius: 17px;
+    color: whitesmoke;
+    background-color: orange;
+    font-size: 11px;
+  }
+  .cards_butts button:first-child{
+    background-color: white;
+    color: orange;
+  }
+  .cards_butts button:first-child{
+    width: 65px;
+    height: 35px;
+  }
+  .cards_butts button:nth-child(2){
+    width: 105px;
+    height: 35px;
+  }
+  .cards_butts button:nth-child(3){
+    width: 100px;
+    height: 35px;
+  }
+  .cards_butts button:nth-child(4){
+    width: 80px;
+    height: 35px;
+  }
+  .cards_butts button:last-child{
+    width: 120px;
+    height: 35px;
+  }
+  .events-text{
+    margin: 0 18px;
+  }
+  .cards{
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    place-items: center;
+  }
+  .thi{
+    margin: 0 10px;
+    left: 5%;
+  }
+   .cards:nth-child(2), .cards:nth-child(3){
+    margin-top: 30px;
+  }
+}
+@media (max-width: 374px) and (min-width: 315px) {
+  .mis {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+  }
+  .upcoming_hero h1 {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    color: whitesmoke;
+    line-height: 1.5;
+    margin: 10px;
+    position: static;
+  }
+  .buttons{
+    gap: 30px;
+  }
+  .divider{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 30%;
+    margin: 30px auto;
+  }
+  .divider::before, .divider::after{
+    content: " ";
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+  }
+  .divider:not(:empty)::before, .divider:not(:empty)::after{
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+  }
+  .card{
+    width: 90%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 1rem;
+    place-items: center;
+  }
+  .cards_butts {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    margin: 0 0.7rem;
+  }
+  .cards_butts button{
+    width: 90px;
+    height: 30px;
+    background: none;
+    border: 1px solid;
+    border-radius: 17px;
+    color: whitesmoke;
+    background-color: orange;
+    font-size: 11px;
+  }
+  .cards_butts button:first-child{
+    background-color: white;
+    color: orange;
+  }
+  .cards_butts button:first-child{
+    width: 65px;
+    height: 35px;
+  }
+  .cards_butts button:nth-child(2){
+    width: 105px;
+    height: 35px;
+  }
+  .cards_butts button:nth-child(3){
+    width: 100px;
+    height: 35px;
+  }
+  .cards_butts button:nth-child(4){
+    width: 80px;
+    height: 35px;
+  }
+  .cards_butts button:last-child{
+    width: 120px;
+    height: 35px;
+  }
+  .events-text{
+    margin: 0 18px;
+  }
+  .cards{
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    place-items: center;
+  }
+  .thi{
+    gap: 5px;
+  }
+   .cards:nth-child(2), .cards:nth-child(3){
+    margin-top: 30px;
+  }
+}

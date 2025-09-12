@@ -1,0 +1,220 @@
+[
+  {
+    "id": 1,
+    "title": "Interfaculty Football Tournament",
+    "date": "March 10, 2025",
+    "location": "Main Stadium",
+    "price": 0,
+    "category": "Sports",
+    "description": "Annual interfaculty football competition bringing together teams across campus.",
+    "status": "Upcoming",
+    "image": "https://highschool.si.com/.image/t_share/MjAyMDUxNDM2OTg3NTU3NDg5/378137915_798344518755339_2336403359300550006_n.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Basketball Championship Finals",
+    "date": "April 18, 2025",
+    "location": "Indoor Arena",
+    "price": 10,
+    "category": "Sports",
+    "description": "Final round of the campus-wide basketball tournament.",
+    "status": "Upcoming",
+    "image": "https://www.adweek.com/wp-content/uploads/2019/04/ncaa-championshipo-content-2019.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Track & Field Meet",
+    "date": "May 22, 2025",
+    "location": "Athletics Ground",
+    "price": 5,
+    "category": "Sports",
+    "description": "An exciting day of track races and field events for student athletes.",
+    "status": "Upcoming",
+    "image": "https://cdn-pps.presspasssports.com/wp-content/uploads/2022/05/29080838/490662_ddd945973d654086abbbcbb3c6ba99cd-mv2.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Cultural Clash Festival",
+    "date": "June 15, 2025",
+    "location": "Auditorium",
+    "price": 15,
+    "category": "Cultural",
+    "description": "A showcase of music, dance, and traditions from different cultures on campus.",
+    "status": "Upcoming",
+    "image": "https://wjla.com/resources/media2/16x9/full/1015/center/80/6c0acf9b-3e14-4886-9115-92ac22d831f7-large16x9_worldculturefestival.png"
+  },
+  {
+    "id": 5,
+    "title": "Science Fair 2025",
+    "date": "July 20, 2025",
+    "location": "Innovation Hub",
+    "price": 0,
+    "category": "Departmental",
+    "description": "Students present groundbreaking projects and innovative experiments.",
+    "status": "Upcoming",
+    "image": "https://avatars.mds.yandex.net/i?id=89d57e9f96f3e52c5a33466d27b6cecb63a1119c-12847150-images-thumbs&n=13"
+  },
+  {
+    "id": 6,
+    "title": "Hiking Adventure",
+    "date": "August 12, 2025",
+    "location": "Hilltop Trails",
+    "price": 25,
+    "category": "Adventure",
+    "description": "A thrilling hiking expedition designed for students who love the outdoors.",
+    "status": "Upcoming",
+    "image": "https://overlandsummers.com/wp-content/uploads/2023/11/leaders-3.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Coding Hackathon",
+    "date": "September 5, 2025",
+    "location": "Tech Lab",
+    "price": 0,
+    "category": "Departmental",
+    "description": "48-hour coding challenge where teams build innovative apps and solutions.",
+    "status": "Upcoming",
+    "image": "https://www.brown.edu/sites/default/files/styles/wide_xlrg/public/2019-05/Hack-a-thon2016_03.jpg?h=08de3a47&itok=HCCZL40Q"
+  },
+  {
+    "id": 8,
+    "title": "Drama Night",
+    "date": "October 9, 2025",
+    "location": "Drama Hall",
+    "price": 8,
+    "category": "Cultural",
+    "description": "A night of performances and stage plays by the drama club.",
+    "status": "Upcoming",
+    "image": "https://news.yale.edu/sites/default/files/styles/full/public/ynews-twelfth-night-0756r.png?itok=OjJdhwg-"
+  },
+  {
+    "id": 9,
+    "title": "Swimming Gala",
+    "date": "November 2, 2025",
+    "location": "Campus Pool",
+    "price": 5,
+    "category": "Sports",
+    "description": "Competitive swimming races and relay events.",
+    "status": "Upcoming",
+    "image": "https://www.riversideschool.cz/wp-content/uploads/2015/04/swimming-gala-2015-9.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Film Screening Night",
+    "date": "December 15, 2025",
+    "location": "Open Air Theatre",
+    "price": 12,
+    "category": "Cultural",
+    "description": "Outdoor movie night showcasing award-winning films.",
+    "status": "Upcoming",
+    "image": "https://wp.thenewdaily.com.au/wp-content/uploads/2022/05/1652928940-packed-cinema.jpg?resize=1313,876&quality=90"
+  },
+  {
+    "id": 11,
+    "title": "Robotics Workshop",
+    "date": "September 20, 2025",
+    "location": "Engineering Lab",
+    "category": "Technical",
+    "image": "https://media.npr.org/assets/img/2023/10/04/mleong_scioly_20230831_slide-1fc39305d8ab464d47b44d973eec5ba99454c852.jpg",
+    "description": "A hands-on robotics workshop where students design and build their own robots."
+  },
+  {
+    "id": 12,
+    "title": "AI & ML Seminar",
+    "date": "September 25, 2025",
+    "location": "Tech Auditorium",
+    "category": "Technical",
+    "image": "https://images.theconversation.com/files/612569/original/file-20240808-19-ydsl00.jpg?ixlib=rb-4.1.0&rect=257%2C214%2C3329%2C1661&q=45&auto=format&w=1356&h=668&fit=crop",
+    "description": "An expert-led seminar exploring the latest trends in artificial intelligence and machine learning."
+  },
+  {
+    "id": 13,
+    "title": "Hackathon Finals",
+    "date": "October 2, 2025",
+    "location": "Innovation Hub",
+    "category": "Technical",
+    "image": "https://miro.medium.com/v2/resize:fit:1200/1*jDt_jfxfE61gSV7GszdKcg.jpeg",
+    "description": "Final round of the hackathon competition where teams showcase their innovative projects."
+  },
+  {
+    "id": 14,
+    "title": "Inter-college Debate",
+    "date": "October 10, 2025",
+    "location": "Main Auditorium",
+    "category": "Cultural",
+    "image": "https://s3.amazonaws.com/thumbnails.thecrimson.com/photos/2019/11/10/194302_1340798.jpg.1500x999_q95_crop-smart_upscale.jpg",
+    "description": "Debate competition between top colleges, focused on current global issues."
+  },
+  {
+    "id": 15,
+    "title": "Drama Night",
+    "date": "October 18, 2025",
+    "location": "Drama Hall",
+    "category": "Cultural",
+    "image": "https://s.yimg.com/ny/api/res/1.2/ZTa6bT8Qi_b3XK1rjARbEg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY0MA--/https://media.zenfs.com/en/ap.org/37bfd0119e2bf13b14dacfc757c40417",
+    "description": "An evening filled with captivating drama performances by student theater groups."
+  },
+  {
+    "id": 16,
+    "title": "Music Fest",
+    "date": "October 25, 2025",
+    "location": "Open Air Stage",
+    "category": "Cultural",
+    "image": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1v32Wa.img?w=1000&h=563&m=4&q=86",
+    "description": "Annual cultural music festival featuring live bands and solo performances."
+  },
+  {
+    "id": 21,
+    "title": "Coding Bootcamp",
+    "date": "November 2, 2025",
+    "location": "Tech Lab",
+    "category": "Technical",
+    "image": "https://avatars.mds.yandex.net/get-altay/1627037/2a0000016740010b71c956fcd006150ebf0c/XXL_height",
+    "description": "Intensive coding bootcamp covering web development, Python, and problem solving."
+  },
+  {
+    "id": 22,
+    "title": "Cybersecurity Talk",
+    "date": "November 8, 2025",
+    "location": "Computer Lab",
+    "category": "Technical",
+    "image": "https://cdn-res.keymedia.com/cms/images/us/036/0311_637872709517639805.jpg",
+    "description": "Expert talk on cyber threats, hacking, and methods to secure digital systems."
+  },
+  {
+    "id": 23,
+    "title": "Tech Fest Exhibition",
+    "date": "November 15, 2025",
+    "location": "Exhibition Hall",
+    "category": "Technical",
+    "image": "https://www.c-o-k.ru/images/seminar/wysiwyg/103/10389/ezhegodnaya-konferenciya-tech-week-2.JPG?1717695154",
+    "description": "Exhibition of latest tech products, innovations, and start-up pitches."
+  },
+  {
+    "id": 24,
+    "title": "Dance Competition",
+    "date": "November 22, 2025",
+    "location": "Cultural Hall",
+    "category": "Cultural",
+    "image": "https://competes.tv/wp-content/uploads/2023/07/dance-competition-first-dance-competition-dance-competition-experience-Dance-8c71894e-1024x683.jpg",
+    "description": "Energetic dance competition featuring solo and group performances."
+  },
+  {
+    "id": 25,
+    "title": "Art Exhibition",
+    "date": "November 29, 2025",
+    "location": "Art Gallery",
+    "category": "Cultural",
+    "image": "https://www.modernschool.org/wp-content/uploads/2018/02/Art-Exhibition-2018.jpg",
+    "description": "Exhibition showcasing paintings, sculptures, and creative artwork from students."
+  },
+  {
+    "id": 26,
+    "title": "Traditional Fest",
+    "date": "December 6, 2025",
+    "location": "Campus Grounds",
+    "category": "Cultural",
+    "image": "https://cdn.culture.ru/images/8160ce60-a06f-591c-a3e6-88ecda31be01",
+    "description": "Celebration of traditional arts, crafts, food, and cultural performances."
+  }
+]
