@@ -490,7 +490,6 @@ const TourPlanner = () => {
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
               />
-
               <select
                 className={classes.filterCategory}
                 value={category}
