@@ -99,6 +99,20 @@ body {
     margin: 10px 0;
    
   }
+
+    .searchBar{
+    padding:18px;
+    border-radius: 5px;
+    border: 1px solid #EF7722;
+    width: 50%;
+    font-size: 1rem;
+}
+ .controls{
+    width: 20rem;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .galleryGrid {
@@ -239,11 +253,13 @@ display: flex;
 width: 70rem;
 margin: auto;
 }
+
+
 .searchBar{
     padding: 8px;
     border-radius: 5px;
     border: 1px solid #EF7722;
-    min-width: 800px;
+    min-width: 50%;
     font-size: 1rem;
     margin-right: 1rem;
 }
@@ -263,7 +279,14 @@ margin: auto;
   font-size: 1rem;
 }
 
-
+.spacer{
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  width: 63rem;
+  justify-content: space-between;
+  height: 2.7rem;
+}
 .grid {
   display: grid;
   grid-template-columns: 1fr; 
@@ -279,10 +302,11 @@ margin: auto;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   text-align: center;
   transition: transform 0.2s;
-  margin: 2rem;
-  
-}
+  margin: 1rem;
+   width: 100%;
+  max-width: 90%;
 
+}
 
 
 
@@ -292,19 +316,72 @@ margin: auto;
 
 @media (max-width:450px) {
   .controls{
+    width: 100%;
+    overflow: hidden;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+  flex-direction: column;
+
   }
   .galleryGrid{
     display: grid;
-     margin-left: -2rem;
+     margin-left: 1rem;
      grid-template-columns: repeat(1, 1fr);
   }
-  #filterYea{
-    
-  }
+
+  .searchBar{
+    padding:18px;
+    border-radius: 5px;
+    border: 1px solid #EF7722;
+    width: 100%;
+    font-size: 1rem;
+}
+.spacer{
+  margin-top: 14px;
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  justify-content: space-between;
+  height: 2.7rem;
+  width: 100%;
 }
 
+}
+@media (max-width: 768px) {
+  .controls{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+  flex-direction: column;
+
+  }
+  .galleryGrid{
+    display: grid;
+    margin-left: -.4;
+    grid-template-columns: repeat(1, 1fr);
+    gap: .5rem;
+    padding: 0 ;
+  }
+
+  .searchBar{
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #EF7722;
+    width: 100%;
+    font-size: 0.9rem;
+  }
+.spacer{
+  margin-top: 14px;
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  justify-content: space-between;
+  height: 2.7rem;
+  width: 100%;
+}
+
+}
 
 
 .pics{

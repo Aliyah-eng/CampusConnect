@@ -51,6 +51,7 @@ const Gallery = () => {
           onChange={(e) => setSearchTerm(e.target.value)}
           className={classes.searchBar}
         />
+        <div className={classes.spacer} >
         <select value={year} onChange={(e) => setYear(e.target.value)}>
           <option value="All">All Years</option>
           <option value="2022-23">2022-23</option>
@@ -67,6 +68,7 @@ const Gallery = () => {
           <option value="Sports">Sports</option>
           <option value="Departmental">Departmental</option>
         </select>
+        </div>
       </section>
 
       <section className={classes.gallery}>

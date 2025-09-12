@@ -59,7 +59,7 @@
   
   .right_section {
     width: 55%;
-    padding-left: 6rem;
+    /* padding-left: ; */
   }
   
   .right_section h3 {
@@ -515,12 +515,6 @@ border-radius: 5px;
   .feedback_area{
     width: 80vw;
   }
-  .feedback_img_wrapper{
-    
-  }
-  .feedback_img{
-    
-  }
 
   
   .feedback_form textarea {
@@ -533,16 +527,107 @@ border-radius: 5px;
   .header{
     height: 50vh ;
   }
+      .text_header{
+    width: 15rem;
+    color: #EF7722 !important;
+    margin: 1rem 2rem;
+  }
+     .star_rating {
+    font-size: 36px;
+    /* color: #;  */
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 500px) {
   .header{
     height: 40vh;
   }
+    .text_header{
+    width: 15rem;
+    color: #EF7722 !important;
+    margin: 1rem 2rem;
+  }
+   .star_rating {
+    font-size: 36px;
+    margin-left: 4rem;
+    margin-bottom: 20px;
+  }
+    select {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .group_buttons {
+    height: 12rem;
+    width: 22rem;
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  
+  .group_buttons button {
+    padding: 5px 5px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #EF7722;
+    cursor: pointer;
+  }
+  .text_area_responsive{
+    overflow:hidden ;
+    border: 1px solid black;
+    height: 8rem;
+    width: 19rem;
+  }
+    .char_count {
+    text-align: left;
+    font-size: 12px;
+    color: #999;
+    margin-top: 5px;
+  }
+  .tour_input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+  .btn .submit{
+  background-color: #EF7722;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left:-11rem ;
+}
+    .feedback_img_wrapper{
+      width: 50%;
+      height: 10vh;
+    }
+    .feedback_img{
+      width: 50%;
+      height: 50%;
+    }
+    .feedback_area{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 50%;
+    margin: 4rem auto;
+}
 }
   @media (max-width: 380px) {
     .header{
       height: 35vh;
     }
+    
+    .text_header{
+    width: 5rem;
+    color: #EF7722 !important;
+    margin: 1rem 2rem;
+  }
   }
 
 
