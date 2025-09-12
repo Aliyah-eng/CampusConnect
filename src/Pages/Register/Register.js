@@ -1,6 +1,7 @@
 import React from "react";
-import classes from "./Register.module.css"
+import classes from "./Register.module.css";
 import { Link } from "react-router-dom";
+
 const RegistrationForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -10,20 +11,19 @@ const RegistrationForm = () => {
 
   return (
     <section className={classes.AllEncompassing}>
-         <div>
-               <Link  to="/"> <button className={classes.back}>Back</button> </Link>
-            </div>
-        <div className={classes.header_back}>
-         <div className={classes.RegisterFormText}>
-              <h1>Registration Form</h1>
-            </div>
+      <div>
+        <Link to="/">
+          <button className={classes.back}>Back</button>
+        </Link>
+      </div>
+      <div className={classes.header_back}>
+        <div className={classes.RegisterFormText}>
+          <h1>Register</h1>
         </div>
+      </div>
       <div className={classes.thebox}>
         <div className={classes.WordSide}>
-            
           <div className={classes.form_container}>
-           
-
             <form onSubmit={handleSubmit}>
               <div className={classes.FirstAndLastName}>
                 <div>
@@ -76,6 +76,26 @@ const RegistrationForm = () => {
                     id="phone"
                     name="phone"
                     placeholder="Phone Number"
+                    required
+                  />
+                </div>
+                <div>
+                  <label htmlFor="password">Password</label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Password"
+                    required
+                  />
+                </div>
+                <div>
+                  <label htmlFor="confirmPassword">Confirm Password</label>
+                  <input
+                    type="password"
+                    id="confirmPassword"
+                    name="confirmPassword"
+                    placeholder="Confirm Password"
                     required
                   />
                 </div>
