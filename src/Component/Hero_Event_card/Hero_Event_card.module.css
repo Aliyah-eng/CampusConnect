@@ -90,7 +90,22 @@
      }
   .card {
     width: 17rem;
-    margin-left: 0.7em;
+    margin-left: 3.5rem;
     margin-bottom: 2rem;
   }
 }
+@media (max-width:500px) {
+    .card {
+    width: 18rem;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width:4150px) {
+    .card {
+    width: 16rem;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+  }
+}
+
