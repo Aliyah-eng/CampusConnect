@@ -112,6 +112,10 @@
 }
 
 @media (max-width: 415px) {
+    .hero_content_wrapper{
+        width: 90vw;
+        padding: 1rem 0.5rem;
+    }
     .hero_txt_content > p{
         line-height: 1.8;
     }
