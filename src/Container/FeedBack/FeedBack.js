@@ -77,7 +77,7 @@ const TourReview = () => {
               className={classes.carousel_slide}
               key={index}
               data-aos="fade-up"
-              data-aos-delay={index * 200} // sequential entrance
+              data-aos-delay={index * 200} 
             >
               <img src={slide.src} alt={slide.text} />
               <div className={classes.overlay_text}>{slide.text}</div>

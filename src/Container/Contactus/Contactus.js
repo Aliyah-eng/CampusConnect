@@ -10,8 +10,8 @@ function Contactus() {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, // animation duration in ms
-      once: false,    // animate every time you scroll
+      duration: 1000, 
+      once: false,    
     });
   }, []);
 
@@ -23,7 +23,6 @@ function Contactus() {
         <h2>Contact Us</h2>
       </div>
 
-      {/* Faculty Coordinators */}
       <div className={classes.coordinators} data-aos="fade-up">
         <h3 className={classes.rcoordinators}>Faculty Coordinators</h3>
         <div className={classes.info}>
@@ -70,7 +69,7 @@ function Contactus() {
         </div>
       </div>
 
-      {/* Student Coordinators */}
+  
       <div className={classes.coordinators} data-aos="fade-up">
         <h3 className={classes.rcoordinators}>Student Coordinators</h3>
         <div className={classes.info}>
@@ -174,7 +173,6 @@ function Contactus() {
         <i className={classes.fa_brands}></i>
       </div>
 
-      {/* Contact Boxes */}
       <div data-aos="fade-left">
         <div className={classes.boxes}>
           <div className={classes.box}>
@@ -198,7 +196,6 @@ function Contactus() {
         </div>
       </div>
 
-      {/* Location Map */}
       <div className={classes.location} data-aos="fade-up">
         <h2 className={classes.heading_text}>Our Location</h2>
         <iframe

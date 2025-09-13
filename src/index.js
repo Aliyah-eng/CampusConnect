@@ -12,7 +12,7 @@ import AboutUsPage from './Container/AboutUsPage/AboutUsPage';
 import Gallery from './Container/Gallery/Gallery';
 import { useEffect } from 'react';
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // import AOS styles
+import 'aos/dist/aos.css'; 
 import Cultural_event from './Pages/Cultural_event/Cultural_event';
 import Technical_event from './Pages/Technical_event/Technical_event';
 import Upcoming_event from './Pages/UpComing_event/UpComing_event';
@@ -23,8 +23,8 @@ function AppWrapper() {
   // ✅ Initialize AOS once
   useEffect(() => {
     AOS.init({
-      duration: 1000, // animation duration in ms
-      once: false,     // animate only once
+      duration: 1000, 
+      once: false,    
     });
      AOS.refresh();  
   }, []);

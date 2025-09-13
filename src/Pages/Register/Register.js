@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 const RegistrationForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add form submission logic here
     console.log("Form submitted!");
   };
 

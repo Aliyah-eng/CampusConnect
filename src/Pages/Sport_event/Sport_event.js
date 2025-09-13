@@ -19,7 +19,6 @@ const Sport_Event = () => {
   const [events, setEvents] = useState([]);
 
   useEffect(() => {
-    // Use eventsData.technical if JSON is wrapped in { technical: [...] }
     setEvents(eventsData.technical || eventsData);
     AOS.init({ duration: 1000, once: true });
   }, []);
@@ -31,7 +30,7 @@ const Sport_Event = () => {
     } else {
       localStorage.setItem(key, true);
     }
-    setEvents([...events]); // force re-render
+    setEvents([...events]);
   };
 
   const normalizedSearch = (searchTerm || "").toLowerCase();
@@ -130,12 +129,10 @@ const Sport_Event = () => {
           )}
         </div>
       </section>
-      {/* <dashboard_footer/> */}
     </>
   );
 };
 
-// ✅ Event Card Component
 function EventCard({ event, onToggleBookmark }) {
   const isBookmarked = localStorage.getItem(`bookmark-${event.id}`);
 

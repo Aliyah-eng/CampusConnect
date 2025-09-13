@@ -370,7 +370,7 @@ const getCategoryIcon = (category) => {
   } else if (category === "Departmental") {
     return <MdMenuBook size={20} color="#EF7722" />;
   } else {
-    return null; // default if category doesn't match
+    return null; 
   }
 };
 

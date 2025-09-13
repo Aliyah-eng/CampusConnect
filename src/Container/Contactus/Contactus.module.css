@@ -21,7 +21,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-top: 3rem; */
 }
 .contact h2{
   font-size: 30px;
@@ -118,7 +117,6 @@ img{
     height: 450px;
     border: none;
     border-radius: 10px;
-    /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
   }
   .location iframe:hover{
     box-shadow: 0 0 15px rgba(0,0,0,0.3);
@@ -132,7 +130,6 @@ img{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: 'Roboto', sans-serif; */
   caret-color: transparent;
   }
 
@@ -422,7 +419,6 @@ button:hover{
     height: 300px;
     border: none;
     border-radius: 10px;
-    /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
   }
   .location iframe:hover{
     box-shadow: 0 0 15px rgba(0,0,0,0.3);
@@ -679,7 +675,6 @@ button:hover{
     height: 200px;
     border: none;
     border-radius: 10px;
-    /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
   }
  
 }

@@ -31,10 +31,10 @@ const Cultural_event = () => {
     } else {
       localStorage.setItem(key, true);
     }
-    setEvents([...events]); // force re-render
+    setEvents([...events]); 
   };
 
-  // ✅ Filtering + sorting
+  
   const normalizedSearch = (searchTerm || "").toLowerCase();
 
   const filteredData = events
@@ -63,7 +63,7 @@ const Cultural_event = () => {
     <>
     <EventCatalogeNavBar/>
     <section className={classes.eventPlanner}>
-      {/* Hero Section */}
+  
       
       <div className={classes.plannerHero}>
 
@@ -71,7 +71,6 @@ const Cultural_event = () => {
        
       </div>
 
-      {/* Controls */}
       <div className={classes.controlsWrapper}>
         <h3>{showBookmarked ? " Bookmarked Events" : " Available Events"}</h3>
 
@@ -109,7 +108,6 @@ const Cultural_event = () => {
         </div>
       </div>
 
-      {/* Events */}
       <div className={classes.eventsGrid}>
         {filteredData.length === 0 ? (
           <p className={classes.noEvents}>
@@ -132,7 +130,6 @@ const Cultural_event = () => {
   );
 };
 
-// ✅ Event Card Component
 function EventCard({ event, onToggleBookmark }) {
   const isBookmarked = localStorage.getItem(`bookmark-${event.id}`);
 

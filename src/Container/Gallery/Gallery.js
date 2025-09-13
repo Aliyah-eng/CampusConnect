@@ -99,7 +99,6 @@ const Gallery = () => {
         </div>
       </section>
 
-      {/* Overlay */}
       {selectedCard && (
         <div
           className={classes.overlay}

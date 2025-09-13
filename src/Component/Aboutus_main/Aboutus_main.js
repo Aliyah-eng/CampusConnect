@@ -11,7 +11,7 @@ function Aboutus_main() {
       description:
         "A week-long sports event with football, basketball, athletics, and indoor games competitions.",
       icon: "🏆",
-      image: "https://images.unsplash.com/photo-1502877338535-766e1452684a" // sports
+      image: "https://images.unsplash.com/photo-1502877338535-766e1452684a" 
     },
     {
       title: "TechFest",
@@ -20,7 +20,7 @@ function Aboutus_main() {
       description:
         "A 3-day annual technology festival featuring project exhibitions, coding challenges, and startup showcases.",
       icon: "💻",
-      image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b" // tech
+      image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b" 
     },
     {
       title: "Music Nights",
@@ -29,7 +29,7 @@ function Aboutus_main() {
       description:
         "An evening filled with live performances, band shows, and solo acts by student musicians.",
       icon: "🎭",
-      image: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4" // music
+      image: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4" 
     },
     {
       title: "Hackathon",
@@ -38,7 +38,7 @@ function Aboutus_main() {
       description:
         "A 24-hour coding marathon where students collaborate to solve real-world problems using technology.",
       icon: "💻",
-      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c" // hackathon
+      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c" 
     },
     {
       title: "Dance Competition",
@@ -47,7 +47,7 @@ function Aboutus_main() {
       description:
         "Inter-college dance competition featuring solo, duet, and group performances across genres.",
       icon: "🎭",
-      image: "https://images.unsplash.com/photo-1515169067865-5387ec356754" // dance
+      image: "https://images.unsplash.com/photo-1515169067865-5387ec356754" 
     },
     {
       title: "Robotics Championship",
@@ -56,7 +56,7 @@ function Aboutus_main() {
       description:
         "Inter-department competition where teams build and showcase robots for tasks and challenges.",
       icon: "🤖",
-      image: "https://images.unsplash.com/photo-1581093588401-22f6362a03fe" // robotics
+      image: "https://images.unsplash.com/photo-1581093588401-22f6362a03fe" 
     },
     {
       title: "Alumni Meet",
@@ -65,7 +65,7 @@ function Aboutus_main() {
       description:
         "An annual gathering for past graduates to reconnect, share experiences, and guide current students.",
       icon: "👥",
-      image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d" // alumni
+      image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d" 
     },
     {
       title: "Annual Day",
@@ -74,7 +74,7 @@ function Aboutus_main() {
       description:
         "A celebration of college achievements, performances, and awards with participation from all departments.",
       icon: "🎉",
-      image: "https://images.unsplash.com/photo-1503424886306-0f1a4bfb1a5c" // celebration
+      image: "https://images.unsplash.com/photo-1503424886306-0f1a4bfb1a5c"
     },
   ];
 
@@ -112,7 +112,6 @@ function Aboutus_main() {
         </div>
       </section>
 
-      {/* --- Mission Section --- */}
       <section className={classes.section_body}>
         <section className={classes.section_one}>
           <p className={classes.mission_header}>OUR MISSION</p>

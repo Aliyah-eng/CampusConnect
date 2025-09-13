@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { useRef, useState } from "react";
-// import emailjs from "@emailjs/browser";
 import classes from "./Footer.module.css";
 
 
@@ -10,9 +9,7 @@ const Footer = () => {
     const [email, setEmail] = useState("");
 
  const handleSubscribe = (e) => {
-    e.preventDefault(); // Prevent page refresh
-
-    // If the form is valid, show the success alert
+    e.preventDefault(); 
     if ( email) {
       alert(`${email} has successfully subscribed to the newsletter!`);
       

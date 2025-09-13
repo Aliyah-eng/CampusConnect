@@ -7,7 +7,7 @@ import eventsData from "../../Data/Upcoming.json";
 const Upcoming_event = () => {
   const [events, setEvents] = useState([]);
   const [bookmarks, setBookmarks] = useState({});
-  const [selectedCategory, setSelectedCategory] = useState("All"); // ✅ NEW
+  const [selectedCategory, setSelectedCategory] = useState("All"); 
 
   useEffect(() => {
     setEvents(eventsData);
@@ -35,7 +35,6 @@ const Upcoming_event = () => {
     <>
       <EventCatalogeNavBar />
       <div>
-        {/* Hero Section */}
         <div className={classes.upcoming_hero}>
           <p className={classes.first_text}>Upcoming</p>
           <h1>Table Mountain Cableway</h1>
@@ -59,7 +58,6 @@ const Upcoming_event = () => {
           </div>
         </div>
 
-        {/* Events Section */}
         <div className={classes.events}>
           <p className={classes.event_tit}>
             Upcoming <span className={classes.event_spa}>Events</span>

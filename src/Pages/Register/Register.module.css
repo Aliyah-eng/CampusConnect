@@ -12,7 +12,6 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            /* min-height: 90vh; */
             background-color: #f5f7fa;
             padding: 10px;
         }
@@ -22,7 +21,6 @@
             width: 90%;
             max-width: 1000px;
             height: 550px;
-
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             border-radius: 12px;
             overflow: hidden;
@@ -46,15 +44,12 @@
 
 
         .form_container {
-            /* width: 100%; */
-            /* max-width: 450px; */
             width: 50rem;
             height: 100%;
             margin: 0 2rem 4rem -9rem;
         }
 
         .RegisterFormText {
-            /* margin-top: 2rem; */
             text-align: center;
             margin-bottom: 30px;
         }
@@ -144,6 +139,5 @@
             .FirstAndLastName {
                 flex-direction: column;
                 gap: 20px;
-
             }
         }

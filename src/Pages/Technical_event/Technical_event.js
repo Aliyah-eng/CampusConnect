@@ -18,7 +18,6 @@ const Technical_event = () => {
   const [events, setEvents] = useState([]);
 
   useEffect(() => {
-    // Use eventsData.technical if JSON is wrapped in { technical: [...] }
     setEvents(eventsData.technical || eventsData);
     AOS.init({ duration: 1000, once: true });
   }, []);
@@ -30,7 +29,7 @@ const Technical_event = () => {
     } else {
       localStorage.setItem(key, true);
     }
-    setEvents([...events]); // force re-render
+    setEvents([...events]);
   };
 
   const normalizedSearch = (searchTerm || "").toLowerCase();
@@ -110,7 +109,6 @@ const Technical_event = () => {
           </div>
         </div>
 
-        {/* Events Grid */}
         <div className={classes.eventsGrid}>
           {filteredData.length === 0 ? (
             <p className={classes.noEvents}>
@@ -133,7 +131,7 @@ const Technical_event = () => {
   );
 };
 
-// ✅ Event Card Component
+
 function EventCard({ event, onToggleBookmark }) {
   const isBookmarked = localStorage.getItem(`bookmark-${event.id}`);
 

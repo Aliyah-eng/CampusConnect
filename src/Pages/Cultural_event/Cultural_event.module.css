@@ -44,7 +44,6 @@ height: auto;
     display: none;
 }
 .merge{
-     /* padding: 1rem; */
      display: flex;
      gap: 2rem;
      margin: 1rem;
