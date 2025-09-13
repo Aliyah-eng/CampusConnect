@@ -1,5 +1,6 @@
 .about_hero {
-    height: 50vh;
+  width: 100%;
+  min-height: 50vh;
     color: white;
     text-transform: uppercase;
     background-color: rgba(0, 0, 0, 0.521);
@@ -9,5 +10,25 @@
     background-position: center;
     display: grid;
     place-items: center;
+<<<<<<< HEAD
   }
  
+=======
+    overflow: hidden;
+  }
+  @media (max-width: 1024px) {
+    .about_hero{
+      width: 100%;
+    }
+  }
+  @media (max-width: 425px) {
+    .about_hero{
+      width: 100%;
+    }
+  }
+  @media (max-width: 319px) {
+    .about_hero{
+      width: 100%;
+    }
+  }
+>>>>>>> d88fb27453bb62428755ab5c73dddd75352dd084
