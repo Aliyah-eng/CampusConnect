@@ -354,7 +354,7 @@ margin: auto;
   transition: transform 0.3s ease;
 }
 
-/* Panel header */
+
 .panelHeader {
   display: flex;
   justify-content: space-between;

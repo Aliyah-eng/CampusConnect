@@ -37,7 +37,7 @@ const Cultural_event = () => {
     } else {
       localStorage.setItem(key, true);
     }
-    setEvents([...events]); // re-render to update bookmark state
+    setEvents([...events]); 
   };
 
   const normalizedSearch = (searchTerm || "").toLowerCase();

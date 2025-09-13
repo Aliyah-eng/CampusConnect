@@ -14,13 +14,13 @@ const Sport_event = () => {
   const [events, setEvents] = useState([]);
   const [bookmarks, setBookmarks] = useState([]);
 
-  // Initialize events and AOS
+
   useEffect(() => {
     setEvents(eventsData);
     AOS.init({ duration: 1000, once: true });
   }, []);
 
-  // Update bookmarks whenever events change
+
   useEffect(() => {
     const storedBookmarks = events.filter(event =>
       localStorage.getItem(`bookmark-${event.id}`)
@@ -36,7 +36,7 @@ const Sport_event = () => {
     } else {
       localStorage.setItem(key, true);
     }
-    setEvents([...events]); // re-render to update bookmark state
+    setEvents([...events]);
   };
 
   // Filter and sort events

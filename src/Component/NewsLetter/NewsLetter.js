@@ -9,13 +9,10 @@ const NewsLetter = () => {
   const [email, setEmail] = useState('');
 
   const handleSubscribe = (e) => {
-    e.preventDefault(); // Prevent page refresh
-
-    // If the form is valid, show the success alert
+    e.preventDefault(); 
     if (fullName && email) {
       alert(`${fullName} has successfully subscribed to the newsletter!`);
       
-      // Clear the form fields
       setFullName('');
       setEmail('');
     }

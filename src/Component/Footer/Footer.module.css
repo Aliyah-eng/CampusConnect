@@ -1,7 +1,6 @@
 .footer_section{
     background:  #0C1321;
     color: #fff;
-    /* height: 65vh; */
     margin-top: 7rem;
     position: relative;
     margin-bottom: -9rem;
@@ -79,9 +78,7 @@
     display: grid;
     grid-template-columns: 40fr 60fr;
     column-gap: 3rem;
-    /* padding-bottom: 1rem; */
     align-items: center;
-    /* padding-top: 6rem; */
     width: 90vw;
     margin: auto;
     margin-top: 5rem;
@@ -97,9 +94,6 @@
 .img_subtext{
     font-size: 1.2rem;
 }
-/* .logo_text_wrapper{
-    margin-bottom: 5rem;
-} */
 .logo_text_wrapper p{
     line-height: 2;
 }
@@ -133,7 +127,6 @@
     all: unset;
     font-size: 1.2rem;
     height: 100%;
-    /* color: white !important; */
 }
 
 .input_mail::placeholder{

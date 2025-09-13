@@ -159,7 +159,7 @@ input[type="submit"]:hover {
     padding: 25px 20px;
   }
   .TheImageSide {
-    display: none; /* hide on tablets and below */
+    display: none;
   }
   .FirstAndLastName {
     flex-direction: column;

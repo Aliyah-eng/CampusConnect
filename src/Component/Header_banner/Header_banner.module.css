@@ -6,8 +6,7 @@
   
   align-items: center;
   justify-content: center;
-  overflow: hidden; /* hides text when it goes out */
-  /* margin: -1rem -0.5rem 0rem -1rem; */
+  overflow: hidden; 
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -22,12 +21,12 @@
 @keyframes moveText {
  
   50% {
-    transform: translateX(-100%);  /* completely out to the left */
+    transform: translateX(-100%); 
   }
   50.01% {
-    transform: translateX(100%);   /* jump back to right instantly */
+    transform: translateX(100%);   
   }
   100% {
-    transform: translateX(0);      /* settle at center */
+    transform: translateX(0);    
   }
 }

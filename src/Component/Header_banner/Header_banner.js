@@ -4,7 +4,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 function Header_banner() {
-  // ✅ Initialize AOS once
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);
@@ -13,8 +12,8 @@ function Header_banner() {
     <div>
       <header 
         className={classes.welcome_header}
-        data-aos="fade-down"       // animation type
-        data-aos-delay="200"       // optional delay
+        data-aos="fade-down"       
+        data-aos-delay="200"      
       >
         <p>Welcome to CampusConnect – Bringing Our Community Together!</p>
       </header>

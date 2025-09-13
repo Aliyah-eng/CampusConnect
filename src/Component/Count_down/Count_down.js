@@ -23,15 +23,13 @@ function Count_down({ targetDate }) {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
   useEffect(() => {
-    // Countdown interval
     const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
 
-    // Initialize AOS
     AOS.init({
       duration: 800,
-      once: false, // animate on scroll every time
+      once: false, 
     });
     AOS.refresh();
 
@@ -59,8 +57,8 @@ function Count_down({ targetDate }) {
             <div
               key={index}
               className={classes.time_box}
-              data-aos="zoom-in"          // individual animation
-              data-aos-delay={index * 200} // stagger each box
+              data-aos="zoom-in"          
+              data-aos-delay={index * 200} 
             >
               {box.value}
               <span className={classes[`${box.label.toLowerCase()}_text`]}>

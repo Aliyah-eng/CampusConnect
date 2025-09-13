@@ -11,7 +11,7 @@ function Aboutus_main() {
       description:
         "A week-long sports event with football, basketball, athletics, and indoor games competitions.",
       icon: "🏆",
-      image: "https://matangitonga.to/sites/default/files/styles/mto_home_slide_large_watermark/public/slides/20240405_athletics_TVJ5203_2000x1128px.jpg?itok=8-A9gs4l" // sports
+      image: "https://matangitonga.to/sites/default/files/styles/mto_home_slide_large_watermark/public/slides/20240405_athletics_TVJ5203_2000x1128px.jpg?itok=8-A9gs4l" 
     },
     {
       title: "TechFest",
@@ -20,7 +20,7 @@ function Aboutus_main() {
       description:
         "A 3-day annual technology festival featuring project exhibitions, coding challenges, and startup showcases.",
       icon: "💻",
-      image: "https://avatars.mds.yandex.net/i?id=c8f87e76c040b4af8b9858eb3753a6ea7bc4c05c-8410613-images-thumbs&n=13" // tech
+      image: "https://avatars.mds.yandex.net/i?id=c8f87e76c040b4af8b9858eb3753a6ea7bc4c05c-8410613-images-thumbs&n=13"
     },
     {
       title: "Music Nights",
@@ -29,7 +29,7 @@ function Aboutus_main() {
       description:
         "An evening filled with live performances, band shows, and solo acts by student musicians.",
       icon: "🎭",
-      image: "https://i.ytimg.com/vi/-rewq2e0suw/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGBMgNSh_MA8=&amp;rs=AOn4CLCzyNIlJ6izaK5n2S1KgVS8b-vaLw" // music
+      image: "https://i.ytimg.com/vi/-rewq2e0suw/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGBMgNSh_MA8=&amp;rs=AOn4CLCzyNIlJ6izaK5n2S1KgVS8b-vaLw" 
     },
     {
       title: "Hackathon",
@@ -38,7 +38,7 @@ function Aboutus_main() {
       description:
         "A 24-hour coding marathon where students collaborate to solve real-world problems using technology.",
       icon: "💻",
-      image: "https://matchy.ru/_next/image?url=https%3A%2F%2Fcms.matchy.ru%2Fuploads%2F2017_10_SOSUEU_17_207_4e3bad8040.jpg&w=1920&q=100" // hackathon
+      image: "https://matchy.ru/_next/image?url=https%3A%2F%2Fcms.matchy.ru%2Fuploads%2F2017_10_SOSUEU_17_207_4e3bad8040.jpg&w=1920&q=100" 
     },
     {
       title: "Dance Competition",
@@ -46,8 +46,7 @@ function Aboutus_main() {
       category: "Cultural",
       description:
         "Inter-college dance competition featuring solo, duet, and group performances across genres.",
-      icon: "🎭",
-      image: "https://cdn.culture.ru/images/7f6eaa51-be5f-58ae-ac2c-3eb39b76077b" // dance
+      image: "https://cdn.culture.ru/images/7f6eaa51-be5f-58ae-ac2c-3eb39b76077b"
     },
     {
       title: "Robotics Championship",
@@ -56,7 +55,7 @@ function Aboutus_main() {
       description:
         "Inter-department competition where teams build and showcase robots for tasks and challenges.",
       icon: "🤖",
-      image: "https://i.dvapis.ru/info/p/photos/218/218771/f1043e000b3456311828fe9c94adac4609be1e9db.jpg" // robotics
+      image: "https://i.dvapis.ru/info/p/photos/218/218771/f1043e000b3456311828fe9c94adac4609be1e9db.jpg" 
     },
     {
       title: "Alumni Meet",
@@ -65,7 +64,7 @@ function Aboutus_main() {
       description:
         "An annual gathering for past graduates to reconnect, share experiences, and guide current students.",
       icon: "👥",
-      image: "https://www.diak.fi/wp-content/uploads/2021/05/cropped-DSC6214_3201.jpg" // alumni
+      image: "https://www.diak.fi/wp-content/uploads/2021/05/cropped-DSC6214_3201.jpg" 
     },
     {
       title: "Annual Day",
@@ -74,7 +73,7 @@ function Aboutus_main() {
       description:
         "A celebration of college achievements, performances, and awards with participation from all departments.",
       icon: "🎉",
-      image: "https://i.ytimg.com/vi/QuaUtGIkixw/hqdefault.jpg" // celebration
+      image: "https://i.ytimg.com/vi/QuaUtGIkixw/hqdefault.jpg" 
     },
   ];
 
@@ -112,7 +111,6 @@ function Aboutus_main() {
         </div>
       </section>
 
-      {/* --- Mission Section --- */}
       <section className={classes.section_body}>
         <section className={classes.section_one}>
           <p className={classes.mission_header}>OUR MISSION</p>

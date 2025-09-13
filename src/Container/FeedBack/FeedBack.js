@@ -10,10 +10,9 @@ const TourReview = () => {
     AOS.init({ duration: 800, once: false });
   }, []);
 
-  // Array of example feedback reviews with updated images
+
   const feedbackReviews = [
     {
-      // Changed this image URL
       imgSrc:
         "https://images.pexels.com/photos/3184454/pexels-photo-3184454.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       content:
@@ -111,7 +110,7 @@ const TourReview = () => {
               className={classes.carousel_slide}
               key={index}
               data-aos="fade-up"
-              data-aos-delay={index * 200} // sequential entrance
+              data-aos-delay={index * 200} 
             >
               <img src={slide.src} alt={slide.text} />
               <div className={classes.overlay_text}>{slide.text}</div>

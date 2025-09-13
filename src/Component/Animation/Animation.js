@@ -1,4 +1,4 @@
-// src/components/AnimatedBox.jsx
+
 import { motion } from "framer-motion";
 
 export default function AnimatedBox() {

@@ -7,7 +7,6 @@
   overflow: hidden!important;
 }
 
-/* Each card */
 .card {
   background: #fff;
   border-radius: 12px;
@@ -17,7 +16,6 @@
   display: flex;
   flex-direction: column;
   width: 17rem !important;
-  /* margin-left: -rem; */
 }
 
 .card:hover {
@@ -136,7 +134,7 @@
   }
 }
 
-/* This is extremely large, but keeping for design intent */
+
 @media (max-width: 4150px) {
   .card {
     width: 16rem;

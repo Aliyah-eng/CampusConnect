@@ -8,7 +8,7 @@ function Hero_section() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      once: false, // animate on scroll every time
+      once: false, 
     });
     AOS.refresh();
   }, []);
@@ -40,7 +40,6 @@ function Hero_section() {
           </Link>
         </div>
 
-        {/* Image content */}
         <div 
           className={classes.hero_img_wrapper} 
           data-aos="fade-left" 

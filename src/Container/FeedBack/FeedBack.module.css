@@ -292,7 +292,6 @@ textarea {
 }
 
 .card_container {
-  /* The changes for horizontal scroll are here */
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
@@ -300,13 +299,12 @@ textarea {
   width: 85vw;
   margin: auto;
   margin-bottom: 6rem;
-  padding-bottom: 1rem; /* Added padding to prevent scrollbar from hiding content */
+  padding-bottom: 1rem; 
 }
 
 .card {
-  /* The changes for horizontal scroll are here */
-  flex: 0 0 auto; /* Prevents cards from shrinking */
-  width: 300px; /* Gives each card a fixed width */
+  flex: 0 0 auto; 
+  width: 300px;
   background-color: #f7f7f7;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -405,21 +403,21 @@ textarea {
     width: 100%;
     text-align: center;
   }
-  .image_card img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 1rem;
+
+  .feedback_img{
+    width: 75%;
+    height: 80%;
   }
-  .group_buttons {
-    justify-content: center;
-  }
-  .feedback_area {
-    grid-template-columns: 1fr;
+}
+
+@media (max-width: 600px) {
+  .feedback_area{
+    width: 80vw;
+  
     text-align: center;
     width: 90vw;
   }
   .feedback_img_wrapper {
-    display: none;
   }
   .feedback_form textarea,
   .tour_input {
@@ -430,14 +428,13 @@ textarea {
     margin: 10px 0;
   }
   .card_container {
-    /* The horizontal scroll is responsive now */
     width: 90vw;
   }
   .card {
-    width: 250px; /* Adjusted card width for smaller screens */
+    width: 250px;
   }
-}
 
+}
 @media (max-width: 620px) {
   .text_header {
     font-size: 1.65rem;

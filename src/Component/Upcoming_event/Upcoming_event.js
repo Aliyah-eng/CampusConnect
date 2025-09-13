@@ -35,11 +35,10 @@ const cartData = [
 ];
 
 function Upcoming_event() {
-  // Initialize AOS
   useEffect(() => {
     AOS.init({
       duration: 800,
-      once: false, // animate every time element scrolls into view
+      once: false,
     });
     AOS.refresh();
   }, []);
@@ -58,8 +57,8 @@ function Upcoming_event() {
           <div
             key={event.id}
             className={classes.card}
-            data-aos="fade-up"           // main animation
-            data-aos-delay={index * 150} // staggered animation
+            data-aos="fade-up"           
+            data-aos-delay={index * 150} 
           >
             <img src={event.img} alt={event.title} className={classes.image} />
             <div className={classes.content}>

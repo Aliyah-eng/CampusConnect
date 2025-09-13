@@ -56,7 +56,7 @@
   display: flex;
   gap: 1rem;
   flex-direction: row;
-  flex-wrap: nowrap;              /* keep them on one row on large screens */
+  flex-wrap: nowrap;              
   justify-content: flex-start;
   align-items: center;
   width: 70%;
@@ -73,7 +73,6 @@ margin: auto;
   transition: all 0.3s;
 }
 .search {
-  /* flex: 0 0 420px;       fixed-ish width on desktop */
   max-width: 75%;
   min-width: 720px;
 }
@@ -469,7 +468,6 @@ margin: auto;
 @media (max-width: 480px) {
   .bookmarkPanel {
     width: 100%;  
-    /* height: 190px;        Almost full width on mobile */
     padding: 2rem;
   }
   .card{

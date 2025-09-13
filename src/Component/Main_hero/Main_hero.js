@@ -4,11 +4,10 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 function Main_hero() {
-  // Initialize AOS for scroll animations
   useEffect(() => {
     AOS.init({
-      duration: 1000,  // animation duration
-      once: false,     // animate every time element scrolls into view
+      duration: 1000,  
+      once: false,     
     });
     AOS.refresh();
   }, []);
@@ -24,7 +23,6 @@ function Main_hero() {
           <p data-aos="fade-up" data-aos-delay="300">
             Stay Updated, Get Involved – Discover the Latest Events, Activities, and Campus Highlights!
           </p>
-          {/* <button className={classes.btn_learn} data-aos="zoom-in" data-aos-delay="500">Explore Gear</button> */}
         </div>
       </div>
     </section>

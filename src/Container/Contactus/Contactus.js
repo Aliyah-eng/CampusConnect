@@ -8,7 +8,6 @@ import Footer from "../../Component/Footer/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-// Data for Faculty Coordinators
 const facultyCoordinators = [
   {
     image: "https://randomuser.me/api/portraits/men/1.jpg",
@@ -44,7 +43,6 @@ const facultyCoordinators = [
   },
 ];
 
-// Data for Student Coordinators
 const studentCoordinators = [
   {
     image: "https://randomuser.me/api/portraits/men/5.jpg",
@@ -80,7 +78,7 @@ const studentCoordinators = [
   },
 ];
 
-// Data for the 'Meet Our Team' section
+
 const teamMembers = [
   {
     image: "https://randomuser.me/api/portraits/men/32.jpg",
@@ -162,7 +160,6 @@ function Contactus() {
         <h2>Contact Us</h2>
       </div>
 
-      {/* Faculty Coordinators */}
       <div className={classes.coordinators} data-aos="fade-up">
         <h3 className={classes.rcoordinators}>Faculty Coordinators</h3>
         <div className={classes.info}>
@@ -170,7 +167,7 @@ function Contactus() {
         </div>
       </div>
 
-      {/* Student Coordinators */}
+  
       <div className={classes.coordinators} data-aos="fade-up">
         <h3 className={classes.rcoordinators}>Student Coordinators</h3>
         <div className={classes.info}>
@@ -194,7 +191,6 @@ function Contactus() {
         <i className={classes.fa_brands}></i>
       </div>
 
-      {/* Contact Boxes */}
       <div data-aos="fade-left">
         <div className={classes.boxes}>
           <div className={classes.box}>
@@ -218,7 +214,6 @@ function Contactus() {
         </div>
       </div>
 
-      {/* Location Map */}
       <div className={classes.location} data-aos="fade-up">
         <h2 className={classes.heading_text}>Our Location</h2>
         <iframe

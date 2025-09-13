@@ -456,7 +456,7 @@ body {
   background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0));
 }
 
-/* Floating Buttons (price + status) */
+
 .img_btn {
   position: absolute;
   bottom: 15px;
@@ -490,7 +490,6 @@ body {
   opacity: 0.9;
 }
 
-/* Bookmark Button */
 .bookmark_btn {
   position: absolute;
   top: 15px;
@@ -511,7 +510,6 @@ body {
   left: 15px;
   background: rgba(255,255,255,0.8);
   border: none;
-  /* border-radius: 50%; */
   padding: 8px;
   width: 7rem;
   height: 3rem;
@@ -525,7 +523,6 @@ body {
   color: #fff;
 }
 
-/* Content */
 .card_tit {
   font-size: 20px;
   font-weight: 600;

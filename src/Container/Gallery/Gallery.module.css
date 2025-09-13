@@ -10,32 +10,6 @@ body {
   line-height: 1.6;
 }
 
-/* Hero Section */
-.hero {
-  text-align: center;
-  padding: 2rem 1rem;
-  background: #f4f4f4;
-  margin-bottom: 1.5rem;
-}
-
-.hero .title {
-  margin-bottom: 0.5rem;
-  color: #EF7722;
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-/* Controls */
-/* Controls */
-.controls {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  margin: 1rem auto 2rem auto;
-  width: 95%;
-}
-
 .searchBar {
   padding: 10px 12px;
   border-radius: 5px;
@@ -137,11 +111,8 @@ body {
   width: 90%;
   padding: 2rem;
   text-align: center;
-  position: relative;
-  overflow-y: auto;
   max-height: 90%;
 }
-
 .overlayContent img.overlayImage {
   width: 100%;
   border-radius: 12px;

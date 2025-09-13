@@ -9,7 +9,6 @@
   text-align: center;
   padding: 3rem 1rem;
   margin-top: 3rem;
-  /* border-radius: 1rem; */
   position: relative;
   overflow: hidden;
   width: 99vw;
@@ -76,7 +75,6 @@
 
 .register_btn {
   margin-top: 2rem;
-  /* padding: 0.8rem 2rem; */
   font-size: 1rem;
   font-weight: bold;
   width: 14rem;

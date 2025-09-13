@@ -54,7 +54,6 @@ const Hero_Event_card = () => {
     },
   ];
 
-  // ✅ Initialize AOS once
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);

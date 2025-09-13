@@ -16,7 +16,6 @@ import BackToTop from "../../Component/BackToTop/BackToTop"
 function HomePage() {
   return (
     <div>
-      {/* <Header_banner/> */}
       <NavBar/>
       <Hero_section/>
       <Main_hero/>

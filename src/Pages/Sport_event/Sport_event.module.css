@@ -73,7 +73,6 @@ margin: auto;
   transition: all 0.3s;
 }
 .search {
-  /* flex: 0 0 420px;       fixed-ish width on desktop */
   max-width: 75%;
   min-width: 720px;
 }
