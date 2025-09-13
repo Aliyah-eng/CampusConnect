@@ -34,7 +34,7 @@ body {
 
 .contact {
   background: linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.185), rgba(0, 0, 0, 0.432)), 
-              url(https://betterdeck.ie/wp-content/uploads/2019/04/Contact-us.jpg);
+            url(https://betterdeck.ie/wp-content/uploads/2019/04/Contact-us.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -81,7 +81,8 @@ body {
   padding: 0 1rem;
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Each contact card */
@@ -140,11 +141,12 @@ body {
 /* Cards */
 .card_container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* fixes overflow */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
   gap: 1.5rem;
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 2rem 1rem;
 }
 
@@ -291,7 +293,7 @@ body {
 }
 
 /* ---------------------------
-   Media Queries
+    Media Queries
 ---------------------------- */
 @media (min-width: 600px) {
   .image { width: 110px; height: 110px; }

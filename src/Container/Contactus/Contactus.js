@@ -84,13 +84,13 @@ const studentCoordinators = [
 const teamMembers = [
   {
     image: "https://randomuser.me/api/portraits/men/32.jpg",
-    name: "Adio Moyinoluwa",
-    bio: "I'm Adio Moyinoluwa, a skilled Front-end Developer specializing in website design, UX/UI, and responsive web development solutions.",
+    name: "Alao Ayomide",
+    bio: "My name is Alao Ayomide, and I'm a Frontend developer skilled in HTML5, CSS,and JavaScript.",
   },
   {
     image: "https://randomuser.me/api/portraits/men/44.jpg",
-    name: "David Micah-Daniels",
-    bio: "My name is David Micah-Daniels, An expert frontend developer highly skilled in HTML5, CSS3, JavaScript ES6 and React and other fronted libraries.",
+    name: "Tella Obaloluwa",
+    bio: "I'm Tella Obaloluwa, a frontend developer with hands-on experience in building responsive web interfaces using React.js, HTML, and CSS.",
   },
   {
     image: {aliyah},
@@ -99,18 +99,18 @@ const teamMembers = [
   },
   {
     image: "https://randomuser.me/api/portraits/men/78.jpg",
-    name: "Stanley",
-    bio: "I'm Stanley ojukwu, an aspiring full stack developer. I specialize in adaptive and responsive web designs and development",
+    name: "Feranmi Adeosun",
+    bio: "I’m Feranmi Adeosun A Frontend developer my skills include coding  in HTML,CSS,Javascript",
   },
   {
     image: "https://randomuser.me/api/portraits/men/62.jpg",
-    name: "Mustapha",
-    bio: "My name is Mustapha Akintola, I'm a software developer specializing in website design and responsive websites.",
+    name: "Azeezat Okunola",
+    bio: "My name is Azeezat Okunola, and I'm a Frontend developer skilled in HTML5, CSS, JavaScript and Reactjs.",
   },
     {
     image: "https://randomuser.me/api/portraits/men/62.jpg",
-    name: "Mustapha",
-    bio: "My name is Mustapha Akintola, I'm a software developer specializing in website design and responsive websites.",
+    name: "Dada Oluwadamilare",
+    bio: "My name is Dada Oluwadamilare, I'm a software developer specializing in website design and responsive websites.",
   },
 ];
 
