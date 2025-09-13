@@ -1,6 +1,8 @@
+
 .hero{
     background-color: #ffffff;
-    height: 89vh;
+    height: 100vh;
+    overflow-y: hidden !important;
 }
 .hero_content_wrapper{
     display: flex;
@@ -33,6 +35,7 @@
     background: #EF7722;
     border-radius: 0.3rem;
     margin-top: 0.5rem;
+    text-decoration: none;
 }
 .explore_btn:hover{
     color: white;

@@ -1,111 +1,110 @@
-.controls {
- display:  flex;
-    gap: 1rem;
- justify-content: center;
- margin: 2rem;
- align-items: center;
-
-}
-
-.search{
-  padding: 8px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  min-width:30rem;
-  font-size: 1rem;
-border-color: #EF7722;
-border-width: 2px;
-width: 40%;
-height: auto;
-}
-.filterCategory{
-  padding: 8px;
-  border-radius: 5px;
-  border: 1px solid #EF7722;
-  width: 13rem;
-  font-size: 1rem;
-}
-.sortBy{
-  padding: 8px;
-  border-radius: 5px;
-  border: 1px solid #EF7722;
-  width: 13rem;
-  font-size: 1rem;
-}
-
-
-
-.contenient_toogler ul li{
-    padding-left: 1rem;
-    list-style: none;
-    background: red !important;
-}
-.hide{
-    display: none;
-}
-
+/* ===== PAGE LAYOUT ===== */
 .eventPlanner {
   padding: 0 2rem;
   background: #fafafa;
   min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
 }
 
+/* ===== HERO ===== */
 .plannerHero {
-  background-image: url(https://i.ytimg.com/vi/eJ8BUhCgwxo/maxresdefault.jpg);
-  width: 99vw;
-  height:25rem ;
-  text-align: center;
+  position: relative;
+  width: 100vw;
+  height: 25rem;
+  background-image: url(https://i.ytimg.com/vi/FzrIViTCdgo/maxresdefault.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 2rem;
-  margin-left: -2rem;
-  background-color: rgba(0, 0, 0, 0.427);
-  background-blend-mode: darken;
-   display: grid;
-    place-items: center;
+  color: #EF7722;
+   margin-left: -2rem;
 }
-.plannerHero{
-  padding: auto;
+
+.plannerHero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
 }
+
 .plannerHero h1 {
-  font-size: 2rem;
+  position: relative;
+  font-size: 2.5rem;
   font-weight: 800;
-  color: #ef7722;
+  text-align: center;
+  color: #EF7722;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
 }
 
-.plannerHero p {
-  color: white;
+/* ===== CONTROLS ===== */
+.controlsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.controlsWrapper h3 {
+  color: #EF7722;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  flex-wrap: nowrap;              /* keep them on one row on large screens */
+  justify-content: flex-start;
+  align-items: center;
+  width: 70%;
+margin: auto;
+}
+
+.search, .filterCategory, .sortBy {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #EF7722;
   font-size: 1rem;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s;
+}
+.search {
+  /* flex: 0 0 420px;       fixed-ish width on desktop */
+  max-width: 75%;
+  min-width: 720px;
+}
+.search:focus, .filterCategory:focus, .sortBy:focus {
+  box-shadow: 0 2px 12px rgba(239,119,34,0.4);
+  border-color: #EF7722;
 }
 
-
-
+/* ===== EVENTS GRID ===== */
 .eventsGrid {
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat( 4,1fr);
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
 }
 
+/* ===== EVENT CARD ===== */
 .card {
-    width:320px;
+  width: 25rem;
   background: #fff;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
 }
-.merge{
-     /* padding: 1rem; */
-     display: flex;
-     gap: 2rem;
-     margin: 1rem;
-}
-.merge icon{
-    font-size: 1.2rem;
-}
-.year{
-    padding-top: -0.5rem;
-}
+
 .card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.18);
 }
 
 .image {
@@ -115,46 +114,402 @@ height: auto;
 }
 
 .content {
-  padding: 1rem;
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .title {
-  font-size: 1.25rem;
-  font-weight: bold;
+  font-size: 1.3rem;
+  font-weight: 700;
   color: #333;
+  margin-bottom: 0.5rem;
 }
 
-.date,
-.venue,
 .desc {
-  font-size: 0.9rem;
-  color: #666;
-  margin-top: 0.4rem;
+  font-size: 1rem;
+  color: #555;
+  flex-grow: 1;
 }
 
-.bookmarkBtn {
-  margin-top: 0.8rem;
+.merge {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin: 0.8rem 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.merge svg {
+  color: #EF7722;
+}
+
+/* ===== NO EVENTS ===== */
+.noEvents {
+  text-align: center;
+  font-style: italic;
+  color: #888;
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+/* Image Wrapper with position relative */
+.imageWrapper {
+  position: relative;
   width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Bookmark Button Overlay */
+.bookmarkBtn {
+  position: absolute;
+  top: 12px;
+  right: 5px;
   background: #EF7722;
   border: none;
-  padding: 0.6rem;
-  border-radius: 8px;
+  border-radius: 50%;
+  padding: 8px;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  justify-content: center;
 }
 
 .bookmarkBtn:hover {
-  background: #efefef;
+  background: #EF7722;
+  color: white;
+  transform: scale(1.1);
 }
 
 .bookmarkBtn.active {
-  background: #ef7722;
+  background: #EF7722;
   color: #fff;
-  font-weight: 600;
+}
+.bookmarkPanel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 100vh;
+  background: #fff;
+  box-shadow: -4px 0 12px rgba(0,0,0,0.2);
+  padding: 1rem;
+  overflow-y: auto;
+  z-index: 1000;
+  transition: transform 0.3s ease;
 }
 
-.noEvents {
+.panelHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.panelHeader h2{
+  /* padding-top: 2rem; */
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.bookmarkCard {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.bookmarkCard img {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.cardInfo h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.cardInfo p {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0.2rem 0;
+}
+
+.removeBtn {
+  background: #ef7722;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.noBookmarks {
   text-align: center;
   color: #888;
-  font-style: italic;
 }
+
+.showBookmarksBtn {
+  padding: 10px 20px;
+  background: #ef7722;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .eventsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    width: 22rem;
+  }
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .search{
+    max-width: 100%;
+  min-width: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .plannerHero {
+    height: 18rem;
+  }
+  .plannerHero h1 {
+    font-size: 2rem;
+  }
+  .eventsGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .card {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 480px) {
+  .plannerHero {
+    height: 14rem;
+    padding: 1rem;
+  }
+  .plannerHero h1 {
+    font-size: 1.5rem;
+  }
+  .card {
+    padding: 1rem;
+  }
+  .title {
+    font-size: 1.1rem;
+  }
+  .desc, .merge {
+    font-size: 0.9rem;
+  }
+}
+/* ===== BOOKMARK PANEL ===== */
+.bookmarkPanel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 350px;
+  max-width: 90vw;
+  height: 100vh;
+  background: #fff;
+  box-shadow: -4px 0 12px rgba(0,0,0,0.2);
+  padding: 1rem;
+  overflow-y: auto;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+/* Panel header */
+.panelHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+/* Individual bookmark card */
+.bookmarkCard {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.bookmarkCard img {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.cardInfo h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.cardInfo p {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0.2rem 0;
+}
+
+.removeBtn {
+  background: #ef7722;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.noBookmarks {
+  text-align: center;
+  color: #888;
+}
+
+.showBookmarksBtn {
+  padding: 10px 20px;
+  background: #ef7722;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .bookmarkPanel {
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .search{
+      max-width: 75%;
+  min-width: 250px;
+  }
+  .bookmarkPanel {
+    width: 80vw;          /* Take most of the screen */
+    right: 0;
+    top: 0;
+    height: 100vh;
+    padding: 0.8rem;
+  }
+
+  .bookmarkCard {
+    flex-direction: column; /* Stack image and info */
+    align-items: center;
+    text-align: center;
+  }
+
+  .bookmarkCard img {
+    width: 100%;
+    height: 150px;
+  }
+
+  .cardInfo h3 {
+    font-size: 1.1rem;
+  }
+
+  .cardInfo p {
+    font-size: 0.95rem;
+  }
+
+  .removeBtn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .bookmarkPanel {
+    width: 100%;  
+    /* height: 190px;        Almost full width on mobile */
+    padding: 2rem;
+  }
+  .card{
+    width: 19rem;
+    height: 30rem;
+  }
+  .panelHeader {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .showBookmarksBtn{
+    width: 12rem;
+  }
+
+  .closeBtn {
+    padding-left: 12em ;
+    align-self:flex-start ;
+    color: black;
+  }
+
+  .bookmarkCard {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .bookmarkCard img {
+    height: 120px;
+  }
+
+  .cardInfo h3 {
+    font-size: 1rem;
+  }
+
+  .cardInfo p {
+    font-size: 0.9rem;
+  }
+
+  .removeBtn {
+    font-size: 0.8rem;
+    padding: 0.4rem;
+  }
+}
+

@@ -53,10 +53,7 @@ const Upcoming_event = () => {
               <p>Table Montain</p>
             </div>
           </div>
-          <div className={classes.buttons}>
-            <button type="button">DETAILS</button>
-            <button type="button">BUY TICKET</button>
-          </div>
+        
         </div>
 
         {/* Events Section */}
@@ -67,9 +64,6 @@ const Upcoming_event = () => {
           <div className={classes.divider}>
             <FaCalendar />
           </div>
-          <p className={classes.events_text}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
         </div>
 
         <div className={classes.cards_butts}>

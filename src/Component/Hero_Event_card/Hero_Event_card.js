@@ -29,7 +29,7 @@ const Hero_Event_card = () => {
         "https://www.montclair.edu/responsive-media/cache/25live/wp-content/uploads/sites/241/2022/03/i-phMnwz2-X2.jpg.5.1x.generic.jpg",
       title: "Departmental Events",
       description: "Explore breathtaking mountain ranges and scenic trails.",
-      link: "./",
+      link: "/department",
     },
     {
       image:

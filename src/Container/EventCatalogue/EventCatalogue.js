@@ -9,39 +9,34 @@ import { FaLaptopCode } from "react-icons/fa";
 import { GiTheaterCurtains, GiTrophy } from "react-icons/gi";
 import { FiClipboard } from "react-icons/fi";
 import { FaShoppingCart } from "react-icons/fa";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { CiStar } from "react-icons/ci";
+
+
+import { GoStarFill } from "react-icons/go";
+
 
 
 export const EventCatalogeNavBar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className={classes.navbar}>
-      <div className={classes.logo}>
-        <Link to="/">Campus Events</Link>
+    <div className={classes.navbar}>
+      <div className={classes.navbar_content_wrapper}>
+        <h2>
+          <Link to="/" className={classes.navbar_link}>
+            CampusConnect
+          </Link>
+        </h2>
+       
+        <div
+          className={`${classes.navLinks} ${menuOpen ? classes.active : ""}`}
+        >
+          <Link to="/Event" className={classes.navbar_link}>
+            <FaHome  size={ 40}/>
+          </Link>
+        </div>
       </div>
-
-      {/* Hamburger Icon */}
-      <div className={classes.hamburger} onClick={() => setIsOpen(!isOpen)}>
-        {isOpen ? <FaTimes /> : <FaBars />}
-      </div>
-
-      {/* Links */}
-      <ul className={`${classes.navLinks} ${isOpen ? classes.open : ""}`}>
-        <li>
-          <Link to="/events">Events</Link>
-        </li>
-        <li>
-          <Link to="/gallery">Gallery</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
-      </ul>
-    </nav>
+    </div>
   );
 };
 
@@ -302,7 +297,7 @@ const CatalogueSidebar = () => {
   return (
     <aside className={classes.catalogue_sidebar}>
       <ul className={classes.catalogue_sidebar_list}>
-        <h3>Tour Activities</h3>
+        <h3>Event Activities</h3>
         <li className={classes.active_list}>Check Out Your Event</li>
         <Link to="/Gallery" className={classes.link}>
           <li>Gallery</li>
@@ -322,19 +317,18 @@ const CatalogueSidebar = () => {
           <li>Technical Event</li>
         </Link>
         <Link to="/sport" className={classes.link}>
-          <li>Sport Tour</li>
+          <li>Sport Event</li>
         </Link>
-        <Link to="/LuxuryTour" className={classes.link}>
+        <Link to="/department" className={classes.link}>
           <li>Departmental Event</li>
         </Link>
         <Link to="/cultural" className={classes.link}>
-          <li>Cultural Tour</li>
+          <li>Cultural Event</li>
         </Link>
       </ul>
     </aside>
   );
 };
-
 
 const Countdown = ({ date }) => {
   const [timeLeft, setTimeLeft] = useState("");
@@ -343,24 +337,20 @@ const Countdown = ({ date }) => {
     const targetDate = new Date(date).getTime();
 
     const update = () => {
-      const now = new Date().getTime();
+      const now = Date.now();
       const diff = targetDate - now;
 
       if (diff <= 0) {
-        setTimeLeft(  <>
-       done!
-    </>);
+        setTimeLeft("Done!");
         return;
       }
-      
 
       const days = Math.floor(diff / (1000 * 60 * 60 * 24));
       const hours = Math.floor(
         (diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
       );
-    
 
-      setTimeLeft( <> {days}d {hours}h </>);
+      setTimeLeft(`${days}d ${hours}h`);
     };
 
     update();
@@ -370,6 +360,7 @@ const Countdown = ({ date }) => {
 
   return <p className={classes.countdown}>{timeLeft}</p>;
 };
+
 const getCategoryIcon = (category) => {
   if (category === "Technical") {
     return <FaLaptopCode size={20} color="#EF7722" />;
@@ -385,56 +376,61 @@ const getCategoryIcon = (category) => {
 };
 
 function DestinationCard({ event, onToggleBookmark }) {
-  const isBookmarked = localStorage.getItem(`bookmark-${event.id}`);
+  const [isBookmarked, setIsBookmarked] = useState(
+    !!localStorage.getItem(`bookmark-${event.id}`)
+  );
+
+  const handleBookmark = () => {
+    onToggleBookmark(event.id);
+    setIsBookmarked(!isBookmarked);
+  };
 
   return (
-    <div className={classes.destination_card}
-    >
+    <div className={classes.destination_card}>
       <div className={classes.destination_card_img_wrapper}>
         <img
           src={event.image}
           alt={event.name}
           className={classes.destination_img}
         />
-          <p className={classes.event_details}>
-         
-        <Countdown date={event.date} />
+        <p className={classes.event_details}>
+          <Countdown date={event.date} />
         </p>
       </div>
       <div className={classes.destination_card_content}>
         <h1>{event.name}</h1>
         <p>{event.description}</p>
         <div className={classes.info}>
-          <p >
-            <strong><FaCalendarDays />:</strong>{" "}
+          <p>
+            <strong><FaCalendarDays color="#EF7722" />:</strong>{" "}
             {new Date(event.date).toLocaleString()}
           </p>
           <p>
-            <strong><FaHouse />:</strong> {event.venue}
+            <strong><FaHouse color="#EF7722" />:</strong> {event.venue}
           </p>
+          <div className={classes.categoryBadge}>
+            {getCategoryIcon(event.category)} {event.category}
+          </div>
           <p>
-            <div className={classes.categoryBadge}>
-              {getCategoryIcon(event.category)} {event.category}
-            </div>
-          </p>
-          <p>
-            <strong><FiClipboard />:</strong> {event.department}
+            <strong><FiClipboard  color="#EF7722"/>:</strong> {event.department}
           </p>
         </div>
-        <div className={classes.card_footer}>
-        
-
-        <button
-          className={`${classes.bookmark} ${
-            isBookmarked ? classes.saved : ""
-          }`}
-          onClick={() => onToggleBookmark(event.id)}
-        >
-          {isBookmarked ? "Bookmarked" : "Bookmark"}
-        </button>
-        
-      
-        </div>
+       <div className={classes.card_footer}>
+  <button
+    className={`${classes.bookmark} ${isBookmarked ? classes.saved : ""}`}
+    onClick={handleBookmark}
+  >
+    {isBookmarked ? (
+      <>
+        < GoStarFill style={{ marginRight: "6px" }} /> Bookmarked
+      </>
+    ) : (
+      <>
+        < CiStar style={{ marginRight: "6px" }} /> Bookmark
+      </>
+    )}
+  </button>
+</div>
       </div>
     </div>
   );
@@ -566,7 +562,7 @@ const TourPlanner = () => {
 
 /* ---------------- MAIN PAGE ---------------- */
 const EventCatalogue = () => {
-  return (  
+  return (
     <section className={classes.event_catalogue_page}>
       <EventCatalogeNavBar />
       <section className={classes.event_catalogue_dashboard}>

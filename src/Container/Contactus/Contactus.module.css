@@ -4,14 +4,17 @@
 * {
   margin: 0;
   padding: 0;
-  /* border: 1px solid red ; */
   box-sizing: border-box;
   caret-color: transparent;
 }
 
-body {
-  overflow-x: hidden;
+html, body {
   width: 100%;
+  max-width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+body {
   min-height: 100vh;
   background-color: whitesmoke;
   font-family: "Roboto", sans-serif;
@@ -30,7 +33,8 @@ body {
 }
 
 .contact {
-  background: linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.185), rgba(0, 0, 0, 0.432)), url(https://betterdeck.ie/wp-content/uploads/2019/04/Contact-us.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.185), rgba(0, 0, 0, 0.432)), 
+              url(https://betterdeck.ie/wp-content/uploads/2019/04/Contact-us.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -45,7 +49,7 @@ body {
   font-size: 2rem;
   font-family: Nunito, sans-serif;
   color: #fbbf24;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added subtle text shadow */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .heading_text {
@@ -53,12 +57,12 @@ body {
   color: #ef7722;
   padding: 3rem 0 2rem;
   font-size: 1.8rem;
-  font-weight: 700; /* Made the heading bolder */
+  font-weight: 700;
 }
 
 .rcoordinators {
   font-size: 1.5rem;
-  font-weight: 700; /* Made the subheading bolder */
+  font-weight: 700;
   text-align: center;
   color: #ef7722;
   padding: 2rem 0;
@@ -68,76 +72,80 @@ body {
   padding: 1rem;
 }
 
+/* Responsive grid container for contacts */
 .info {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  align-items: start;
+  padding: 0 1rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
+/* Each contact card */
 .contacts {
-  width: 90%;
-  max-width: 350px;
+  width: 100%;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 1.5rem; /* Increased padding */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  padding: 1.25rem;
   text-align: center;
-  transition: all 0.3s ease;
-  border: 2px solid transparent; /* Added transparent border for a cool effect */
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 2px solid transparent;
+  box-sizing: border-box;
 }
 
 .contacts:hover {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-  transform: translateY(-5px) scale(1.02); /* Added a slight scale effect */
-  background-color: #f9f9f9; /* Slightly changed background on hover */
-  border-image: linear-gradient(45deg, #ef7722, #0099ff); /* Added a gradient border on hover */
-  border-image-slice: 1;
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.12);
+  background-color: #fbfbfb;
 }
 
 .image {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   margin: 0 auto 1rem;
   overflow: hidden;
   border-radius: 50%;
-  border: 4px solid #fff; /* Added a white border */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 4px solid #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
 }
 
 .image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
   transition: transform 0.3s ease;
 }
 
 .image:hover img {
-  transform: scale(1.1); /* Zoom effect on image hover */
+  transform: scale(1.08);
 }
 
 .contacts h4 {
-  font-size: 1.2rem;
-  color: #333;
-  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+  color: #222;
+  margin-bottom: 0.35rem;
 }
 
 .contacts p {
   font-size: 0.9rem;
-  color: #666;
-  margin-bottom: 0.2rem;
+  color: #555;
+  margin-bottom: 0.25rem;
 }
 
+/* Cards */
 .card_container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* fixes overflow */
   gap: 1.5rem;
-  padding: 2rem 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
 }
 
 .card {
@@ -151,12 +159,12 @@ body {
   overflow: hidden;
   width: 100%;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px); /* Lift the card on hover */
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .card_image {
@@ -184,6 +192,7 @@ body {
   line-height: 1.5;
 }
 
+/* Social links */
 .social_links {
   padding-top: 2rem;
   text-align: center;
@@ -191,24 +200,26 @@ body {
 }
 
 .social_links i {
-  font-size: 1.8rem; /* Increased icon size */
+  font-size: 1.8rem;
   color: #374151;
-  margin: 0 10px; /* Increased margin for better spacing */
+  margin: 0 10px;
   cursor: pointer;
-  transition: color 0.3s ease, transform 0.3s ease; /* Added transform transition */
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .social_links i:hover {
   color: #fbbf24;
-  transform: scale(1.2); /* Grow the icon on hover */
+  transform: scale(1.2);
 }
 
+/* Boxes */
 .boxes {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  gap: 1.5rem; /* Increased gap */
+  gap: 1.5rem;
+  height: auto; /* fix overflow */
 }
 
 .boxes .box {
@@ -222,13 +233,10 @@ body {
   padding: 1.5rem 1rem;
   line-height: 1.8;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden; /* Needed for the shine effect */
-  position: relative; /* Needed for the shine effect */
+  overflow: hidden;
+  position: relative;
 }
 
-/*
-  Shine effect on hover
-*/
 .boxes .box::before {
   content: '';
   position: absolute;
@@ -254,6 +262,7 @@ body {
   margin-bottom: 0.5rem;
 }
 
+/* Location */
 .location {
   padding: 2rem 1rem;
   text-align: center;
@@ -261,6 +270,7 @@ body {
 
 .location iframe {
   width: 100%;
+  max-width: 100%; /* prevent overflow */
   height: 300px;
   border: none;
   border-radius: 10px;
@@ -270,7 +280,7 @@ body {
 
 .location iframe:hover {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-  transform: scale(1.01); /* Slight zoom on map hover */
+  transform: scale(1.01);
 }
 
 .text h3 {
@@ -280,176 +290,29 @@ body {
   margin-top: 4rem;
 }
 
-/*
-  Desktop styling: These styles override the mobile styles on larger screens.
-*/
-@media (min-width: 768px) {
-  .info {
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-
-  .contacts {
-    width: 18%;
-    max-width: none;
-  }
-
-  .card_container {
-    grid-template-columns: repeat(3, 1fr);
-    display: grid;
-  }
-
-  .card {
-    flex-direction: column;
-  }
-
-  .card_image {
-    width: 150px;
-    height: 150px;
-  }
-
-  .boxes {
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 0 8rem;
-    height: 300px;
-  }
-
-  .boxes .box {
-    width: 25%;
-    max-width: none;
-  }
-
-  .location iframe {
-    width: 70%;
-    height: 450px;
-  }
-}
 /* ---------------------------
-   Coordinator / Contacts (responsive)
-   Replace your existing .info/.contacts/.image rules with this.
+   Media Queries
 ---------------------------- */
-
-/* Container uses grid so cards auto-fit and wrap responsively */
-.info {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.25rem;
-  align-items: start;
-  padding: 0 1rem;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Each contact card fills its grid cell (mobile-first) */
-.contacts {
-  width: 100%;
-  max-width: 100%;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
-  padding: 1.25rem;
-  text-align: center;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  border: 2px solid transparent;
-  box-sizing: border-box;
-}
-
-/* Hover lift (keeps your original hover vibe but scaled for grid) */
-.contacts:hover {
-  transform: translateY(-6px) scale(1.01);
-  box-shadow: 0 10px 22px rgba(0,0,0,0.12);
-  background-color: #fbfbfb;
-}
-
-/* Circular image that scales smoothly */
-.image {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto 1rem;
-  overflow: hidden;
-  border-radius: 50%;
-  border: 4px solid #fff;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
-}
-
-.image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.3s ease;
-}
-
-/* Slight zoom on image hover */
-.image:hover img {
-  transform: scale(1.08);
-}
-
-/* Small text scale adjustments (keeps readable at different sizes) */
-.contacts h4 {
-  font-size: 1.05rem;
-  color: #222;
-  margin-bottom: 0.35rem;
-}
-
-.contacts p {
-  font-size: 0.9rem;
-  color: #555;
-  margin-bottom: 0.25rem;
-}
-
-
 @media (min-width: 600px) {
-  .image {
-     width: 110px; height: 110px;
-   }
-  .contacts {
-     padding: 1.4rem; 
-  }
+  .image { width: 110px; height: 110px; }
+  .contacts { padding: 1.4rem; }
 }
 
 @media (min-width: 768px) {
-
-  .info { 
-    grid-template-columns: repeat(2, minmax(220px, 1fr)); 
-  }
-  .contacts {
-     padding: 1.5rem; 
-  }
-  .card_container {
-     grid-template-columns: repeat(2, 1fr); 
-  } 
+  .info { grid-template-columns: repeat(2, minmax(220px, 1fr)); }
+  .contacts { padding: 1.5rem; }
+  .boxes { flex-direction: row; justify-content: space-around; padding: 0 2rem; }
+  .location iframe { height: 450px; }
 }
-
 
 @media (min-width: 1024px) {
-  .info {
-     grid-template-columns: repeat(3, minmax(240px, 1fr)); 
-  }
-  .image { width: 120px; height: 120px; 
-  }
-  .contacts {
-     padding: 1.75rem;
-   }
-  .card_container {
-     grid-template-columns: repeat(3, 1fr);
-   }
+  .info { grid-template-columns: repeat(3, minmax(240px, 1fr)); }
+  .image { width: 120px; height: 120px; }
+  .contacts { padding: 1.75rem; }
 }
 
-
 @media (min-width: 1400px) {
-  .info {
-     grid-template-columns: repeat(4, minmax(240px, 1fr));
-   }
-  .image {
-     width: 140px; height: 140px;
-   }
-  .contacts {
-     padding: 2rem;
-   }
-  .card_container { 
-    grid-template-columns: repeat(4, 1fr);
-   }
+  .info { grid-template-columns: repeat(4, minmax(240px, 1fr)); }
+  .image { width: 140px; height: 140px; }
+  .contacts { padding: 2rem; }
 }

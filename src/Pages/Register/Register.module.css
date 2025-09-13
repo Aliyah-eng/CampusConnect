@@ -1,42 +1,36 @@
-/* Base styles for the entire body */
+/* Base body reset */
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: #f5f7fa;
+  background-color: #f8f9fbc5;
 }
 
-/* Overall container for centering content */
+/* Centering container */
 .AllEncompassing {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   min-height: 100vh;
   padding: 20px;
+  position: relative;
 }
 
-/* Back button positioning */
-.back {
+
+.cancel {
   position: absolute;
   top: 20px;
   right: 20px;
-  padding: 8px 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #fff;
+  font-size: 3rem;
+  /* background-color: #fff; */
   color: #333;
   cursor: pointer;
+  font-weight: 500;
   transition: all 0.3s ease;
 }
 
-.back:hover {
-  background-color: #ef7722;
-  color: #fff;
-  border-color: #ef7722;
-}
 
-/* Header styling for "Registration Form" */
+
 .header_back {
   width: 100%;
   max-width: 1000px;
@@ -49,8 +43,6 @@ body {
   font-size: 2.5rem;
   font-weight: 600;
 }
-
-/* Main container for the form and gradient box */
 .thebox {
   display: flex;
   flex-direction: row;
@@ -62,9 +54,8 @@ body {
   overflow: hidden;
 }
 
-/* Left side of the box (the form side) */
 .WordSide {
-  width: 60%;
+  flex: 1;
   background: white;
   padding: 40px;
   display: flex;
@@ -72,18 +63,18 @@ body {
   justify-content: center;
 }
 
-/* Right side of the box (the gradient side) */
+
 .TheImageSide {
-  width: 40%;
+  flex: 1;
   background: linear-gradient(135deg, #ef7722, #0099ff);
 }
 
-/* Form container to handle input arrangement */
+
 .form_container {
   width: 100%;
 }
 
-/* Grouping for the first and last name inputs */
+
 .FirstAndLastName {
   display: flex;
   gap: 20px;
@@ -94,14 +85,14 @@ body {
   flex: 1;
 }
 
-/* Grouping for all other inputs */
+
 .AllTheOtherFormNames {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-/* Styling for labels and inputs */
+
 label {
   display: block;
   margin-bottom: 8px;
@@ -125,9 +116,8 @@ input:focus {
   box-shadow: 0 0 0 3px rgba(0, 153, 255, 0.2);
 }
 
-/* Styling for the submit button */
 input[type="submit"] {
-  background: linear-gradient(to right, #ef7722, #0099ff);
+  background-color:  #ef7722;
   color: white;
   border: none;
   padding: 16px;
@@ -135,6 +125,7 @@ input[type="submit"] {
   font-weight: 600;
   cursor: pointer;
   margin-top: 10px;
+  border-radius: 6px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -143,27 +134,56 @@ input[type="submit"]:hover {
   box-shadow: 0 6px 12px rgba(0, 153, 255, 0.3);
 }
 
-/*
-  Responsive adjustments for smaller screens (mobile-first approach)
-*/
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .thebox {
+    flex-direction: column;
+    width: 95%;
+  }
+  .WordSide {
+    padding: 30px;
+  }
+  .TheImageSide {
+    height: 200px;
+    width: 100%;
+  }
+}
+
 @media (max-width: 768px) {
   .thebox {
     flex-direction: column;
     min-height: auto;
-    width: 90%;
   }
-
   .WordSide {
     width: 100%;
-    padding: 30px 20px;
+    padding: 25px 20px;
   }
-
   .TheImageSide {
-    display: none; /* Hide the gradient box on mobile */
+    display: none; /* hide on tablets and below */
   }
-
   .FirstAndLastName {
     flex-direction: column;
     gap: 15px;
+  }
+  .RegisterFormText h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cancel {
+  
+    font-size: 2REM;
+  }
+  .RegisterFormText h1 {
+    font-size: 1.6rem;
+  }
+  input {
+    padding: 12px;
+    font-size: 14px;
+  }
+  input[type="submit"] {
+    padding: 14px;
+    font-size: 15px;
   }
 }

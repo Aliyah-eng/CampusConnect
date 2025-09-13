@@ -73,7 +73,7 @@ function Count_down({ targetDate }) {
         <p className={classes.let_getStarted}>🎉 The event has started!</p>
       )}
 
-      <button className={classes.register_btn}>REGISTRATION NOW</button>
+      
     </section>
   );
 }

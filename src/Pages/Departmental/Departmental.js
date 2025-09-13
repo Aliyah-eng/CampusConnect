@@ -1,51 +1,34 @@
 import React, { useState, useEffect } from "react";
-import classes from "./Technical_event.module.css";
+import classes from "./Departmental.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import {
-  FaCalendarAlt,
-  FaMapPin,
-  FaBookmark,
-  FaRegBookmark,
-  FaTimes,
-} from "react-icons/fa";
-import { EventCatalogeNavBar } from "../../Container/EventCatalogue/EventCatalogue";
-import eventsData from "../../Data/Technical.json";
+import { FaCalendarAlt, FaBookmark, FaRegBookmark, FaTimes } from "react-icons/fa";
+import { EventCatalogeNavBar } from '../../Container/EventCatalogue/EventCatalogue';
+import eventsData from "../../Data/Departmental.json";
 
-const Technical_event = () => {
+const Department_event = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [category, setCategory] = useState("All");
   const [sortOption, setSortOption] = useState("");
-  const [events, setEvents] = useState([]);
   const [showBookmarksPanel, setShowBookmarksPanel] = useState(false);
+  const [events, setEvents] = useState([]);
   const [bookmarks, setBookmarks] = useState([]);
 
+  // Initialize events and AOS
   useEffect(() => {
-
-    const data = Array.isArray(eventsData) ? eventsData : [eventsData];
-
-    const normalized = data.map((ev) => ({
-      id: ev.id,
-      eventName: ev.eventName || ev.title || "Untitled Event",
-      dateTime: ev.dateTime || ev.year || "Date TBD",
-      venue: ev.venue || "Venue TBD",
-      category: ev.category || "General",
-      img: ev.img || ev.image || "https://via.placeholder.com/400x250",
-      description: ev.description || "No description available.",
-    }));
-
-    setEvents(normalized);
+    setEvents(eventsData);
     AOS.init({ duration: 1000, once: true });
   }, []);
 
+  // Update bookmarks whenever events change
   useEffect(() => {
-    const storedBookmarks = events.filter((event) =>
+    const storedBookmarks = events.filter(event =>
       localStorage.getItem(`bookmark-${event.id}`)
     );
     setBookmarks(storedBookmarks);
   }, [events]);
 
-
+  // Toggle bookmark
   const toggleBookmark = (id) => {
     const key = `bookmark-${id}`;
     if (localStorage.getItem(key)) {
@@ -53,21 +36,17 @@ const Technical_event = () => {
     } else {
       localStorage.setItem(key, true);
     }
-    setEvents([...events]); 
+    setEvents([...events]); // re-render to update bookmark state
   };
 
+  // Filter and sort events
   const normalizedSearch = (searchTerm || "").toLowerCase();
   const filteredData = events
-    .filter((event) =>
-      (event.eventName || "").toLowerCase().includes(normalizedSearch)
-    )
-  
-    .filter((event) =>
-      showBookmarksPanel ? localStorage.getItem(`bookmark-${event.id}`) : true
-    )
+    .filter(event => (event.title || "").toLowerCase().includes(normalizedSearch))
+   
     .sort((a, b) => {
-      if (sortOption === "date") return new Date(a.dateTime) - new Date(b.dateTime);
-      if (sortOption === "name") return a.eventName.localeCompare(b.eventName);
+      if (sortOption === "year") return a.year.localeCompare(b.year);
+      if (sortOption === "title") return a.title.localeCompare(b.title);
       return 0;
     });
 
@@ -77,29 +56,29 @@ const Technical_event = () => {
       <section className={classes.eventPlanner}>
         {/* Hero */}
         <div className={classes.plannerHero}>
-          <h1>Technical Events</h1>
+          <h1>Department Events</h1>
         </div>
 
         {/* Controls */}
         <div className={classes.controlsWrapper}>
-          <h3>{showBookmarksPanel ? "Bookmarked Events" : "Available Events"}</h3>
+          <h3>Available Events</h3>
           <div className={classes.controls}>
             <input
               type="text"
               className={classes.search}
-              placeholder="Search events by name..."
+              placeholder="Search events by title..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
-        
+           
             <select
               className={classes.sortBy}
               value={sortOption}
               onChange={(e) => setSortOption(e.target.value)}
             >
               <option value="">Sort By</option>
-              <option value="date">Date</option>
-              <option value="name">Name</option>
+              <option value="year">Year</option>
+              <option value="title">Title</option>
             </select>
           </div>
         </div>
@@ -124,11 +103,7 @@ const Technical_event = () => {
         {/* Events Grid */}
         <div className={classes.eventsGrid}>
           {filteredData.length === 0 ? (
-            <p className={classes.noEvents}>
-              {showBookmarksPanel
-                ? "No bookmarked events yet."
-                : "No events match your search."}
-            </p>
+            <p className={classes.noEvents}>No events match your search.</p>
           ) : (
             filteredData.map((event) => (
               <EventCard
@@ -144,17 +119,16 @@ const Technical_event = () => {
   );
 };
 
+// Event Card
 function EventCard({ event, onToggleBookmark }) {
   const isBookmarked = localStorage.getItem(`bookmark-${event.id}`);
 
   return (
     <div className={classes.card} data-aos="fade-up">
       <div className={classes.imageWrapper}>
-        <img src={event.img} alt={event.eventName} className={classes.image} />
+        <img src={event.image} alt={event.title} className={classes.image} />
         <button
-          className={`${classes.bookmarkBtn} ${
-            isBookmarked ? classes.active : ""
-          }`}
+          className={`${classes.bookmarkBtn} ${isBookmarked ? classes.active : ""}`}
           onClick={() => onToggleBookmark(event.id)}
         >
           {isBookmarked ? <FaBookmark size={20} /> : <FaRegBookmark size={20} />}
@@ -162,22 +136,18 @@ function EventCard({ event, onToggleBookmark }) {
       </div>
 
       <div className={classes.content}>
-        <h2 className={classes.title}>{event.eventName}</h2>
+        <h2 className={classes.title}>{event.title}</h2>
         <p className={classes.desc}>{event.description}</p>
         <div className={classes.merge}>
           <FaCalendarAlt size={20} />
-          <p className={classes.date}>{event.dateTime}</p>
-        </div>
-        <div className={classes.merge}>
-          <FaMapPin size={20} />
-          <p className={classes.venue}>{event.venue}</p>
+          <p>{event.year}</p>
         </div>
       </div>
     </div>
   );
 }
 
-
+// Bookmark Panel
 function BookmarkPanel({ bookmarks, onClose, onToggleBookmark }) {
   return (
     <div className={classes.bookmarkPanel}>
@@ -193,10 +163,10 @@ function BookmarkPanel({ bookmarks, onClose, onToggleBookmark }) {
       ) : (
         bookmarks.map((event) => (
           <div key={event.id} className={classes.bookmarkCard}>
-            <img src={event.img} alt={event.eventName} />
+            <img src={event.image} alt={event.title} />
             <div className={classes.cardInfo}>
-              <h3>{event.eventName}</h3>
-              <p>{event.dateTime}</p>
+              <h3>{event.title}</h3>
+              <p>{event.year}</p>
               <button
                 className={classes.removeBtn}
                 onClick={() => onToggleBookmark(event.id)}
@@ -211,4 +181,4 @@ function BookmarkPanel({ bookmarks, onClose, onToggleBookmark }) {
   );
 }
 
-export default Technical_event;
+export default Department_event;

@@ -11,7 +11,7 @@ function Aboutus_main() {
       description:
         "A week-long sports event with football, basketball, athletics, and indoor games competitions.",
       icon: "🏆",
-      image: "https://images.unsplash.com/photo-1502877338535-766e1452684a" // sports
+      image: "https://matangitonga.to/sites/default/files/styles/mto_home_slide_large_watermark/public/slides/20240405_athletics_TVJ5203_2000x1128px.jpg?itok=8-A9gs4l" // sports
     },
     {
       title: "TechFest",
@@ -20,7 +20,7 @@ function Aboutus_main() {
       description:
         "A 3-day annual technology festival featuring project exhibitions, coding challenges, and startup showcases.",
       icon: "💻",
-      image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b" // tech
+      image: "https://avatars.mds.yandex.net/i?id=c8f87e76c040b4af8b9858eb3753a6ea7bc4c05c-8410613-images-thumbs&n=13" // tech
     },
     {
       title: "Music Nights",
@@ -29,7 +29,7 @@ function Aboutus_main() {
       description:
         "An evening filled with live performances, band shows, and solo acts by student musicians.",
       icon: "🎭",
-      image: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4" // music
+      image: "https://i.ytimg.com/vi/-rewq2e0suw/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGBMgNSh_MA8=&amp;rs=AOn4CLCzyNIlJ6izaK5n2S1KgVS8b-vaLw" // music
     },
     {
       title: "Hackathon",
@@ -38,7 +38,7 @@ function Aboutus_main() {
       description:
         "A 24-hour coding marathon where students collaborate to solve real-world problems using technology.",
       icon: "💻",
-      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c" // hackathon
+      image: "https://matchy.ru/_next/image?url=https%3A%2F%2Fcms.matchy.ru%2Fuploads%2F2017_10_SOSUEU_17_207_4e3bad8040.jpg&w=1920&q=100" // hackathon
     },
     {
       title: "Dance Competition",
@@ -47,7 +47,7 @@ function Aboutus_main() {
       description:
         "Inter-college dance competition featuring solo, duet, and group performances across genres.",
       icon: "🎭",
-      image: "https://images.unsplash.com/photo-1515169067865-5387ec356754" // dance
+      image: "https://cdn.culture.ru/images/7f6eaa51-be5f-58ae-ac2c-3eb39b76077b" // dance
     },
     {
       title: "Robotics Championship",
@@ -56,7 +56,7 @@ function Aboutus_main() {
       description:
         "Inter-department competition where teams build and showcase robots for tasks and challenges.",
       icon: "🤖",
-      image: "https://images.unsplash.com/photo-1581093588401-22f6362a03fe" // robotics
+      image: "https://i.dvapis.ru/info/p/photos/218/218771/f1043e000b3456311828fe9c94adac4609be1e9db.jpg" // robotics
     },
     {
       title: "Alumni Meet",
@@ -65,7 +65,7 @@ function Aboutus_main() {
       description:
         "An annual gathering for past graduates to reconnect, share experiences, and guide current students.",
       icon: "👥",
-      image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d" // alumni
+      image: "https://www.diak.fi/wp-content/uploads/2021/05/cropped-DSC6214_3201.jpg" // alumni
     },
     {
       title: "Annual Day",
@@ -74,7 +74,7 @@ function Aboutus_main() {
       description:
         "A celebration of college achievements, performances, and awards with participation from all departments.",
       icon: "🎉",
-      image: "https://images.unsplash.com/photo-1503424886306-0f1a4bfb1a5c" // celebration
+      image: "https://i.ytimg.com/vi/QuaUtGIkixw/hqdefault.jpg" // celebration
     },
   ];
 
@@ -169,16 +169,16 @@ function Aboutus_main() {
             alt="Angelo State University"
           />
         </a>
-            <a href="https://uci.edu/" target="_blank">
+            <a href="https://www.durham.ac.uk//" target="_blank">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXq-pRAJhbtQY30RYtsX4X8VF2oAuDDrIcoSBSQF44avtmQJm2B1ftVB5DsOjxXOKYkjs&usqp=CAU"
-            alt="FlixBus"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqqGH877a16NCSfzoG4jMNMkcwmcjcSAT9-g&s"
+            alt="Durham University"
           />
         </a>
-        <a href="https://www.stagecoachbus.com" target="_blank">
+        <a href="https://college.harvard.edu/" target="_blank">
           <img
-            src="https://seekvectorlogo.com/wp-content/uploads/2022/01/stagecoach-group-vector-logo-2022.png"
-            alt="Stagecoach"
+            src="https://www.shorttermprograms.com/images/cache/600_by_314/uploads/institution-logos/harvard-university.png"
+            alt="harvard college"
           />
         </a>
      
@@ -224,7 +224,7 @@ function Aboutus_main() {
         </div>
       </section>
        <h1 className={classes.tittle}> USEFUL ARTICLES</h1><br/>
-
+{/* 
         <section  className={classes.image_topic}>
           <div className={classes.topic_div}>
             <div className={classes.topic_img_wrapper}>
@@ -259,7 +259,7 @@ function Aboutus_main() {
                <Link to='https://www.lonelyplanet.com/articles/top-free-things-to-do-in-lisbon' target='_blank'>Read article</Link>
                </div>
              </div>
-        </section>
+        </section> */}
 
     </div>
   )

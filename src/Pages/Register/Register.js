@@ -1,11 +1,12 @@
 import React from "react";
 import classes from "./Register.module.css";
 import { Link } from "react-router-dom";
+import { MdCancel } from "react-icons/md";
+
 
 const RegistrationForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add form submission logic here
     console.log("Form submitted!");
   };
 
@@ -13,7 +14,7 @@ const RegistrationForm = () => {
     <section className={classes.AllEncompassing}>
       <div>
         <Link to="/">
-          <button className={classes.back}>Back</button>
+          <p className={classes.cancel}><MdCancel /></p>
         </Link>
       </div>
       <div className={classes.header_back}>

@@ -1,5 +1,5 @@
 .footer_section{
-    background:  linear-gradient(135deg, #EF7722, #0099ff);
+    background:  #0C1321;
     color: #fff;
     /* height: 65vh; */
     margin-top: 7rem;
@@ -7,7 +7,7 @@
     margin-bottom: -9rem;
 }
 .newsletter_box{
-    background:  linear-gradient(55deg, #0099ff, #EF7722);
+    background:  #0C1321;
     width: 80vw;
     margin: auto;
     color: white;
@@ -180,7 +180,7 @@
 
 @media(max-width: 1000px){
     .footer_section{
-        background-color: #385e79;
+        background-color: #0C1321;
         padding-top: 3rem;
     }
     .footer_content_wrapper{
