@@ -362,7 +362,7 @@
   margin-left: 4rem;
   border-radius: 10px;
 }
-<<<<<<< HEAD
+
 @media (max-width: 768px) {
   .about_history {
     padding: 1.5rem;
@@ -466,7 +466,6 @@
     text-align: center;
   }
 }
-=======
 @media (max-width: 1024px) {
   body{
     width: 100%;
@@ -736,4 +735,4 @@
     border-radius: 2rem;
   }
 } */
->>>>>>> d88fb27453bb62428755ab5c73dddd75352dd084
+
