@@ -1,124 +1,137 @@
-{
-  "technical": [
-    {
-      "id": 1,
-      "title": "Robotics Workshop",
-      "year": "2022-23",
-      "category": "Technical",
-      "image": "https://media.npr.org/assets/img/2023/10/04/mleong_scioly_20230831_slide-1fc39305d8ab464d47b44d973eec5ba99454c852.jpg",
-      "description": "Hands-on workshop exploring the fundamentals of robotics, including sensors, motors, and programming."
-    },
-    {
-      "id": 2,
-      "title": "AI & ML Seminar",
-      "year": "2022-23",
-      "category": "Technical",
-      "image": "https://images.theconversation.com/files/612569/original/file-20240808-19-ydsl00.jpg?ixlib=rb-4.1.0&rect=257%2C214%2C3329%2C1661&q=45&auto=format&w=1356&h=668&fit=crop",
-      "description": "Seminar discussing the latest trends and applications of Artificial Intelligence and Machine Learning."
-    },
-    {
-      "id": 3,
-      "title": "Hackathon Finals",
-      "year": "2022-23",
-      "category": "Technical",
-      "image": "https://miro.medium.com/v2/resize:fit:1200/1*jDt_jfxfE61gSV7GszdKcg.jpeg",
-      "description": "Final round of an intense coding competition where teams showcase innovative software solutions."
-    },
-    {
-      "id": 11,
-      "title": "Coding Bootcamp",
-      "year": "2023-24",
-      "category": "Technical",
-      "image": "https://avatars.mds.yandex.net/get-altay/1627037/2a0000016740010b71c956fcd006150ebf0c/XXL_height",
-      "description": "Intensive bootcamp designed to teach practical coding skills in multiple programming languages."
-    },
-    {
-      "id": 12,
-      "title": "Cybersecurity Talk",
-      "year": "2023-24",
-      "category": "Technical",
-      "image": "https://cdn-res.keymedia.com/cms/images/us/036/0311_637872709517639805.jpg",
-      "description": "Discussion on current cybersecurity threats, best practices, and protecting digital assets."
-    },
-    {
-      "id": 13,
-      "title": "Tech Fest Exhibition",
-      "year": "2023-24",
-      "category": "Technical",
-      "image": "https://www.c-o-k.ru/images/seminar/wysiwyg/103/10389/ezhegodnaya-konferenciya-tech-week-2.JPG?1717695154",
-      "description": "Annual exhibition showcasing innovative projects and technological advancements by students."
-    },
-    {
-      "id": 21,
-      "title": "Data Science Workshop",
-      "year": "2024-25",
-      "category": "Technical",
-      "image": "https://asset-a.grid.id/crop/0x0:0x0/x/photo/2021/11/03/04_algoritma-data-science-school-20211103125537.jpg",
-      "description": "Workshop covering data analysis, visualization, and predictive modeling using real datasets."
-    },
-    {
-      "id": 22,
-      "title": "Cloud Computing Seminar",
-      "year": "2024-25",
-      "category": "Technical",
-      "image": "https://img-cdn.inc.com/image/upload/f_webp,c_fit,w_640,q_auto/images/panoramic/GettyImages-1383550433_534077_sommjp.jpg",
-      "description": "Seminar introducing cloud computing concepts, platforms, and deployment strategies."
-    },
-    {
-      "id": 23,
-      "title": "IoT Hackathon",
-      "year": "2024-25",
-      "category": "Technical",
-      "image": "https://cdn.prod.website-files.com/5b4786dab998deabe400ed18/61c33529836757424d53d8da_Hero%20-%20IoT%20Hackathon%20Guide-%20Everything%20You%20Need%20to%20Know.jpg",
-      "description": "Competition to develop innovative IoT solutions, connecting devices to solve real-world problems."
-    },
-    {
-      "id": 31,
-      "title": "AI Hackathon",
-      "year": "2025-26",
-      "category": "Technical",
-      "image": "https://quasa.io/storage/images/news/HpCrxLn2TZ982jH62eTPrAQ7mJ202o4swEHnEeVM.webp",
-      "description": "Hackathon focused on building intelligent AI-powered applications in a competitive environment."
-    },
-    {
-      "id": 32,
-      "title": "Blockchain Summit",
-      "year": "2025-26",
-      "category": "Technical",
-      "image": "https://www.blockchainbeach.com/wp-content/uploads/2021/09/Screen-Shot-2021-09-05-at-2.51.05-PM.png",
-      "description": "Summit exploring blockchain technology, decentralized applications, and cryptocurrency innovations."
-    },
-    {
-      "id": 33,
-      "title": "Startup Pitch",
-      "year": "2025-26",
-      "category": "Technical",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/7/77/Presentaci%C3%B3n_de_la_Biblioteca_Digital_en_el_Encuentro_Federal_de_la_Palabra_%2813911819285%29.jpg",
-      "description": "Event for startups to present their business ideas and technology solutions to investors and judges."
-    },
-    {
-      "id": 41,
-      "title": "Cloud Computing Bootcamp",
-      "year": "2026-27",
-      "category": "Technical",
-      "image": "https://yes.sgp1.digitaloceanspaces.com/diginews/uploads/2023/09/Node.js-dan-TypeScript-1024x610.png",
-      "description": "Bootcamp focused on cloud computing services, architecture, and deploying cloud-native applications."
-    },
-    {
-      "id": 42,
-      "title": "AR/VR Showcase",
-      "year": "2026-27",
-      "category": "Technical",
-      "image": "https://avatars.mds.yandex.net/get-altay/1246719/2a00000164382b3354b1f2f8f71e3770b696/XXL_height",
-      "description": "Showcase event demonstrating augmented and virtual reality projects developed by students."
-    },
-    {
-      "id": 43,
-      "title": "Drone Racing",
-      "year": "2026-27",
-      "category": "Technical",
-      "image": "https://miro.medium.com/v2/resize:fit:1200/1*DIxIvc63wsOICJqoEvAWyg.jpeg",
-      "description": "Exciting drone racing competition testing speed, agility, and piloting skills of participants."
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "eventName": "Robotics Workshop",
+    "dateTime": "2022-23",
+    "venue": "TBD",
+    "category": "Technical",
+    "img": "https://media.npr.org/assets/img/2023/10/04/mleong_scioly_20230831_slide-1fc39305d8ab464d47b44d973eec5ba99454c852.jpg",
+    "description": "Hands-on workshop exploring the fundamentals of robotics, including sensors, motors, and programming."
+  },
+  {
+    "id": 2,
+    "eventName": "AI & ML Seminar",
+    "dateTime": "2022-23",
+    "venue": "TBD",
+    "category": "Technical",
+    "img": "https://images.theconversation.com/files/612569/original/file-20240808-19-ydsl00.jpg?ixlib=rb-4.1.0&rect=257%2C214%2C3329%2C1661&q=45&auto=format&w=1356&h=668&fit=crop",
+    "description": "Seminar discussing the latest trends and applications of Artificial Intelligence and Machine Learning."
+  },
+  {
+    "id": 3,
+    "eventName": "Hackathon Finals",
+    "dateTime": "2022-23",
+    "venue": "TBD",
+    "category": "Technical",
+    "img": "https://miro.medium.com/v2/resize:fit:1200/1*jDt_jfxfE61gSV7GszdKcg.jpeg",
+    "description": "Final round of an intense coding competition where teams showcase innovative software solutions."
+  },
+  {
+    "id": 11,
+    "eventName": "Coding Bootcamp",
+    "dateTime": "2023-24",
+    "venue": "TBD",
+    "category": "Technical",
+    "img": "https://avatars.mds.yandex.net/get-altay/1627037/2a0000016740010b71c956fcd006150ebf0c/XXL_height",
+    "description": "Intensive bootcamp designed to teach practical coding skills in multiple programming languages."
+  },
+  {
+    "id": 12,
+    "eventName": "Cybersecurity Talk",
+    "dateTime": "2023-24",
+    "venue": "TBD",
+    "category": "Technical",
+    "img": "https://cdn-res.keymedia.com/cms/images/us/036/0311_637872709517639805.jpg",
+    "description": "Discussion on current cybersecurity threats, best practices, and protecting digital assets."
+  },
+  {
+    "id": 13,
+    "eventName": "Tech Fest Exhibition",
+    "dateTime": "2023-24",
+    "venue": "TBD",
+    "category": "Technical",
+    "img": "https://www.c-o-k.ru/images/seminar/wysiwyg/103/10389/ezhegodnaya-konferenciya-tech-week-2.JPG?1717695154",
+    "description": "Annual exhibition showcasing innovative projects and technological advancements by students."
+  },
+  {
+    "id": 21,
+    "eventName": "Data Science Workshop",
+    "dateTime": "2024-25",
+    "venue": "TBD",
+    "category": "Technical",
+    "img": "https://asset-a.grid.id/crop/0x0:0x0/x/photo/2021/11/03/04_algoritma-data-science-school-20211103125537.jpg",
+    "description": "Workshop covering data analysis, visualization, and predictive modeling using real datasets."
+  },
+  {
+    "id": 22,
+    "eventName": "Cloud Computing Seminar",
+    "dateTime": "2024-25",
+    "venue": "TBD",
+    "category": "Technical",
+    "img": "https://img-cdn.inc.com/image/upload/f_webp,c_fit,w_640,q_auto/images/panoramic/GettyImages-1383550433_534077_sommjp.jpg",
+    "description": "Seminar introducing cloud computing concepts, platforms, and deployment strategies."
+  },
+  {
+    "id": 23,
+    "eventName": "IoT Hackathon",
+    "dateTime": "2024-25",
+    "venue": "TBD",
+    "category": "Technical",
+    "img": "https://cdn.prod.website-files.com/5b4786dab998deabe400ed18/61c33529836757424d53d8da_Hero%20-%20IoT%20Hackathon%20Guide-%20Everything%20You%20Need%20to%20Know.jpg",
+    "description": "Competition to develop innovative IoT solutions, connecting devices to solve real-world problems."
+  },
+  {
+    "id": 31,
+    "eventName": "AI Hackathon",
+    "dateTime": "2025-26",
+    "venue": "TBD",
+    "category": "Technical",
+    "img": "https://quasa.io/storage/images/news/HpCrxLn2TZ982jH62eTPrAQ7mJ202o4swEHnEeVM.webp",
+    "description": "Hackathon focused on building intelligent AI-powered applications in a competitive environment."
+  },
+  {
+    "id": 32,
+    "eventName": "Blockchain Summit",
+    "dateTime": "2025-26",
+    "venue": "TBD",
+    "category": "Technical",
+    "img": "https://www.blockchainbeach.com/wp-content/uploads/2021/09/Screen-Shot-2021-09-05-at-2.51.05-PM.png",
+    "description": "Summit exploring blockchain technology, decentralized applications, and cryptocurrency innovations."
+  },
+  {
+    "id": 33,
+    "eventName": "Startup Pitch",
+    "dateTime": "2025-26",
+    "venue": "TBD",
+    "category": "Technical",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/7/77/Presentaci%C3%B3n_de_la_Biblioteca_Digital_en_el_Encuentro_Federal_de_la_Palabra_%2813911819285%29.jpg",
+    "description": "Event for startups to present their business ideas and technology solutions to investors and judges."
+  },
+  {
+    "id": 41,
+    "eventName": "Cloud Computing Bootcamp",
+    "dateTime": "2026-27",
+    "venue": "TBD",
+    "category": "Technical",
+    "img": "https://yes.sgp1.digitaloceanspaces.com/diginews/uploads/2023/09/Node.js-dan-TypeScript-1024x610.png",
+    "description": "Bootcamp focused on cloud computing services, architecture, and deploying cloud-native applications."
+  },
+  {
+    "id": 42,
+    "eventName": "AR/VR Showcase",
+    "dateTime": "2026-27",
+    "venue": "TBD",
+    "category": "Technical",
+    "img": "https://avatars.mds.yandex.net/get-altay/1246719/2a00000164382b3354b1f2f8f71e3770b696/XXL_height",
+    "description": "Showcase event demonstrating augmented and virtual reality projects developed by students."
+  },
+  {
+    "id": 43,
+    "eventName": "Drone Racing",
+    "dateTime": "2026-27",
+    "venue": "TBD",
+    "category": "Technical",
+    "img": "https://miro.medium.com/v2/resize:fit:1200/1*DIxIvc63wsOICJqoEvAWyg.jpeg",
+    "description": "Exciting drone racing competition testing speed, agility, and piloting skills of participants."
+  }
+]

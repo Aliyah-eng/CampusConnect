@@ -1,18 +1,16 @@
 .landing_page {
       display: flex;
       justify-content: space-between;
-      /* margin: 40px 0; */
       gap: 30px;
-      /* height: 28rem; */
       background-repeat:no-repeat;
       background-size: cover;
       width: 99.55vw;
-      height: 70vh;
+      height: 80vh;
+      overflow-y: hidden;
       margin: 0 -2rem 0 -1rem;
       background-attachment: fixed;
       background-color: rgba(0, 0, 0, 0.375);
       background-blend-mode: darken;
-      /* background-position:left; */
       background-image: url(https://www.sjsu.edu/_images/people/ADV_campus-events-dschmitz_1.jpg);
     }
     .hero_text {

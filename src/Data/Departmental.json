@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "eventName": "Departmental Project Expo",
+    "dateTime": "2022-23",
+    "venue": "Main Hall",
+    "category": "Departmental",
+    "img": "https://www.jeccomposites.com/wp-content/uploads/2023/04/JECW.jpg",
+    "description": "An exhibition showcasing innovative departmental projects and student research outcomes."
+  },
+  {
+    "id": 2,
+    "eventName": "Final Year Project Showcase",
+    "dateTime": "2023-24",
+    "venue": "Auditorium",
+    "category": "Departmental",
+    "img": "https://avatars.mds.yandex.net/i?id=2fc76be36abb79d6414d441823cabf80_l-9221695-images-thumbs&ref=rim&n=13&w=1080&h=720",
+    "description": "A presentation event where final year students demonstrate their capstone projects and innovations."
+  },
+  {
+    "id": 3,
+    "eventName": "Mini Project Demo",
+    "dateTime": "2024-25",
+    "venue": "Lab 3",
+    "category": "Departmental",
+    "img": "https://www.campustimes.org/wp-content/uploads/2013/10/bio-class-1024x680.jpg",
+    "description": "Students present their mini projects, highlighting problem-solving skills and teamwork."
+  },
+  {
+    "id": 4,
+    "eventName": "Research Symposium",
+    "dateTime": "2022-23",
+    "venue": "Seminar Hall",
+    "category": "Departmental",
+    "img": "https://miro.medium.com/v2/resize:fit:1400/1*3mKsrkQxq_Fk7zY6U3nMAA.jpeg",
+    "description": "A symposium for faculty and students to present research papers and findings."
+  },
+  {
+    "id": 5,
+    "eventName": "Coding Hackathon",
+    "dateTime": "2023-24",
+    "venue": "Innovation Hub",
+    "category": "Departmental",
+    "img": "https://i.ytimg.com/vi/ENAF_ZtTx-A/maxresdefault.jpg",
+    "description": "A 24-hour coding challenge where teams solve real-world problems through programming."
+  },
+  {
+    "id": 6,
+    "eventName": "Entrepreneurship Workshop",
+    "dateTime": "2024-25",
+    "venue": "Workshop Room A",
+    "category": "Departmental",
+    "img": "https://kirkpatrickprice.com/wp-content/uploads/2017/02/5-Tips-to-Host-a-Successful-Workshop.jpg",
+    "description": "An interactive workshop on entrepreneurship, business models, and innovation strategies."
+  },
+  {
+    "id": 7,
+    "eventName": "Alumni Meet",
+    "dateTime": "2022-23",
+    "venue": "Conference Hall",
+    "category": "Departmental",
+    "img": "https://kcgcollege.ac.in/wp-content/uploads/2020/01/alumni3.jpg",
+    "description": "An annual reunion for alumni to network with current students and faculty."
+  },
+  {
+    "id": 8,
+    "eventName": "Departmental Orientation",
+    "dateTime": "2023-24",
+    "venue": "Auditorium",
+    "category": "Departmental",
+    "img": "https://cdn.corporatefinanceinstitute.com/assets/Orientation.jpeg",
+    "description": "An introduction event for new students to learn about departmental resources and activities."
+  },
+  {
+    "id": 9,
+    "eventName": "Tech Quiz",
+    "dateTime": "2024-25",
+    "venue": "Hall 5",
+    "category": "Departmental",
+    "img": "https://i.pinimg.com/originals/bc/40/9d/bc409d71341b5866c8f3d7c35d7a3c39.jpg",
+    "description": "A quiz competition to test students’ knowledge in technology and general awareness."
+  },
+  {
+    "id": 10,
+    "eventName": "Paper Presentation",
+    "dateTime": "2022-23",
+    "venue": "Seminar Hall",
+    "category": "Departmental",
+    "img": "https://cache.careers360.mobi/media/article_images/2022/4/13/paper-presentation-event.jpg",
+    "description": "Students present their research papers on various trending topics in their field."
+  },
+  {
+    "id": 11,
+    "eventName": "Robotics Workshop",
+    "dateTime": "2023-24",
+    "venue": "Lab 7",
+    "category": "Departmental",
+    "img": "https://cdn.geekwire.com/wp-content/uploads/2022/11/RoboticsWorkshop.jpg",
+    "description": "Hands-on robotics workshop where students design and test functional robots."
+  },
+  {
+    "id": 12,
+    "eventName": "AI & ML Bootcamp",
+    "dateTime": "2024-25",
+    "venue": "Innovation Center",
+    "category": "Departmental",
+    "img": "https://miro.medium.com/v2/resize:fit:1200/1*WGRr0d-OKUQX7TawVY1iJw.png",
+    "description": "Bootcamp to introduce Artificial Intelligence and Machine Learning concepts."
+  },
+  {
+    "id": 13,
+    "eventName": "Departmental Sports Day",
+    "dateTime": "2022-23",
+    "venue": "College Ground",
+    "category": "Departmental",
+    "img": "https://www.schoolmykids.com/wp-content/uploads/2021/05/importance-of-sports-day-in-schools.jpg",
+    "description": "Sports and games organized exclusively for departmental students."
+  },
+  {
+    "id": 14,
+    "eventName": "Photography Contest",
+    "dateTime": "2023-24",
+    "venue": "Exhibition Hall",
+    "category": "Departmental",
+    "img": "https://static.wixstatic.com/media/3b92ae_f1f13a11a0644a1b9c34bfa1f1e19c1d~mv2.jpg",
+    "description": "A contest encouraging students to showcase their creativity through photography."
+  },
+  {
+    "id": 15,
+    "eventName": "Industrial Visit",
+    "dateTime": "2024-25",
+    "venue": "TBD",
+    "category": "Departmental",
+    "img": "https://www.shutterstock.com/image-photo/students-industrial-visit-260nw-1690340345.jpg",
+    "description": "Field trip to industries for practical exposure and understanding of processes."
+  },
+  {
+    "id": 16,
+    "eventName": "Coding Competition",
+    "dateTime": "2022-23",
+    "venue": "Computer Lab",
+    "category": "Departmental",
+    "img": "https://miro.medium.com/v2/resize:fit:1400/1*8pYtDtW0s4Vb7jO2QcrnwQ.jpeg",
+    "description": "Competitive programming event where participants solve coding challenges."
+  },
+  {
+    "id": 17,
+    "eventName": "Cultural Evening",
+    "dateTime": "2023-24",
+    "venue": "Auditorium",
+    "category": "Departmental",
+    "img": "https://img.freepik.com/free-photo/cultural-performance.jpg",
+    "description": "An evening filled with music, dance, and drama performances by students."
+  },
+  {
+    "id": 18,
+    "eventName": "Poster Design Contest",
+    "dateTime": "2024-25",
+    "venue": "Design Studio",
+    "category": "Departmental",
+    "img": "https://static.vecteezy.com/system/resources/previews/004/216/061/original/poster-design-event.jpg",
+    "description": "A design contest to encourage creativity and communication through posters."
+  },
+  {
+    "id": 19,
+    "eventName": "Tech Talk Series",
+    "dateTime": "2022-23",
+    "venue": "Seminar Hall",
+    "category": "Departmental",
+    "img": "https://i.ytimg.com/vi/3OYx3jFItU4/maxresdefault.jpg",
+    "description": "Invited talks by industry experts and faculty members on trending technologies."
+  },
+  {
+    "id": 20,
+    "eventName": "Mathematics Quiz",
+    "dateTime": "2023-24",
+    "venue": "Hall 2",
+    "category": "Departmental",
+    "img": "https://miro.medium.com/v2/resize:fit:1200/1*BebWfxjU2QcR3wQ5Z1h6cw.jpeg",
+    "description": "A quiz competition to test analytical and problem-solving skills in mathematics."
+  },
+  {
+    "id": 21,
+    "eventName": "Departmental Debate",
+    "dateTime": "2024-25",
+    "venue": "Hall 1",
+    "category": "Departmental",
+    "img": "https://www.thoughtco.com/thmb/2kUsVTN-5-4uO9FO0WCBgViDTjE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/debate-56a8b36f5f9b58b7d0f48bb3.jpg",
+    "description": "Debate competition on contemporary topics in science, technology, and society."
+  },
+  {
+    "id": 22,
+    "eventName": "Career Guidance Workshop",
+    "dateTime": "2022-23",
+    "venue": "Conference Room",
+    "category": "Departmental",
+    "img": "https://www.shutterstock.com/image-photo/career-guidance-260nw-1935345556.jpg",
+    "description": "A workshop to guide students in planning their career paths and opportunities."
+  },
+  {
+    "id": 23,
+    "eventName": "Start-up Pitch Fest",
+    "dateTime": "2023-24",
+    "venue": "Innovation Hub",
+    "category": "Departmental",
+    "img": "https://miro.medium.com/v2/resize:fit:1200/1*0nL5UpYEEoU0gWfVQ3OagA.jpeg",
+    "description": "Students pitch their innovative start-up ideas to a panel of judges."
+  },
+  {
+    "id": 24,
+    "eventName": "Science Exhibition",
+    "dateTime": "2024-25",
+    "venue": "Exhibition Hall",
+    "category": "Departmental",
+    "img": "https://cdn.pixabay.com/photo/2016/03/05/22/45/science-exhibition.jpg",
+    "description": "Exhibition of science experiments, prototypes, and models by students."
+  },
+  {
+    "id": 25,
+    "eventName": "Departmental Picnic",
+    "dateTime": "2022-23",
+    "venue": "Resort",
+    "category": "Departmental",
+    "img": "https://i0.wp.com/blog.raynatours.com/wp-content/uploads/2023/02/Corporate-Picnic.jpg",
+    "description": "An outing organized for students and faculty to build relationships and relax."
+  },
+  {
+    "id": 26,
+    "eventName": "Innovation Challenge",
+    "dateTime": "2023-24",
+    "venue": "Innovation Hub",
+    "category": "Departmental",
+    "img": "https://cdn.pixabay.com/photo/2015/12/08/00/32/innovation-1081635_960_720.jpg",
+    "description": "Challenge encouraging students to create innovative solutions to real problems."
+  },
+  {
+    "id": 27,
+    "eventName": "Data Science Workshop",
+    "dateTime": "2024-25",
+    "venue": "Computer Lab",
+    "category": "Departmental",
+    "img": "https://cdn.educba.com/academy/wp-content/uploads/2019/12/Data-Science-Workshop.png",
+    "description": "A practical workshop introducing students to data analysis and visualization."
+  },
+  {
+    "id": 28,
+    "eventName": "Drama & Skit Competition",
+    "dateTime": "2022-23",
+    "venue": "Auditorium",
+    "category": "Departmental",
+    "img": "https://img.freepik.com/free-photo/drama-play.jpg",
+    "description": "Students perform skits and drama on social, cultural, and academic themes."
+  },
+  {
+    "id": 29,
+    "eventName": "Ethics in Tech Panel",
+    "dateTime": "2023-24",
+    "venue": "Seminar Hall",
+    "category": "Departmental",
+    "img": "https://miro.medium.com/v2/resize:fit:1400/1*zrVn2oEJqZNdP8sUxMseTg.png",
+    "description": "A panel discussion on ethics and responsibility in modern technology."
+  },
+  {
+    "id": 30,
+    "eventName": "Graduation Farewell",
+    "dateTime": "2024-25",
+    "venue": "Banquet Hall",
+    "category": "Departmental",
+    "img": "https://www.shutterstock.com/image-photo/farewell-party-260nw-1712583658.jpg",
+    "description": "A farewell party organized to celebrate graduating students of the department."
+  }
+]

@@ -1,14 +1,229 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   caret-color: transparent;
 }
-body{
+
+body {
   width: 100%;
-  height: auto;
+  min-height: 100vh;
   padding-bottom: 6rem;
+  font-family: "Roboto", sans-serif;
 }
+
+/* ===== HERO SECTION ===== */
+.upcoming_hero {
+  width: 100%;
+  height: 380px;
+  background: url(https://imu.indiana.edu/images/hotel/reservations-campusevents/football-crowd.jpg)
+    no-repeat center / cover;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: darken;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.first_text {
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  background-color: orange;
+  color: white;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.upcoming_hero h1 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.mis {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.this {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* ===== EVENTS TITLE ===== */
+.events {
+  text-align: center;
+  padding: 3rem 1rem 1rem;
+}
+
+.event_tit {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  margin-bottom: 0.5rem;
+}
+
+.event_spa {
+  color: orange;
+  font-weight: bold;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 60%;
+  max-width: 300px;
+  margin: 1.5rem auto;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+}
+
+/* ===== CATEGORY BUTTONS ===== */
+.cards_butts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 2rem 1rem;
+}
+
+.cards_butts button {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: 1px solid orange;
+  background: orange;
+  color: white;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.cards_butts button:hover {
+  background: white;
+  color: orange;
+}
+
+.active_btn {
+  background: white !important;
+  color: orange !important;
+}
+
+/* ===== EVENT CARDS GRID ===== */
+.card {
+  width: 90%;
+  max-width: 1400px;
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.cards {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.cards:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Image section */
+.cards_cont {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.cards_cont img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: scale 0.4s ease;
+}
+
+.cards:hover .cards_cont img {
+  scale: 1.05;
+}
+
+.cards_cont::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+}
+
+/* Category + bookmark buttons */
+.category_btn {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 20px;
+  background: orange;
+  color: white;
+  font-size: 0.75rem;
+}
+
+.bookmark_btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 50%;
+  padding: 0.6rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.bookmark_btn:hover {
+  background: orange;
+  color: white;
+}
+
+/* Content inside cards */
+.card_tit {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 1rem;
+}
+
+.card_cont {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0 1rem 1rem;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.card_text {
+  margin: 0 1rem 1.5rem;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+}
+
 .upcoming_hero{
   width: 100%;
   height: 380px;
@@ -324,7 +539,11 @@ body{
   font-size: 14px;
   flex-wrap: wrap;
 }
+.first_text,.this{
+  font:1.3rem;
 
+   color: orange;
+}
 .thi button {
   background: orange;
   color: #fff;
@@ -377,6 +596,16 @@ body{
   }
 }
 @media (max-width: 767px) and (min-width: 620px){
+    .upcoming_hero {
+    height: 300px;
+  }
+  .mis {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .divider {
+    width: 80%;
+  }
   .card{
     width: 90%;
     overflow: hidden;

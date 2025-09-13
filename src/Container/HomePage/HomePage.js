@@ -9,6 +9,7 @@ import Hero_Event_card from '../../Component/Hero_Event_card/Hero_Event_card'
 import Footer from '../../Component/Footer/Footer'
 import classes from './HomePage.module.css'
 import NewsLetter from '../../Component/NewsLetter/NewsLetter'
+import BackToTop from "../../Component/BackToTop/BackToTop"
 
 
 
@@ -21,6 +22,8 @@ function HomePage() {
        <Upcoming_event/>
       <Count_down targetDate="2025-12-31T23:59:59" />
       <Hero_Event_card/>
+      {/* <NewsLetter/> */}
+      <BackToTop/>
       <Footer/>
      
       

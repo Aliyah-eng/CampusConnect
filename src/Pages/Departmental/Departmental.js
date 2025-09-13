@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import classes from "./Sport_event.module.css";
+import classes from "./Departmental.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { FaCalendarAlt, FaBookmark, FaRegBookmark, FaTimes } from "react-icons/fa";
 import { EventCatalogeNavBar } from '../../Container/EventCatalogue/EventCatalogue';
-import eventsData from "../../Data/Sport.json";
+import eventsData from "../../Data/Departmental.json";
 
-const Sport_event = () => {
+const Department_event = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [category, setCategory] = useState("All");
   const [sortOption, setSortOption] = useState("");
@@ -14,13 +14,13 @@ const Sport_event = () => {
   const [events, setEvents] = useState([]);
   const [bookmarks, setBookmarks] = useState([]);
 
-
+  // Initialize events and AOS
   useEffect(() => {
     setEvents(eventsData);
     AOS.init({ duration: 1000, once: true });
   }, []);
 
-
+  // Update bookmarks whenever events change
   useEffect(() => {
     const storedBookmarks = events.filter(event =>
       localStorage.getItem(`bookmark-${event.id}`)
@@ -36,7 +36,7 @@ const Sport_event = () => {
     } else {
       localStorage.setItem(key, true);
     }
-    setEvents([...events]);
+    setEvents([...events]); // re-render to update bookmark state
   };
 
   // Filter and sort events
@@ -56,7 +56,7 @@ const Sport_event = () => {
       <section className={classes.eventPlanner}>
         {/* Hero */}
         <div className={classes.plannerHero}>
-          <h1>Sports Events</h1>
+          <h1>Department Events</h1>
         </div>
 
         {/* Controls */}
@@ -181,4 +181,4 @@ function BookmarkPanel({ bookmarks, onClose, onToggleBookmark }) {
   );
 }
 
-export default Sport_event;
+export default Department_event;

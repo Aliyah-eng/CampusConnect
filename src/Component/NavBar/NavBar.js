@@ -43,10 +43,8 @@ const NavBar = () => {
 
   return (
     <>
-      {/* Mobile Navbar Overlay */}
       {isMobileNavVisible && <MobileNav closeMobileNav={closeMobileNav} />}
 
-      {/* Desktop Navbar */}
       <nav className={classes.navbar}>
         <div className={classes.nav}>
           <Link to="/" className={classes.Logo}>CampusConnect</Link>

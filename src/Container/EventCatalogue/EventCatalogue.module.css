@@ -1,15 +1,11 @@
 .event_catalogue_page{
-    overflow: hidden;
+    overflow: hidden !important;
 }
-.navbar{
-    background-color: #f0eeee;
-    padding: 1.3rem 1rem;
-    color: #385e79;
-}
+
 .navbar_content_wrapper{
     display: flex;
     justify-content: space-between;
-    gap: 35rem;
+    gap: 75rem;
 }
 .card_footer{
     display: flex;
@@ -42,10 +38,19 @@
 
     position: relative;
       background-color: white;
-      color: white !important;
+      color: #EF7722 !important;
       font-weight: 700;
 }
+.card_footer button{
+    width: 13rem;
+    height: 2rem;
+    border-radius: 2rem;
+    border:none ;
+     background-color: #EF7722;
+     color: white;
+}
 .navbar_content_wrapper > h2{
+   
     font-size: 1.8rem;
     text-decoration: none;
 }
@@ -69,7 +74,7 @@
 .catalogue_sidebar{
     background-color: white;
     padding: 1rem;
-    width: 21vw;
+    width: 20vw;
     margin: 1rem 0;
     height: 82vh;
     /* overflow-y: scroll; */
@@ -140,7 +145,7 @@ height: auto;
   font-size: 1rem;
 }
 .name{
-     font-size: 3rem;
+    font-size: 3rem;
 }
 
 
@@ -154,9 +159,6 @@ height: auto;
 }
 
 
-
-
-/* Tour planner */
 .event_planner{
     height: 84.3vh;
     overflow-y: scroll;
@@ -204,9 +206,7 @@ height: auto;
     width: 90%;
     margin: 2rem auto;
 }
-.budget_input_wrapper{
-   
-}
+
 .budget_box{
     display: flex;
     justify-content: flex-end;
@@ -232,29 +232,40 @@ height: auto;
 .event_card_wrapper{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    width: 68vw;
+    gap: 2rem;
+
+    width: 65vw;
 }
 .destination_card{
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.26);
     cursor: pointer;
+    
+
+    width: 20rem;
 }
 .destination_card_img_wrapper{
-    width: 100%;
+    width: 97%;
     height: 30vh;
 }
 .destination_img{
     object-fit: cover;
-    position: relative;
+   
     width: 100%;
     height: 100%;
 }
 .destination_card_content{
+    
     padding: 0.5rem;
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1339px) and (min-width: 1024px) {
+    .navbar{
+        width: 100%;
+        background-color: #f0eeee;
+        padding: 1.3rem 1rem;
+        color: #EF7722;
+    }
     .event_catalogue_dashboard{
         flex-direction: column;
         justify-content: center;
@@ -265,11 +276,12 @@ height: auto;
         height: 100%;
         border-radius: 0.5rem;
     }
-    .catalogue_sidebar_list{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+    .catalogue_sidebar h3, .catalogue_sidebar ul{
+        padding-left: 1.2rem;
+        line-height: 2.5;
+        font-size: 15px;
     }
-
+    
     .event_planner{
         width: 90vw;
         overflow: hidden;
@@ -284,6 +296,7 @@ height: auto;
         margin: 1rem;
     }
     .event_card_wrapper{
+        grid-template-columns: repeat(2,1fr);
         width: 85vw;
     }
 
@@ -292,118 +305,461 @@ height: auto;
     }
 }
 
-
-
-@media (max-width: 830px) {
-    .event_card_wrapper{
-        grid-template-columns: repeat(2, 1fr);
+/* @media (max-width: 1020px) and (min-width: 827px){
+    .search{
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      min-width:15rem;
+      font-size: 0.9rem;
+      border-color: #EF7722;
+      border-width: 2px;
+      width: 400px;
+      height: auto;
     }
-}
-
-@media (max-width: 750px) {
-    .catalogue_sidebar{
-        width: 90vw;
-    }
-    .budget_input_wrapper{
-        justify-content: center;
-    }
-    .budget_box{
-        width: 50vw;
-    }
-    
-    .budget_box > select{
-        padding: 0.3rem 1rem;
-        width: 35%;
-        outline: none;
-        border: 1px solid rgb(173, 173, 173);
-        border-radius: 0.5rem;
-        font-family: inherit;
-    }
-    .budget_box_input{
-        width: 65%;
-        border: 1px solid rgb(173, 173, 173);
-        border-radius: 0.5rem;
-    }
-}
-
-@media (max-width: 620px) {
-    .catalogue_sidebar{
-        width: 90vw;
-    }
-    .destination_card_img_wrapper{
-        height: 25vh;
-    }
-}
-
-
-@media (max-width: 590px) {
-    .catalogue_sidebar_list{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .planner_hero{
-        height: 25vh;
-        font-size: 1.2rem;
-    }
-
-    .event_card_wrapper{
-        grid-template-columns: repeat(1, 1fr);
-        width: 60vw;
-        margin: auto;
-    }
-}
-
-
-@media (max-width: 500px) {
-    .catalogue_sidebar{
-        width: 80vw;
-    }
-    .catalogue_sidebar_list{
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
-
-@media (max-width: 440px) {
-    .budget_box{
-        width: 80vw;
-        margin-bottom: 1rem;
-    }
-    .event_card_wrapper{
-        width: 70vw;
-    }
-}
-
-
-@media (max-width: 400px) {
-    .destination_card_img_wrapper{
-        height: 20vh;
-    }
-}
-
-
-@media (max-width: 370px) {
-    .event_card_wrapper{
+    event_card_wrapper{
+        grid-template-columns: repeat(2,1fr);
         width: 85vw;
     }
+} */
+
+@media (max-width: 1020px) and (min-width: 768px) {
+    .event_catalogue_dashboard{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .catalogue_sidebar{
-        width: 90vw;
-        margin-left: 0;
+        width: 80vw;
+        height: 100%;
+        border-radius: 0.5rem;
     }
+    .catalogue_sidebar h3, .catalogue_sidebar ul{
+        padding-left: 1.2rem;
+        line-height: 2.5;
+        font-size: 15px;
+    }
+    
+    .event_planner{
+        width: 90vw;
+        overflow: hidden;
+        height: 100%;
+    }
+
     .planner_hero{
-        font-size: 1.1rem;
-    }
-}
-
-
-@media (max-width: 360px) {
-    .event_card_wrapper{
         width: 90vw;
+        height: 30vh;
     }
-}
+    .event_card_container{
+        margin: 1rem;
+    }
+    .event_card_wrapper{
+        grid-template-columns: repeat(2,1fr);
+        width: 85vw;
+    }
 
-
-@media (max-width: 500px) {
+    .event_catalogue_page{
+        overflow-Y: scroll;
+    }
+    .search{
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      min-width:15rem;
+      font-size: 0.9rem;
+      border-color: #EF7722;
+      border-width: 2px;
+      width: auto;
+      height: auto;
+    }
+    .event_card_container{
+        width: 100%;
+        margin: 2rem auto;
+    }
     .navbar_content_wrapper{
-        padding-right: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 27em;
+}
+    .destination_card{
+            width: 21rem;
+    }
+
+}
+
+
+@media (max-width: 767px) and (min-width: 595px){
+.navbar_content_wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 20rem;
+
+}
+    .event_catalogue_dashboard{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .catalogue_sidebar{
+        width: 80vw;
+        height: 100%;
+        border-radius: 0.5rem;
+    }
+    .catalogue_sidebar h3, .catalogue_sidebar ul{
+        padding-left: 1.2rem;
+        line-height: 2.5;
+        font-size: 15px;
+    }
+    
+    .event_planner{
+        width: 90vw;
+        overflow: hidden;
+        height: 100%;
+    }
+
+    .planner_hero{
+        width: 90vw;
+        height: 30vh;
+    }
+    .event_card_container{
+        margin: 1rem;
+    }
+    .event_card_wrapper{
+        grid-template-columns: repeat(1,1fr);
+        width: 70vw;
+        margin-left: 3rem;
+    }
+    button {
+        width: 150px;
+        height: 40px;
+        color: white;
+        background-color: #EF7722;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin: 0 2rem;
+    }
+
+    .event_catalogue_page{
+        overflow-Y: scroll;
+    }
+    .search{
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      min-width:15rem;
+      font-size: 0.9rem;
+      border-color: #EF7722;
+      border-width: 2px;
+      width: 200px;
+      height: auto;
+    }
+    .event_card_container{
+        width: 100%;
+        margin: 2rem auto;
     }
 }
+
+@media (max-width: 549px) and (min-width: 425px) {
+    .event_catalogue_dashboard{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .catalogue_sidebar{
+        width: 80vw;
+        height: 100%;
+        border-radius: 0.5rem;
+    }
+    .catalogue_sidebar h3, .catalogue_sidebar ul{
+        padding-left: 1.2rem;
+        line-height: 2.5;
+        font-size: 15px;
+    }
+    
+    .event_planner{
+        width: 90vw;
+        overflow: hidden;
+        height: 100%;
+    }
+
+    .planner_hero{
+        width: 90vw;
+        height: 30vh;
+    }
+    .event_card_wrapper{
+        grid-template-columns: repeat(1,1fr);
+        width: 70vw;
+        margin-left: 3rem;
+    }
+    button {
+        width: 150px;
+        height: 40px;
+        color: white;
+        background-color: #EF7722;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin: 0 2rem;
+    }
+
+    .event_catalogue_page{
+        overflow-Y: scroll;
+    }
+    .search{
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      min-width: 9rem;
+      font-size: 0.9rem;
+      border-color: #EF7722;
+      border-width: 2px;
+      width: 50px;
+      height: auto;
+    }
+    .event_card_container{
+        width: 90%;
+        margin: 2rem 0;
+    }
+}
+
+
+@media (max-width: 424px) and (min-width: 375px) {
+    .navbar_content_wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: -15rem;
+
+}
+   .event_catalogue_dashboard{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .catalogue_sidebar{
+        width: 80vw;
+        height: 100%;
+        border-radius: 0.5rem;
+    }
+    .catalogue_sidebar h3, .catalogue_sidebar ul{
+        padding-left: 1.2rem;
+        line-height: 2.5;
+        font-size: 15px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .event_planner{
+        width: 90vw;
+        overflow: hidden;
+        height: 100%;
+    }
+
+    .planner_hero{
+        width: 90vw;
+        height: 30vh;
+    }
+    .event_card_container{
+        margin: 0;
+    }
+    .event_card_wrapper{
+        grid-template-columns: repeat(1,1fr);
+        width: 50vw;
+        margin-left: 3rem;
+    }
+    button {
+        width: 150px;
+        height: 40px;
+        color: white;
+        background-color: #EF7722;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin: 0 2rem;
+    }
+
+    .event_catalogue_page{
+        overflow-Y: scroll;
+    }
+    .controls{
+        display: flex;
+        flex-direction: column;
+    }
+    .sorted{
+        display: grid;
+    }
+    .search{
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      min-width: 9rem;
+      font-size: 0.9rem;
+      border-color: #EF7722;
+      border-width: 2px;
+      width: 50px;
+      height: auto;
+    }
+    .event_card_container{
+        width: 90%;
+        margin: 2rem 0;
+    }
+    .destination_card{
+        width: 22rem!important;
+    }
+    .card_footer button{
+    width: 20rem;
+    height: 4rem;
+    border-radius: 2rem;
+   
+}
+}
+@media (max-width: 767px) {
+  /* Make dashboard vertical */
+  .event_catalogue_dashboard {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Sidebar takes full width */
+  .catalogue_sidebar {
+    width: 90vw;
+    height: auto;
+    margin: 1rem auto;
+  }
+
+  /* Hero section smaller */
+  .planner_hero {
+    width: 90vw;
+    height: 25vh;
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  /* Controls stack vertically */
+  .controls {
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: stretch;
+  }
+
+  .search {
+    width: 100% !important;
+    min-width: unset;
+  }
+  .filterCategory,
+  .sortBy {
+    width: 100%;
+  }
+
+  /* Event cards in 1 column */
+  .event_card_wrapper {
+    grid-template-columns: 1fr;
+    width: 90vw;
+    gap: 1rem;
+    margin-left: 0;
+  }
+
+  .destination_card {
+    width: 100%;
+  }
+
+  .destination_card_img_wrapper {
+    height: 200px;
+  }
+
+  /* Cart button smaller */
+  .fixedCartButton {
+    width: 3.5rem;
+    height: 3.5rem;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  /* Navbar */
+  .navbar_content_wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .navbar_content_wrapper h2 {
+    font-size: 1.2rem;
+  }
+}
+.navbar {
+  width: 100%;
+  background: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ef7722;
+}
+
+/* Nav links (desktop) */
+.navLinks {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  transition: all 0.3s ease;
+}
+
+.navLinks li a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.navLinks li a:hover {
+  color: #ef7722;
+}
+
+/* Hamburger (hidden on desktop) */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    color: #ef7722;
+  }
+
+  .navLinks {
+    position: absolute;
+    top: 70px;
+    right: -100%;
+    flex-direction: column;
+    background: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+    gap: 1.5rem;
+    transition: right 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  }
+
+  .navLinks.open {
+    right: 0;
+  }
+}
+

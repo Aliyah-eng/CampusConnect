@@ -18,6 +18,7 @@ import Technical_event from './Pages/Technical_event/Technical_event';
 import Upcoming_event from './Pages/UpComing_event/UpComing_event';
 import RegistrationForm from './Pages/Register/Register';
 import Sport_Event from './Pages/Sport_event/Sport_event';
+import Department_event from './Pages/Departmental/Departmental';
 
 function AppWrapper() {
   // ✅ Initialize AOS once
@@ -45,6 +46,7 @@ function AppWrapper() {
              <Route path="/tech" element={<Technical_event/>} />
              <Route path="/culture" element={<Cultural_event/>} />
               <Route path="/sport" element={<Sport_Event/>} />
+              <Route path="/department" element={<Department_event/>} />
           </Routes>
         </BrowserRouter>
    );

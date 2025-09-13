@@ -1,19 +1,156 @@
-import React, { useEffect } from 'react';
-import classes from './Contactus.module.css';
-import NavBar from '../../Component/NavBar/NavBar';
-import Footer from '../../Component/Footer/Footer';
-import ay from '../../Assest/ay.jpg';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React, { useEffect } from "react";
+import classes from "./Contactus.module.css";
+import NavBar from "../../Component/NavBar/NavBar";
+import { FaPhoneAlt } from "react-icons/fa";
+import { CiMapPin } from "react-icons/ci";
+import aliyah from "../../Assest/aliyah.jpg"
+import Footer from "../../Component/Footer/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+const facultyCoordinators = [
+  {
+    image: "https://randomuser.me/api/portraits/men/1.jpg",
+    name: "Dr. Ben Carter",
+    designation: "Head of Department",
+    department: " Computer Science",
+    number: " +234 801 111 2222",
+    email: "ben.carter@university.edu",
+  },
+  {
+    image: "https://randomuser.me/api/portraits/women/2.jpg",
+    name: "Dr. Evelyn Reed",
+    designation: "Senior Lecturer",
+    department: " Electrical Engineering",
+    number: " +234 802 333 4444",
+    email: "evelyn.reed@university.edu",
+  },
+  {
+    image: "https://randomuser.me/api/portraits/men/3.jpg",
+    name: "Prof. Michael Adebisi",
+    designation: "Dean of Studies",
+    department: " Artificial Intelligence",
+    number: " +234 803 555 6666",
+    email: "michael.adebisi@university.edu",
+  },
+  {
+    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    name: "Mrs. Sarah Olayinka",
+    designation: "Lecturer I",
+    department: " Network & Security",
+    number: " +234 804 777 8888",
+    email: "sarah.olayinka@university.edu",
+  },
+];
+
+const studentCoordinators = [
+  {
+    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    name: "Chukwudi Eke",
+    designation: "Lead Coordinator",
+    department: " Computer Science",
+    number: " +234 901 123 4567",
+    email: "chukwudi.eke@student.com",
+  },
+  {
+    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    name: "Ifeoma Nwosu",
+    designation: "Event Manager",
+    department: " Web Development",
+    number: " +234 902 234 5678",
+    email: "ifeoma.nwosu@student.com",
+  },
+  {
+    image: "https://randomuser.me/api/portraits/men/7.jpg",
+    name: "Tunde Alabi",
+    designation: "Social Media Head",
+    department: " UI/UX Design",
+    number: " +234 903 345 6789",
+    email: "tunde.alabi@student.com",
+  },
+  {
+    image: "https://randomuser.me/api/portraits/women/8.jpg",
+    name: "Grace Adeoye",
+    designation: "Public Relations",
+    department: " Mobile App Dev",
+    number: "+234 904 456 7890",
+    email: "grace.adeoye@student.com",
+  },
+];
+
+
+const teamMembers = [
+  {
+    image: "https://randomuser.me/api/portraits/men/32.jpg",
+    name: "Adio Moyinoluwa",
+    bio: "I'm Adio Moyinoluwa, a skilled Front-end Developer specializing in website design, UX/UI, and responsive web development solutions.",
+  },
+  {
+    image: "https://randomuser.me/api/portraits/men/44.jpg",
+    name: "David Micah-Daniels",
+    bio: "My name is David Micah-Daniels, An expert frontend developer highly skilled in HTML5, CSS3, JavaScript ES6 and React and other fronted libraries.",
+  },
+  {
+    image: {aliyah},
+    name: "Aliyah",
+    bio: "My name is Adeleke Aliyah and i am a React developer, i am very skilled in javascript and javascript libaries.",
+  },
+  {
+    image: "https://randomuser.me/api/portraits/men/78.jpg",
+    name: "Stanley",
+    bio: "I'm Stanley ojukwu, an aspiring full stack developer. I specialize in adaptive and responsive web designs and development",
+  },
+  {
+    image: "https://randomuser.me/api/portraits/men/62.jpg",
+    name: "Mustapha",
+    bio: "My name is Mustapha Akintola, I'm a software developer specializing in website design and responsive websites.",
+  },
+    {
+    image: "https://randomuser.me/api/portraits/men/62.jpg",
+    name: "Mustapha",
+    bio: "My name is Mustapha Akintola, I'm a software developer specializing in website design and responsive websites.",
+  },
+];
 
 function Contactus() {
-
   useEffect(() => {
     AOS.init({
-      duration: 1000, 
-      once: false,    
+      duration: 1000,
+      once: false,
     });
   }, []);
+
+  const renderContactCards = (coordinators) => {
+    return coordinators.map((person, index) => (
+      <div className={classes.contacts} data-aos="zoom-in" key={index}>
+        <div className={classes.image}>
+          <img src={person.image} alt={person.name} />
+        </div>
+        <h4 className={classes.names}>{person.name}</h4>
+        <p className={classes.designation}>{person.designation}</p>
+        <p className={classes.department}> <CiMapPin color="pink" size={24} />
+{person.department}</p>
+        <p className={classes.number} ><FaPhoneAlt color="pink" size={24} />{person.number}</p>
+        <p className={classes.email}>{person.email}</p>
+      </div>
+    ));
+  };
+
+  const renderTeamCards = (members) => {
+    return members.map((person, index) => (
+      <div className={classes.card} key={index}>
+        <img
+          src={person.image}
+          alt={person.name}
+          className={classes.card_image}
+        />
+        <div className={classes.card_content}>
+          <h3>{person.name}</h3>
+          <p>{person.bio}</p>
+        </div>
+      </div>
+    ));
+  };
 
   return (
     <div>
@@ -26,46 +163,7 @@ function Contactus() {
       <div className={classes.coordinators} data-aos="fade-up">
         <h3 className={classes.rcoordinators}>Faculty Coordinators</h3>
         <div className={classes.info}>
-          <div className={classes.contacts} data-aos="zoom-in">
-            <div className={classes.image}>
-              <img src={ay} alt="#" />
-            </div>
-            <h4 className={classes.names}>Ay Adeleke</h4>
-            <p className={classes.designation}>Team Member</p>
-            <p className={classes.department}>📍 ADSE</p>
-            <p className={classes.number}>📞 +234 915 905 2549</p>
-            <p className={classes.email}>📧 adelekeay244@gmail.com</p>
-          </div>
-          <div className={classes.contacts} data-aos="zoom-in">
-            <div className={classes.image}>
-              <img src={ay} alt="#" />
-            </div>
-            <h4 className={classes.names}>Ay Adeleke</h4>
-            <p className={classes.designation}>Team Member</p>
-            <p className={classes.department}>📍 ADSE</p>
-            <p className={classes.number}>📞 +234 915 905 2549</p>
-            <p className={classes.email}>📧 adelekeay244@gmail.com</p>
-          </div>
-          <div className={classes.contacts} data-aos="zoom-in">
-            <div className={classes.image}>
-              <img src={ay} alt="#" />
-            </div>
-            <h4 className={classes.names}>Ayomide Alao</h4>
-            <p className={classes.designation}>Team Member</p>
-            <p className={classes.department}>📍 WEB DEVELOPMENT</p>
-            <p className={classes.number}>📞 +234 704 787 3877</p>
-            <p className={classes.email}>📧 alaoayomide700@gmail.com</p>
-          </div>
-          <div className={classes.contacts} data-aos="zoom-in">
-            <div className={classes.image}>
-              <img src={ay} alt="#" />
-            </div>
-            <h4 className={classes.names}>Oluwaseun Akinyemi</h4>
-            <p className={classes.designation}>Team Member</p>
-            <p className={classes.department}>📍 UI/UX DESIGN</p>
-            <p className={classes.number}>📞 +234 803 456 7890</p>
-            <p className={classes.email}>📧 seunakinyemi123@gmail.com</p>
-          </div>
+          {renderContactCards(facultyCoordinators)}
         </div>
       </div>
 
@@ -73,96 +171,16 @@ function Contactus() {
       <div className={classes.coordinators} data-aos="fade-up">
         <h3 className={classes.rcoordinators}>Student Coordinators</h3>
         <div className={classes.info}>
-          <div className={classes.contacts} data-aos="zoom-in">
-            <div className={classes.image}>
-              <img src={ay} alt="#" />
-            </div>
-            <h4 className={classes.names}>Ay Adeleke</h4>
-            <p className={classes.designation}>Team Member</p>
-            <p className={classes.department}>📍 ADSE</p>
-            <p className={classes.number}>📞 +234 915 905 2549</p>
-            <p className={classes.email}>📧 adelekeay244@gmail.com</p>
-          </div>
-          <div className={classes.contacts} data-aos="zoom-in">
-            <div className={classes.image}>
-              <img src={ay} alt="#" />
-            </div>
-            <h4 className={classes.names}>Ayomide Alao</h4>
-            <p className={classes.designation}>Team Member</p>
-            <p className={classes.department}>📍 WEB DEVELOPMENT</p>
-            <p className={classes.number}>📞 +234 704 787 3877</p>
-            <p className={classes.email}>📧 alaoayomide700@gmail.com</p>
-          </div>
-          <div className={classes.contacts} data-aos="zoom-in">
-            <div className={classes.image}>
-              <img src={ay} alt="#" />
-            </div>
-            <h4 className={classes.names}>Oluwaseun Akinyemi</h4>
-            <p className={classes.designation}>Team Member</p>
-            <p className={classes.department}>📍 UI/UX DESIGN</p>
-            <p className={classes.number}>📞 +234 803 456 7890</p>
-            <p className={classes.email}>📧 seunakinyemi123@gmail.com</p>
-          </div>
-          <div className={classes.contacts} data-aos="zoom-in">
-            <div className={classes.image}>
-              <img src={ay} alt="#" />
-            </div>
-            <h4 className={classes.names}>Oluwaseun Akinyemi</h4>
-            <p className={classes.designation}>Team Member</p>
-            <p className={classes.department}>📍 UI/UX DESIGN</p>
-            <p className={classes.number}>📞 +234 803 456 7890</p>
-            <p className={classes.email}>📧 seunakinyemi123@gmail.com</p>
-          </div>
+          {renderContactCards(studentCoordinators)}
         </div>
       </div>
-        <div className={classes.text}>
-          <h3>Meet Our Team</h3>
-        </div>
-       <section className={classes.card_container}>
-          <div className={classes.card}>
-            <img src="" alt="Image 1" className={classes.card_image}/>
-            <div className={classes.card_content}>
-              <h3>Adio Moyinoluwa</h3>
-              <p>I'm Adio Moyinoluwa, a skilled Front-end Developer specializing in website design, UX/UI, and responsive web development solutions.</p>
-            </div>
-          </div>
-           <div className={classes.card}>
-            <img src="" alt="Image 1" className={classes.card_image}/>
-            <div className={classes.card_content}>
-              <h3>Adio Moyinoluwa</h3>
-              <p>I'm Adio Moyinoluwa, a skilled Front-end Developer specializing in website design, UX/UI, and responsive web development solutions.</p>
-            </div>
-          </div>
-          <div className={classes.card}>
-            <img src=""alt="Image 2" className={classes.card_image}/>
-            <div className={classes.card_content}>
-              <h3>David Micah-Daniels</h3>
-              <p>My name is David Micah-Daniels, An expert frontend developer highly skilled in HTML5, CSS3, JavaScript ES6 and React and other fronted libraries.</p>
-            </div>
-          </div>
-          <div className={classes.card}>
-            <img src="" alt="Image 3" className={classes.card_image}/>
-            <div className={classes.card_content}>
-              <h3>Aliyah</h3>
-              <p>My name is  Adeleke Aliyah and i am a React developer, i am very skilled in javascript and javascript libaries.</p>
-            </div>
-          </div>
-          <div className={classes.card}>
-            <img src="" alt="Image 3" className={classes.card_image}/>
-            <div className={classes.card_content}>
-              <h3>Stanley</h3>
-              <p>I'm Stanley ojukwu , an aspiring full stack developer. I specialize adaptive and responsive web designs and development</p>
-            </div>
-          </div>
-          <div className={classes.card}>
-            <img src="" alt="Image 3" className={classes.card_image}/>
-            <div className={classes.card_content}>
-              <h3>Mustapha</h3>
-              <p>My name is Mustapha Akintola, I'm a software developer specializing in website design and responsive websites.</p>
-            </div>
-          </div>
-      
-        </section>
+
+      <div className={classes.text}>
+        <h3>Meet Our Team</h3>
+      </div>
+      <section className={classes.card_container}>
+        {renderTeamCards(teamMembers)}
+      </section>
 
       {/* Social Links */}
       <div className={classes.social_links} data-aos="fade-right">

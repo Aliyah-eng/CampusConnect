@@ -1,12 +1,12 @@
 .footer_section{
-    background:  linear-gradient(135deg, #EF7722, #0099ff);
+    background:  #0C1321;
     color: #fff;
     margin-top: 7rem;
     position: relative;
     margin-bottom: -9rem;
 }
 .newsletter_box{
-    background:  linear-gradient(55deg, #0099ff, #EF7722);
+    background:  #0C1321;
     width: 80vw;
     margin: auto;
     color: white;
@@ -170,10 +170,33 @@
 .footer_bottom_content p{
     font-size: 1.1rem;
 }
+@media (max-width: 1024px) {
+    .newsletter_box {
+    background: linear-gradient(55deg, #0099ff, #EF7722);
+    width: 80vw;
+    margin: auto;
+    color: white;
+    border-radius: 1.5rem;
+    padding: 1.5rem 2rem;
+    position: absolute;
+    margin-top: -7rem;
+    left: 10vw;
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	}
+	.lists_wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 5rem;
+    gap: 30px;
+	}
+}
 
 @media(max-width: 1000px){
     .footer_section{
-        background-color: #385e79;
+        background-color: #0C1321;
         padding-top: 3rem;
     }
     .footer_content_wrapper{

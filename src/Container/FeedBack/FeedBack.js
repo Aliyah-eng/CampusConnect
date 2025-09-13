@@ -10,13 +10,47 @@ const TourReview = () => {
     AOS.init({ duration: 800, once: false });
   }, []);
 
+
+  const feedbackReviews = [
+    {
+      imgSrc:
+        "https://images.pexels.com/photos/3184454/pexels-photo-3184454.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      content:
+        "The campus tour was incredibly informative! I loved seeing all the facilities and learning about student life. Very welcoming staff!",
+    },
+    {
+      imgSrc:
+        "https://images.pexels.com/photos/5212342/pexels-photo-5212342.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      content:
+        "Attended a workshop on career development and it was fantastic. The presenter was engaging, and I gained valuable insights.",
+    },
+    {
+      imgSrc:
+        "https://images.pexels.com/photos/5905494/pexels-photo-5905494.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      content:
+        "The online resources are top-notch. I was able to find all the information I needed for my application process quickly and easily.",
+    },
+    {
+      imgSrc:
+        "https://images.pexels.com/photos/256468/pexels-photo-256468.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      content:
+        "I had a question about financial aid and the support team responded swiftly and clearly. Excellent service overall!",
+    },
+    {
+      imgSrc:
+        "https://images.pexels.com/photos/3184454/pexels-photo-3184454.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      content:
+        "The student lounge is a great place to connect with others and work on group projects. The atmosphere is very positive and collaborative!",
+    },
+  ];
+
   return (
     <>
       <NavBar />
 
       {/* Header */}
       <section className={classes.header} data-aos="fade-down">
-        <h1 className={classes.about}>FeedBack</h1>
+        <h1 className={classes.about}>Feedback Reviews</h1>
       </section>
 
       {/* Review Section */}
@@ -27,12 +61,11 @@ const TourReview = () => {
           </h2>
           <div className={classes.image_card} data-aos="zoom-in">
             <img
-              src="https://sponsored.chronicle.com/new-generation-of-learners/assets/qecLvq907j/istock-1307457287-4096x2731.jpeg"
-              alt="Tour Image"
+              src="https://images.pexels.com/photos/3184454/pexels-photo-3184454.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="Students in a classroom"
             />
           </div>
         </div>
-
         {Reviewbox()}
       </div>
 
@@ -41,36 +74,36 @@ const TourReview = () => {
         <div className={classes.image_carousel}>
           {[
             {
-              src: "https://sponsored.chronicle.com/new-generation-of-learners/assets/qecLvq907j/istock-1307457287-4096x2731.jpeg",
-              text: "Azores, Portugal",
+              src: "https://images.pexels.com/photos/5905709/pexels-photo-5905709.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+              text: "Students collaborating",
             },
             {
-              src: "https://sponsored.chronicle.com/new-generation-of-learners/assets/qecLvq907j/istock-1307457287-4096x2731.jpeg",
-              text: "Cancun, Mexico",
+              src: "https://images.pexels.com/photos/256541/pexels-photo-256541.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+              text: "University library",
             },
             {
-              src: "https://sponsored.chronicle.com/new-generation-of-learners/assets/qecLvq907j/istock-1307457287-4096x2731.jpeg",
-              text: "Tokyo, Japan",
+              src: "https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+              text: "Students in a lecture hall",
             },
             {
-              src: "https://sponsored.chronicle.com/new-generation-of-learners/assets/qecLvq907j/istock-1307457287-4096x2731.jpeg",
-              text: "Jerusalem",
+              src: "https://images.pexels.com/photos/5905494/pexels-photo-5905494.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+              text: "Student studying on a laptop",
             },
             {
-              src: "https://sponsored.chronicle.com/new-generation-of-learners/assets/qecLvq907j/istock-1307457287-4096x2731.jpeg",
-              text: "Julian Alps, Slovenia",
+              src: "https://images.pexels.com/photos/5905705/pexels-photo-5905705.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+              text: "Students on campus",
             },
             {
-              src: "https://sponsored.chronicle.com/new-generation-of-learners/assets/qecLvq907j/istock-1307457287-4096x2731.jpeg",
-              text: "Bahama Beach",
+              src: "https://images.pexels.com/photos/256468/pexels-photo-256468.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+              text: "Laptop and books",
             },
             {
-              src: "https://sponsored.chronicle.com/new-generation-of-learners/assets/qecLvq907j/istock-1307457287-4096x2731.jpeg",
-              text: "Maui Beach, Hawaii",
+              src: "https://images.pexels.com/photos/5212342/pexels-photo-5212342.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+              text: "Students chatting in a hallway",
             },
             {
-              src: "https://sponsored.chronicle.com/new-generation-of-learners/assets/qecLvq907j/istock-1307457287-4096x2731.jpeg",
-              text: "Taj Mahal, India",
+              src: "https://images.pexels.com/photos/3184454/pexels-photo-3184454.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+              text: "Group project meeting",
             },
           ].map((slide, index) => (
             <div
@@ -91,8 +124,9 @@ const TourReview = () => {
         <div className={classes.feedback_area}>
           <div className={classes.feedback_img_wrapper} data-aos="zoom-in">
             <img
-              src="https://sponsored.chronicle.com/new-generation-of-learners/assets/qecLvq907j/istock-1307457287-4096x2731.jpeg"
+              src="https://images.pexels.com/photos/5905709/pexels-photo-5905709.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
               className={classes.feedback_img}
+              alt="Students smiling"
             />
           </div>
           {FeedbackForm()}
@@ -103,7 +137,7 @@ const TourReview = () => {
       <br />
       <div className={classes.head} data-aos="fade-up">
         <center>
-          <h2>Tour Reviews</h2>
+          <h2>Feedback Reviews</h2>
         </center>
         <div className={classes.feedback_summary}>
           <h3>Overall Rating: ★★★★☆ (4.5/5)</h3>
@@ -113,18 +147,15 @@ const TourReview = () => {
 
       {/* Review Cards */}
       <section className={classes.card_container}>
-        {[1, 2, 3, 4].map((i) => (
-          <div className={classes.card} key={i} data-aos="zoom-in">
+        {feedbackReviews.map((review, index) => (
+          <div className={classes.card} key={index} data-aos="zoom-in">
             <img
-              src="https://sponsored.chronicle.com/new-generation-of-learners/assets/qecLvq907j/istock-1307457287-4096x2731.jpeg"
-              alt={`Image ${i}`}
+              src={review.imgSrc}
+              alt={`Review image ${index + 1}`}
               className={classes.card_image}
             />
             <div className={classes.card_content}>
-              <p>
-                Example review content for user {i}. This is where the user's
-                testimonial goes.
-              </p>
+              <p>{review.content}</p>
             </div>
           </div>
         ))}
@@ -139,34 +170,37 @@ export default TourReview;
 
 // Review Box Component
 function Reviewbox() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [userType, setUserType] = useState("");
+  const [eventAttended, setEventAttended] = useState("");
   const [rating, setRating] = useState(null);
-  const [date, setDate] = useState("");
-  const [group, setGroup] = useState("");
-  const [reviewText, setReviewText] = useState("");
-  const [reviewTitle, setReviewTitle] = useState("");
+  const [comments, setComments] = useState("");
 
   const handleRating = (ratingValue) => setRating(ratingValue);
-  const handleGroupClick = (groupValue) => setGroup(groupValue);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!rating) return alert("Please select a rating.");
 
     const reviewSummary = `
-      Thank you for your feedback!
-      Ratings Accepted: ${rating} star${rating > 1 ? "s" : ""}
-      Review Title: ${reviewTitle}
-      Comment: ${reviewText}
+      Thank you for your feedback, ${name}!
+      Email: ${email}
+      User Type: ${userType}
+      Event Attended: ${eventAttended}
+      Rating: ${rating} star${rating > 1 ? "s" : ""}
+      Comments: ${comments}
     `;
+
     window.alert(reviewSummary);
     window.location.reload();
   };
 
   return (
     <div className={classes.right_section}>
-      <h3 className={classes.header_text}>
-        How would you rate your experience?
-      </h3>
+      <h3 className={classes.header_text}>Share Your Experience</h3>
+
+      {/* Rating */}
       <div className={classes.star_rating}>
         {[1, 2, 3, 4, 5].map((star) => (
           <span
@@ -183,74 +217,81 @@ function Reviewbox() {
       </div>
 
       <form className={classes.form_page} onSubmit={handleSubmit}>
+        {/* Name */}
         <div className={classes.form_group}>
-          <label htmlFor="date">When did you go?</label>
+          <label htmlFor="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your full name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+          />
+        </div>
+
+        {/* Email */}
+        <div className={classes.form_group}>
+          <label htmlFor="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+        </div>
+
+        {/* User Type */}
+        <div className={classes.form_group}>
+          <label htmlFor="userType">User Type</label>
           <select
-            id="date"
-            value={date}
-            onChange={(e) => setDate(e.target.value)}
+            id="userType"
+            value={userType}
+            onChange={(e) => setUserType(e.target.value)}
             required
           >
-            <option value="">Select one</option>
-            <option value="academic">Academic Events</option>
-            <option value="cultural">Cultural Events</option>
-            <option value="sports">Sports Events</option>
-            <option value="departmental">Departmental Events</option>
+            <option value="">Select user type</option>
+            <option value="Student">Student</option>
+            <option value="Faculty">Faculty</option>
+            <option value="Staff">Staff</option>
+            <option value="Visitor">Visitor</option>
           </select>
         </div>
 
+        {/* Event Attended */}
         <div className={classes.form_group}>
-          <label>Who did you go with?</label>
-          <div className={classes.group_buttons}>
-            {["Good", "Very Good", "Average", "Bad", "Very Bad"].map((grp) => (
-              <button
-                type="button"
-                key={grp}
-                className={group === grp ? classes.selected : ""}
-                onClick={() => handleGroupClick(grp)}
-              >
-                {grp}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        <div className={`${classes.form_group} ${classes.review_section}`}>
-          <div className={classes.review_header}>
-            <h3>Write your review</h3>
-          </div>
-          <div className={classes.text_area_responsive}>
-            <textarea
-              rows="4"
-              placeholder="The views were amazing. We took so many photos!..."
-              value={reviewText}
-              onChange={(e) => setReviewText(e.target.value)}
-              minLength="100"
-              required
-            ></textarea>
-          </div>
-          <p className={classes.char_count}>
-            {reviewText.length}/100 min characters
-          </p>
-        </div>
-
-        <div className={`${classes.form_group} ${classes.title_section}`}>
-          <label htmlFor="review-title">Title your review</label>
+          <label htmlFor="eventAttended">Event Attended</label>
           <input
             type="text"
-            id="review-title"
-            placeholder="Give us the gist of your experience"
-            className={classes.tour_input}
-            value={reviewTitle}
-            onChange={(e) => setReviewTitle(e.target.value)}
-            maxLength="120"
+            id="eventAttended"
+            placeholder="Enter event attended (past 1 month)"
+            value={eventAttended}
+            onChange={(e) => setEventAttended(e.target.value)}
             required
           />
+        </div>
+
+        {/* Comments */}
+        <div className={`${classes.form_group} ${classes.review_section}`}>
+          <div className={classes.review_header}>
+            <h3>Your Comments</h3>
+          </div>
+          <textarea
+            rows="4"
+            placeholder="Share your experience..."
+            value={comments}
+            onChange={(e) => setComments(e.target.value)}
+            minLength="20"
+            required
+          ></textarea>
           <p className={classes.char_count}>
-            {reviewTitle.length}/120 max characters
+            {comments.length}/20 min characters
           </p>
         </div>
 
+        {/* Submit Button */}
         <div className={classes.btn}>
           <center>
             <button type="submit" className={classes.submit}>

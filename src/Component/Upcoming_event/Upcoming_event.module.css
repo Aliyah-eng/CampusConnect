@@ -130,7 +130,8 @@
   .grid {
     grid-template-columns: 1fr,1fr;
     gap: 2rem;
-    margin-left:  rem;
+    margin-left: 2rem;
+    margin-right:  5rem;
     padding: 1rem;
   }
   .card{
@@ -147,7 +148,7 @@
   .grid {
     grid-template-columns: 1fr,1fr;
     gap: 2rem;
-    margin: 0 3rem;
+    margin: 0 1rem;
     padding: 1rem;
   }
   .card{
