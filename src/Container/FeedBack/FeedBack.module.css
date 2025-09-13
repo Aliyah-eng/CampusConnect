@@ -3,7 +3,7 @@
   background-color: rgba(0, 0, 0, 30%);
   width: 100%;
   height: 45vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.185), rgba(0, 0, 0, 0.432)), url("");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.185), rgba(0, 0, 0, 0.432)), url("https://images.pexels.com/photos/5905709/pexels-photo-5905709.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -45,6 +45,7 @@
   width: 100%;
   max-width: 450px;
   height: 450px;
+  object-fit: cover;
 }
 
 .right_section {
@@ -66,6 +67,12 @@
   border-radius: 5px;
   border: 1px solid #ef7722;
   margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn button:hover {
+  background-color: #cc631c;
 }
 
 .star_rating {
@@ -76,6 +83,7 @@
 .star_rating .star {
   cursor: pointer;
   margin-right: 5px;
+  transition: color 0.2s;
 }
 
 .form_group {
@@ -86,8 +94,11 @@ label {
   display: block;
   font-size: 16px;
   margin-bottom: 5px;
+  color: #333;
 }
 
+input[type="text"],
+input[type="email"],
 select {
   width: 100%;
   padding: 10px;
@@ -95,6 +106,15 @@ select {
   border: 1px solid #ccc;
   border-radius: 4px;
   outline: none;
+  box-sizing: border-box;
+}
+
+select {
+  appearance: none;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13.2-5.4H18.6c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.6c0%204.8%201.8%209.1%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.9%205.4s9.3-1.8%2012.9-5.4l128-127.9c3.6-3.8%205.4-8.1%205.4-12.9%200-4.8-1.8-9.1-5.4-12.9z%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-position: right 10px top 50%;
+  background-size: 12px;
 }
 
 .group_buttons {
@@ -121,6 +141,7 @@ select {
 .group_buttons button.selected {
   background-color: white;
   color: #ef7722;
+  border-color: #ef7722;
 }
 
 .review_section {
@@ -136,6 +157,7 @@ textarea {
   margin-top: 10px;
   outline: none;
   box-sizing: border-box;
+  resize: vertical;
 }
 
 .tour_input {
@@ -167,6 +189,11 @@ textarea {
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.btn .submit:hover {
+  background-color: #cc631c;
 }
 
 .feedback_container {
@@ -193,6 +220,7 @@ textarea {
   width: 100%;
   height: 65vh;
   object-fit: cover;
+  border-radius: 8px;
 }
 
 .feedback_form_wrapper {
@@ -202,18 +230,23 @@ textarea {
 
 .feedback_form {
   text-align: center;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .feedback_form h3 {
   color: #ef7722;
   font-size: 24px;
-  margin: 5px;
+  margin: 5px 0 20px;
 }
 
 .feedback_form label {
   color: #ef7722;
   margin-top: 10px;
   display: block;
+  text-align: left;
 }
 
 .feedback_form textarea {
@@ -222,6 +255,8 @@ textarea {
   margin: 10px 0;
   outline: none;
   box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 .feedback_form .submit2 {
@@ -232,29 +267,52 @@ textarea {
   border-radius: 5px;
   border: 1px solid #ef7722;
   cursor: pointer;
-  margin: 10px 0;
+  margin: 20px 0 0;
+  transition: background-color 0.3s;
 }
+
+.feedback_form .submit2:hover {
+  background-color: #cc631c;
+}
+
 
 /* Card and Carousel styles */
 .head {
   color: #ef7722;
   text-align: center;
+  margin-bottom: 2rem;
+}
+
+.head h2 {
+  margin-bottom: 1rem;
+}
+
+.feedback_summary {
+  margin-bottom: 2rem;
 }
 
 .card_container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  /* The changes for horizontal scroll are here */
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 1.5rem;
   width: 85vw;
   margin: auto;
   margin-bottom: 6rem;
-  gap: 1.5rem;
+  padding-bottom: 1rem; /* Added padding to prevent scrollbar from hiding content */
 }
 
 .card {
+  /* The changes for horizontal scroll are here */
+  flex: 0 0 auto; /* Prevents cards from shrinking */
+  width: 300px; /* Gives each card a fixed width */
   background-color: #f7f7f7;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .card_image {
@@ -264,13 +322,24 @@ textarea {
 }
 
 .card_content {
-  padding: 0.5rem 1rem;
+  padding: 1rem;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.card_content p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #555;
 }
 
 .carousel_wrapper {
   overflow: hidden;
   margin: auto;
   width: 100%;
+  padding: 2rem 0;
 }
 .image_carousel {
   display: flex;
@@ -279,6 +348,7 @@ textarea {
   margin: auto;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
+  padding-bottom: 20px;
 }
 
 .carousel_slide {
@@ -287,6 +357,7 @@ textarea {
   position: relative;
   border-radius: 5px;
   overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .carousel_slide img {
@@ -339,10 +410,6 @@ textarea {
     height: auto;
     margin-top: 1rem;
   }
-  .form_page {
-    width: 100%;
-    margin-left: 0;
-  }
   .group_buttons {
     justify-content: center;
   }
@@ -352,7 +419,7 @@ textarea {
     width: 90vw;
   }
   .feedback_img_wrapper {
-    display: none; /* Hide image for mobile feedback form */
+    display: none;
   }
   .feedback_form textarea,
   .tour_input {
@@ -363,21 +430,23 @@ textarea {
     margin: 10px 0;
   }
   .card_container {
-    grid-template-columns: repeat(2, 1fr);
+    /* The horizontal scroll is responsive now */
     width: 90vw;
+  }
+  .card {
+    width: 250px; /* Adjusted card width for smaller screens */
   }
 }
 
 @media (max-width: 620px) {
-  .card_container {
-    grid-template-columns: 1fr;
-    width: 80vw;
-  }
   .text_header {
     font-size: 1.65rem;
   }
   .right_section h3 {
     font-size: 1.4rem;
+  }
+  .card_container {
+    width: 90vw;
   }
 }
 
@@ -394,6 +463,12 @@ textarea {
   }
   .feedback_area {
     width: 95vw;
+  }
+  .card_container {
+    width: 95vw;
+  }
+  .card {
+    width: 200px;
   }
 }
 

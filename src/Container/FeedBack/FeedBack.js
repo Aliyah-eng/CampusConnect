@@ -1,33 +1,72 @@
-import React, { useState, useEffect } from 'react';
-import NavBar from '../../Component/NavBar/NavBar';
-import Footer from '../../Component/Footer/Footer';
+import React, { useState, useEffect } from "react";
+import NavBar from "../../Component/NavBar/NavBar";
+import Footer from "../../Component/Footer/Footer";
 import classes from "./FeedBack.module.css";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const TourReview = () => {
   useEffect(() => {
     AOS.init({ duration: 800, once: false });
   }, []);
 
+  // Array of example feedback reviews with updated images
+  const feedbackReviews = [
+    {
+      // Changed this image URL
+      imgSrc:
+        "https://images.pexels.com/photos/3184454/pexels-photo-3184454.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      content:
+        "The campus tour was incredibly informative! I loved seeing all the facilities and learning about student life. Very welcoming staff!",
+    },
+    {
+      imgSrc:
+        "https://images.pexels.com/photos/5212342/pexels-photo-5212342.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      content:
+        "Attended a workshop on career development and it was fantastic. The presenter was engaging, and I gained valuable insights.",
+    },
+    {
+      imgSrc:
+        "https://images.pexels.com/photos/5905494/pexels-photo-5905494.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      content:
+        "The online resources are top-notch. I was able to find all the information I needed for my application process quickly and easily.",
+    },
+    {
+      imgSrc:
+        "https://images.pexels.com/photos/256468/pexels-photo-256468.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      content:
+        "I had a question about financial aid and the support team responded swiftly and clearly. Excellent service overall!",
+    },
+    {
+      imgSrc:
+        "https://images.pexels.com/photos/3184454/pexels-photo-3184454.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      content:
+        "The student lounge is a great place to connect with others and work on group projects. The atmosphere is very positive and collaborative!",
+    },
+  ];
+
   return (
     <>
-      <NavBar/>
+      <NavBar />
 
       {/* Header */}
       <section className={classes.header} data-aos="fade-down">
-        <h1 className={classes.about}>Tour Review</h1>
+        <h1 className={classes.about}>Feedback Reviews</h1>
       </section>
 
       {/* Review Section */}
       <div className={classes.review_container} data-aos="fade-up">
         <div className={classes.left_section}>
-          <h2 className={classes.text_header}>Tell us, About your experience?</h2>
+          <h2 className={classes.text_header}>
+            Tell us, About your experience?
+          </h2>
           <div className={classes.image_card} data-aos="zoom-in">
-            <img src="https://sponsored.chronicle.com/new-generation-of-learners/assets/qecLvq907j/istock-1307457287-4096x2731.jpeg" alt="Tour Image"/>
+            <img
+              src="https://images.pexels.com/photos/3184454/pexels-photo-3184454.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="Students in a classroom"
+            />
           </div>
         </div>
-
         {Reviewbox()}
       </div>
 
@@ -35,14 +74,38 @@ const TourReview = () => {
       <section className={classes.carousel_wrapper}>
         <div className={classes.image_carousel}>
           {[
-            { src: "https://sponsored.chronicle.com/new-generation-of-learners/assets/qecLvq907j/istock-1307457287-4096x2731.jpeg", text: "Azores, Portugal" },
-            { src: "https://sponsored.chronicle.com/new-generation-of-learners/assets/qecLvq907j/istock-1307457287-4096x2731.jpeg", text: "Cancun, Mexico" },
-            { src: "https://sponsored.chronicle.com/new-generation-of-learners/assets/qecLvq907j/istock-1307457287-4096x2731.jpeg", text: "Tokyo, Japan" },
-            { src: "https://sponsored.chronicle.com/new-generation-of-learners/assets/qecLvq907j/istock-1307457287-4096x2731.jpeg", text: "Jerusalem" },
-            { src: "https://sponsored.chronicle.com/new-generation-of-learners/assets/qecLvq907j/istock-1307457287-4096x2731.jpeg", text: "Julian Alps, Slovenia" },
-            { src: "https://sponsored.chronicle.com/new-generation-of-learners/assets/qecLvq907j/istock-1307457287-4096x2731.jpeg", text: "Bahama Beach" },
-            { src: "https://sponsored.chronicle.com/new-generation-of-learners/assets/qecLvq907j/istock-1307457287-4096x2731.jpeg", text: "Maui Beach, Hawaii" },
-            { src: "https://sponsored.chronicle.com/new-generation-of-learners/assets/qecLvq907j/istock-1307457287-4096x2731.jpeg", text: "Taj Mahal, India" }
+            {
+              src: "https://images.pexels.com/photos/5905709/pexels-photo-5905709.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+              text: "Students collaborating",
+            },
+            {
+              src: "https://images.pexels.com/photos/256541/pexels-photo-256541.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+              text: "University library",
+            },
+            {
+              src: "https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+              text: "Students in a lecture hall",
+            },
+            {
+              src: "https://images.pexels.com/photos/5905494/pexels-photo-5905494.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+              text: "Student studying on a laptop",
+            },
+            {
+              src: "https://images.pexels.com/photos/5905705/pexels-photo-5905705.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+              text: "Students on campus",
+            },
+            {
+              src: "https://images.pexels.com/photos/256468/pexels-photo-256468.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+              text: "Laptop and books",
+            },
+            {
+              src: "https://images.pexels.com/photos/5212342/pexels-photo-5212342.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+              text: "Students chatting in a hallway",
+            },
+            {
+              src: "https://images.pexels.com/photos/3184454/pexels-photo-3184454.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+              text: "Group project meeting",
+            },
           ].map((slide, index) => (
             <div
               className={classes.carousel_slide}
@@ -50,7 +113,7 @@ const TourReview = () => {
               data-aos="fade-up"
               data-aos-delay={index * 200} // sequential entrance
             >
-              <img src={slide.src} alt={slide.text}/>
+              <img src={slide.src} alt={slide.text} />
               <div className={classes.overlay_text}>{slide.text}</div>
             </div>
           ))}
@@ -61,16 +124,22 @@ const TourReview = () => {
       <div className={classes.feedback_container} data-aos="fade-up">
         <div className={classes.feedback_area}>
           <div className={classes.feedback_img_wrapper} data-aos="zoom-in">
-            <img src="https://sponsored.chronicle.com/new-generation-of-learners/assets/qecLvq907j/istock-1307457287-4096x2731.jpeg" className={classes.feedback_img}/>
+            <img
+              src="https://images.pexels.com/photos/5905709/pexels-photo-5905709.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              className={classes.feedback_img}
+              alt="Students smiling"
+            />
           </div>
           {FeedbackForm()}
         </div>
       </div>
 
       {/* Reviews Summary */}
-      <br/>
+      <br />
       <div className={classes.head} data-aos="fade-up">
-        <center><h2>Tour Reviews</h2></center>
+        <center>
+          <h2>Feedback Reviews</h2>
+        </center>
         <div className={classes.feedback_summary}>
           <h3>Overall Rating: ★★★★☆ (4.5/5)</h3>
           <p>Based on 100 reviews</p>
@@ -79,22 +148,24 @@ const TourReview = () => {
 
       {/* Review Cards */}
       <section className={classes.card_container}>
-        {[1,2,3,4].map((i) => (
-          <div className={classes.card} key={i} data-aos="zoom-in">
-            <img src="https://sponsored.chronicle.com/new-generation-of-learners/assets/qecLvq907j/istock-1307457287-4096x2731.jpeg" alt={`Image ${i}`} className={classes.card_image}/>
+        {feedbackReviews.map((review, index) => (
+          <div className={classes.card} key={index} data-aos="zoom-in">
+            <img
+              src={review.imgSrc}
+              alt={`Review image ${index + 1}`}
+              className={classes.card_image}
+            />
             <div className={classes.card_content}>
-              <p>
-                Example review content for user {i}. This is where the user's testimonial goes.
-              </p>
+              <p>{review.content}</p>
             </div>
           </div>
         ))}
       </section>
 
-      <Footer/>
+      <Footer />
     </>
-  )
-}
+  );
+};
 
 export default TourReview;
 
@@ -135,7 +206,9 @@ function Reviewbox() {
         {[1, 2, 3, 4, 5].map((star) => (
           <span
             key={star}
-            className={`${classes.star} ${rating >= star ? classes.selected : ""}`}
+            className={`${classes.star} ${
+              rating >= star ? classes.selected : ""
+            }`}
             onClick={() => handleRating(star)}
             style={{ color: rating >= star ? "#EF7722" : "gray" }}
           >
@@ -214,7 +287,9 @@ function Reviewbox() {
             minLength="20"
             required
           ></textarea>
-          <p className={classes.char_count}>{comments.length}/20 min characters</p>
+          <p className={classes.char_count}>
+            {comments.length}/20 min characters
+          </p>
         </div>
 
         {/* Submit Button */}
@@ -232,17 +307,17 @@ function Reviewbox() {
 
 // Feedback Form Component
 function FeedbackForm() {
-  const [suggestions, setSuggestions] = useState('');
-  const [complaints, setComplaints] = useState('');
+  const [suggestions, setSuggestions] = useState("");
+  const [complaints, setComplaints] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (suggestions.trim() && complaints.trim()) {
-      alert('Review Accepted');
-      setSuggestions('');
-      setComplaints('');
+      alert("Review Accepted");
+      setSuggestions("");
+      setComplaints("");
     } else {
-      alert('Please fill out both suggestions and complaints fields.');
+      alert("Please fill out both suggestions and complaints fields.");
     }
   };
 
@@ -271,8 +346,10 @@ function FeedbackForm() {
             required
           ></textarea>
 
-          <br/>
-          <button type="submit" className={classes.submit2}>Submit Feedback</button>
+          <br />
+          <button type="submit" className={classes.submit2}>
+            Submit Feedback
+          </button>
         </form>
       </div>
     </div>
